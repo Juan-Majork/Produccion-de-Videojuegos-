@@ -161,9 +161,9 @@ public class MagicAttackController : MonoBehaviour
         }
     }
 
-    public void recibirMana(float recharge)
+    public void restoreMana(float recharge)
     {
-        if (mana == maxMana && baseAttack == false)
+        if (mana == maxMana)
         {
             return;
         }

@@ -51,8 +51,11 @@ TagManager:
   - name: Enemy
     uniqueID: 1092792119
     locked: 0
-  - name: Magic/Attacks
+  - name: Attacks
     uniqueID: 1801310261
+    locked: 0
+  - name: Items
+    uniqueID: 1945784835
     locked: 0
   m_RenderingLayers:
   - Default
