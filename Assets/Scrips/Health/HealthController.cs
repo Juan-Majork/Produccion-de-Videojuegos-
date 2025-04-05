@@ -17,6 +17,8 @@ public class HealthController : MonoBehaviour
         }
     }
 
+    public bool isInvicible { get; set; }
+
     public void restoreHP(float restore)
     {
         if (health == maxHealth)
@@ -36,6 +38,11 @@ public class HealthController : MonoBehaviour
 
     public void takeDamage(float damage)
     {
+        if (isInvicible)
+        {
+            return;
+        }
+
         health -= damage;
 
         if (health < 0) 

@@ -3,9 +3,18 @@ using Unity.Burst.Intrinsics;
 using UnityEngine;
 using UnityEngine.Events;
 
+public enum Spells
+{
+    Empty,
+    Fire,
+    Water,
+    Rock
+};
+
 public class MagicAttackController : MonoBehaviour
 {
     private Movement move;
+    private nearAttack faceAttack;
 
     [SerializeField] 
     private float mana;
@@ -13,13 +22,14 @@ public class MagicAttackController : MonoBehaviour
     private float maxMana;
 
     private float speedMagic;
+
     private float waitShoot;
     private float lastShoot;
 
-    private bool fireContinue = false;
+    private bool fireContinue1 = false;
+    private bool fireContinue2 = false;
+    private float timeToSwap = 0;
 
-    [SerializeField] 
-    private GameObject basicPrefap;
     [SerializeField] 
     private GameObject firePrefap;
     [SerializeField] 
@@ -32,10 +42,8 @@ public class MagicAttackController : MonoBehaviour
     [SerializeField]
     private Transform upSpawner;
 
-    public bool baseAttack = true;
-    public bool fireAttack;
-    public bool waterAttack;
-    public bool rockAttack;
+
+    public Spells[] slots = new Spells[2];
 
     public float manaPercentage
     {
@@ -48,102 +56,113 @@ public class MagicAttackController : MonoBehaviour
     private void Awake()
     {
         move = GetComponent<Movement>();
+        faceAttack = GetComponentInChildren<nearAttack>();
 
-        baseAttack = true;
-
-        fireAttack = false;
-        waterAttack = false;
-        rockAttack = false;
+        slots[0] = Spells.Empty;
+        slots[1] = Spells.Empty;
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.P))
+
+        if (timeToSwap > 0)
         {
-            fireContinue = true;
+            timeToSwap -= Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.I))
+        {
+            Swap();
+        }
+
+        if (Input.GetKey(KeyCode.K))
+        {
+            fireContinue1 = true;
         }
         else
         {
-            fireContinue = false;
+            fireContinue1 = false;
         }
-        if (fireContinue)
+        if (fireContinue1)
         {
-            if (baseAttack)
-            {
-                speedMagic = 8f;
-                waitShoot = 0.25f;
-                float timeSinceShoot = Time.time - lastShoot;
+            waitShoot = 0.5f;
+            float timeSinceShoot = Time.time - lastShoot;
 
-                if (timeSinceShoot >= waitShoot)
-                {
-                    SpawnMagic(basicPrefap, baseSpawner);
-                    lastShoot = Time.time;
-                }
-            }
-            if (fireAttack) 
+            if (timeSinceShoot >= waitShoot)
             {
-                
+                faceAttack.actualTime = 0;
+                lastShoot = Time.time;
             }
-            if (waterAttack)
+
+        }
+
+        if (Input.GetKey (KeyCode.J))
+        {
+            fireContinue2 = true;
+        }
+        else 
+        {
+            fireContinue2 = false;
+        }
+        if (fireContinue2)
+        {
+            if (slots[0] == Spells.Fire && mana > 0)
+            {
+
+            }
+            if (slots[0] == Spells.Water && mana > 0)
             {
                 speedMagic = 20f;
                 waitShoot = 0.1f;
 
-                if (mana > 0)
-                {
-                    float timeSinceShoot = Time.time - lastShoot;
+                float timeSinceShoot = Time.time - lastShoot;
 
-                    if (timeSinceShoot >= waitShoot)
-                    {
-                        SpawnMagic(waterPrefap, baseSpawner);
-                        lastShoot = Time.time;
-                        mana -= 10;
-                    }
+                if (timeSinceShoot >= waitShoot)
+                {
+                    SpawnMagic(waterPrefap, baseSpawner);
+                    lastShoot = Time.time;
+                    mana -= 10;
                 }
             }
-            if (rockAttack)
+            if (slots[0] == Spells.Rock && mana > 0)
             {
-                speedMagic = -4f;
+                speedMagic = -0f;
                 waitShoot = 1f;
 
-                if (mana > 0)
-                {
-                    float timeSinceShoot = Time.time - lastShoot;
+                float timeSinceShoot = Time.time - lastShoot;
 
-                    if (timeSinceShoot >= waitShoot)
-                    {
-                        SpawnMagic(rockPrefap, upSpawner);
-                        lastShoot = Time.time;
-                        mana -= 25;
-                    }
+                if (timeSinceShoot >= waitShoot)
+                {
+                    SpawnMagic(rockPrefap, upSpawner);
+                    lastShoot = Time.time;
+                    mana -= 25;
                 }
             }
         }
 
-        if (mana > 0)
+        if(mana < 0)
         {
-            baseAttack = false;
-        }
-        else
-        {
-            baseAttack = true;
-        }
-
-        if (mana <= 0)
-        {
-            fireAttack = false;
-            waterAttack = false;
-            rockAttack = false;
+            mana = 0;
         }
 
         changeMana.Invoke();
+    }
+
+    private void Swap()
+    {
+        if (timeToSwap <= 0)
+        {
+            var first = slots[0];
+            slots[0] = slots[1];
+            slots[1] = first;
+            timeToSwap = 1;
+        }
     }
 
     private void SpawnMagic(GameObject attackPrefap, Transform spawnPoint)
     {
         GameObject attack = Instantiate(attackPrefap, spawnPoint.position, spawnPoint.rotation);
         Rigidbody2D rb = attack.GetComponent<Rigidbody2D>();
-        if (rockAttack)
+        if (slots[0] == Spells.Rock)
         {
             return;
         }

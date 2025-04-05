@@ -1,7 +1,11 @@
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using UnityEditor.Sprites;
 using UnityEngine;
 
 public class MagicCollectableBehaviour : MonoBehaviour, ICollectableBehaviour
 {
+    public bool Take;
+
     [SerializeField] private float ManaRestore;
 
     [SerializeField] private bool fireActive;
@@ -10,9 +14,46 @@ public class MagicCollectableBehaviour : MonoBehaviour, ICollectableBehaviour
 
     public void onCollected(GameObject player)
     {
-        player.GetComponent<MagicAttackController>().restoreMana(ManaRestore);
-        player.GetComponent<MagicAttackController>().waterAttack = waterActive;
-        player.GetComponent<MagicAttackController>().rockAttack = rockActive;
-        player.GetComponent<MagicAttackController>().fireAttack = fireActive;
+        
+        var magic = Spells.Empty;
+
+        if (fireActive)
+        {
+            magic = Spells.Fire;
+        }
+        if (waterActive)
+        {
+            magic = Spells.Water;
+        }
+        if (rockActive)
+        {
+            magic = Spells.Rock;
+        }
+
+        for (int i = 0; i < player.GetComponent<MagicAttackController>().slots.Length; i++)
+        {
+            if (player.GetComponent<MagicAttackController>().slots[i] == Spells.Empty)
+            {
+                player.GetComponent<MagicAttackController>().slots[i] = magic;
+                player.GetComponent<MagicAttackController>().restoreMana(ManaRestore);
+                Take = true;
+                Debug.Log("equipado");
+
+                return;
+            }
+            else if(player.GetComponent<MagicAttackController>().slots[i] == magic)
+            {
+                player.GetComponent<MagicAttackController>().restoreMana(ManaRestore);
+                Take = true;
+                Debug.Log("restaurado");
+
+                return;
+            }
+            else
+            {
+                Take = false;
+            }
+        }
+
     }
 }

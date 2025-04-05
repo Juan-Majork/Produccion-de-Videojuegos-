@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2618769e80106964f88aa9e8831a89a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ManaRestore: 100
+  ManaRestore: 0
   fireActive: 0
   waterActive: 0
   rockActive: 0
