@@ -37,6 +37,9 @@ public class MagicAttackController : MonoBehaviour
     public bool waterAttack;
     public bool rockAttack;
 
+    private float fireManaTimer;
+    [SerializeField] private float fireManaCostPerSecond;
+
     public float manaPercentage
     {
         get
@@ -65,6 +68,8 @@ public class MagicAttackController : MonoBehaviour
         else
         {
             fireContinue = false;
+            firePrefap.SetActive(false);
+            fireManaTimer = 0f;
         }
         if (fireContinue)
         {
@@ -80,10 +85,28 @@ public class MagicAttackController : MonoBehaviour
                     lastShoot = Time.time;
                 }
             }
-            if (fireAttack) 
+            if (fireAttack)
             {
-                
+
+                if (mana > 0)
+                {
+                    firePrefap.SetActive(true);
+
+                    fireManaTimer += Time.fixedDeltaTime;
+                    if (fireManaTimer >= 0.2f)
+                    {
+                        mana -= fireManaCostPerSecond;
+                        fireManaTimer = 0f;
+                    }
+                }
+                else
+                {
+                    firePrefap.SetActive(false);
+                    fireAttack = false;
+                }
             }
+
+
             if (waterAttack)
             {
                 speedMagic = 20f;
