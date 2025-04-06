@@ -16,8 +16,10 @@ public class MagicAttackController : MonoBehaviour
     private Movement move;
     private nearAttack faceAttack;
 
-    [SerializeField] 
     private float mana;
+    private float [] magicMana = new float[3];
+    //0 = Fire, 1 = Water, 2 = Rock
+
     [SerializeField] 
     private float maxMana;
 
@@ -62,6 +64,7 @@ public class MagicAttackController : MonoBehaviour
 
         slots[0] = Spells.Empty;
         slots[1] = Spells.Empty;
+
     }
 
     private void FixedUpdate()
@@ -109,7 +112,7 @@ public class MagicAttackController : MonoBehaviour
         {
             if (slots[0] == Spells.Fire)
             {
-                if (mana > 0)
+                if (magicMana[0] > 0)
                 {
                     firePrefap.SetActive(true);
                     setFire = true;
@@ -131,7 +134,12 @@ public class MagicAttackController : MonoBehaviour
                 {
                     SpawnMagic(waterPrefap, baseSpawner);
                     lastShoot = Time.time;
-                    mana -= 10;
+                    magicMana[1] -= 10;
+
+                    if (magicMana[1] < 0)
+                    {
+                        magicMana[1] = 0;
+                    }
                 }
             }
             if (slots[0] == Spells.Rock && mana > 0)
@@ -145,24 +153,50 @@ public class MagicAttackController : MonoBehaviour
                 {
                     SpawnMagic(rockPrefap, upSpawner);
                     lastShoot = Time.time;
-                    mana -= 25;
+                    magicMana[2] -= 25;
+                    if (magicMana[2] < 0)
+                    {
+                        magicMana[2] = 0;
+                    }
                 }
             }
         }
+
         if (setFire)
         {
-            mana -= 0.5f;
+            magicMana[0] -= 0.5f;
         }
 
-        if (mana <= 0 || slots[0] != Spells.Fire)
+        if (magicMana[0] <= 0 || slots[0] != Spells.Fire)
         {
             firePrefap.SetActive (false);
             setFire = false;
         }
 
-        if(mana < 0)
+        if (slots[0] == Spells.Empty)
         {
             mana = 0;
+        }
+        if (slots[0] == Spells.Fire)
+        {
+            mana = magicMana[0];
+        }
+        if (slots[0] == Spells.Water)
+        {
+            mana = magicMana[1];
+        }
+        if (slots[0] == Spells.Rock)
+        {
+            mana = magicMana[2];
+        }
+
+        if (mana < 0)
+        {
+            mana = 0;
+        }
+        else if (mana > 100)
+        {
+            mana = maxMana;
         }
 
         changeMana.Invoke();
@@ -175,7 +209,7 @@ public class MagicAttackController : MonoBehaviour
             var first = slots[0];
             slots[0] = slots[1];
             slots[1] = first;
-            timeToSwap = 1;
+            timeToSwap = 0.5f;
         }
     }
 
@@ -201,18 +235,18 @@ public class MagicAttackController : MonoBehaviour
         }
     }
 
-    public void restoreMana(float recharge)
+    public void restoreMana(float recharge, int magic)
     {
-        if (mana == maxMana)
+        if (magicMana[magic] == maxMana)
         {
             return;
         }
 
-        mana += recharge;
+        magicMana[magic] += recharge;
 
-        if (mana > maxMana)
+        if (magicMana[magic] > maxMana)
         {
-            mana = maxMana;
+            magicMana[magic] = maxMana;
         }
 
         changeMana.Invoke();
