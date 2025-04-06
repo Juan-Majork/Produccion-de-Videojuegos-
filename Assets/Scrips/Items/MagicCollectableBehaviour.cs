@@ -1,5 +1,4 @@
 using Unity.VisualScripting.Antlr3.Runtime.Misc;
-using UnityEditor.Sprites;
 using UnityEngine;
 
 public class MagicCollectableBehaviour : MonoBehaviour, ICollectableBehaviour
