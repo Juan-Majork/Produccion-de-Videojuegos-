@@ -32,6 +32,8 @@ public class MagicAttackController : MonoBehaviour
 
     [SerializeField] 
     private GameObject firePrefap;
+    private bool setFire;
+
     [SerializeField] 
     private GameObject waterPrefap;
     [SerializeField] 
@@ -105,9 +107,18 @@ public class MagicAttackController : MonoBehaviour
         }
         if (fireContinue2)
         {
-            if (slots[0] == Spells.Fire && mana > 0)
+            if (slots[0] == Spells.Fire)
             {
-
+                if (mana > 0)
+                {
+                    firePrefap.SetActive(true);
+                    setFire = true;
+                }
+                else
+                {
+                    firePrefap.SetActive(false);
+                    setFire = false;
+                }
             }
             if (slots[0] == Spells.Water && mana > 0)
             {
@@ -137,6 +148,16 @@ public class MagicAttackController : MonoBehaviour
                     mana -= 25;
                 }
             }
+        }
+        if (setFire)
+        {
+            mana -= 0.5f;
+        }
+
+        if (mana <= 0 || slots[0] != Spells.Fire)
+        {
+            firePrefap.SetActive (false);
+            setFire = false;
         }
 
         if(mana < 0)
