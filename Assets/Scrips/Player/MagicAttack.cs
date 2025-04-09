@@ -9,7 +9,6 @@ public class MagicAttack : MonoBehaviour
 
     [SerializeField] private bool triger;
 
-    // Update is called once per frame
     void Update()
     {
         actualTime += Time.deltaTime;
