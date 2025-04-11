@@ -13,35 +13,48 @@ public class Movement : MonoBehaviour
     public bool facingRight = true;
     private bool canJump = true;
 
+    private bool inWaterfall = false; 
 
+    Animator animator;
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
     {
         horizontalInput = Input.GetAxis("Horizontal");
 
+        Vector2 currentVelocity = rb2D.linearVelocity;
+
+        if (inWaterfall) return; // bloquea input horizontal en la cascada
+
+        animator.SetBool("isWalking", horizontalInput != 0);//animacion de caminar
+
         if (horizontalInput != 0)
         {
-            rb2D.linearVelocityX = horizontalInput * speed;
+            currentVelocity.x = horizontalInput * speed;
         }
+
+        if (Input.GetKey(KeyCode.Space) && canJump)
+        {
+            currentVelocity.y = jumpForce;
+            canJump = false;
+        }
+
+        rb2D.linearVelocity = currentVelocity;
+
         if (horizontalInput > 0 && !facingRight)
         {
             Flip();
         }
-        if (horizontalInput < 0 && facingRight)
+        else if (horizontalInput < 0 && facingRight)
         {
             Flip();
         }
-
-        if(Input.GetKey(KeyCode.Space) && canJump) 
-        {
-            rb2D.linearVelocityY = (jumpForce);
-            canJump = false;
-        }
     }
+
 
     private void Flip()
     {
@@ -59,4 +72,11 @@ public class Movement : MonoBehaviour
             canJump = true;
         }
     }
+
+    public void SetInWaterfall(bool state)
+    {
+        inWaterfall = state;
+    }
+
+
 }

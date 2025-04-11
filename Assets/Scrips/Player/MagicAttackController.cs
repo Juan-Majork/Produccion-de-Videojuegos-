@@ -49,6 +49,8 @@ public class MagicAttackController : MonoBehaviour
 
     public Spells[] slots = new Spells[2];
 
+    Animator animator;
+
     public float manaPercentage
     {
         get
@@ -61,6 +63,7 @@ public class MagicAttackController : MonoBehaviour
     {
         move = GetComponent<Movement>();
         faceAttack = GetComponentInChildren<nearAttack>();
+        animator = GetComponent<Animator>();
 
         slots[0] = Spells.Empty;
         slots[1] = Spells.Empty;
@@ -142,15 +145,16 @@ public class MagicAttackController : MonoBehaviour
                     }
                 }
             }
-            if (slots[0] == Spells.Rock && mana > 0)
+            if (slots[0] == Spells.Rock && mana > 0 && fireContinue2)
             {
-                speedMagic = -0f;
+                speedMagic = 0f;
                 waitShoot = 1f;
 
                 float timeSinceShoot = Time.time - lastShoot;
 
                 if (timeSinceShoot >= waitShoot)
                 {
+                    animator.SetTrigger("castRock");
                     SpawnMagic(rockPrefap, upSpawner);
                     lastShoot = Time.time;
                     magicMana[2] -= 25;
@@ -160,6 +164,8 @@ public class MagicAttackController : MonoBehaviour
                     }
                 }
             }
+
+
         }
 
         if (setFire)
