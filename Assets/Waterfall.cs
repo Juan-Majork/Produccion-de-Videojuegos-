@@ -11,6 +11,8 @@ public class Waterfall : MonoBehaviour
     private Collider2D col;//referencia a el colider
     private SpriteRenderer spriteRenderer;//referencia a el sprite renderer
 
+    private string newTag = "Floor";//cambia el tag
+
     private void Awake()
     {
         //obtener lo componentes
@@ -76,6 +78,8 @@ public class Waterfall : MonoBehaviour
         spriteRenderer.color = Color.cyan; //cambia el color de el sprite (cambiarlo despues por un sprite)
 
         col.isTrigger = false; //remueve el trigger de el collider y lo hace solido
+
+        gameObject.tag = newTag;//cambia el tag
 
     }
 
