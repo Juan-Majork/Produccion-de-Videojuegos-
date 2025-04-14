@@ -1,60 +1,70 @@
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class nearAttack : MonoBehaviour
+public class RockAttack : MonoBehaviour
 {
+    private Rigidbody2D rb;
+
     [SerializeField] private float damage;
+    [SerializeField] private float lowDamage;
+    [SerializeField] private float riseamage;
 
-    private float waitToDestroy = 0.2f;
-    public float actualTime = 1;
+    private float gravity = 2;
+    [SerializeField] private float waitToFall;
+    private float actualTime = 0;
 
-    private BoxCollider2D attack;
-    private SpriteRenderer spriteRenderer;
-
-    private void Start()
+    private void Awake()
     {
-        attack = GetComponent<BoxCollider2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
-
 
     void Update()
     {
         actualTime += Time.deltaTime;
 
-        if (actualTime >= waitToDestroy)
+        if (actualTime >= waitToFall)
         {
-            attack.enabled = false;
-            spriteRenderer.enabled = false;
-        }
-        else
-        {
-            attack.enabled = true;
-            spriteRenderer.enabled = true;
+            rb.gravityScale = gravity;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             healthController.takeDamage(damage);
+
+            timeToDestroy.Invoke();
         }
         if (collision.gameObject.CompareTag("FireEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             healthController.takeDamage(damage);
+
+            timeToDestroy.Invoke();
         }
         if (collision.gameObject.CompareTag("IceEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             healthController.takeDamage(damage);
+
+            timeToDestroy.Invoke();
         }
         if (collision.gameObject.CompareTag("RockEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
+            healthController.takeDamage(damage - lowDamage);
+
+            timeToDestroy.Invoke();
         }
+
+        else if (collision.gameObject)
+        {
+            timeToDestroy.Invoke();
+        }
+
     }
+
+    public UnityEvent timeToDestroy;
 }

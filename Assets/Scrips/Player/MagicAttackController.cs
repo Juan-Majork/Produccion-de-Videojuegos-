@@ -63,7 +63,7 @@ public class MagicAttackController : MonoBehaviour
     {
         move = GetComponent<Movement>();
         faceAttack = GetComponentInChildren<nearAttack>();
-        animator = GetComponent<Animator>();
+        animator = transform.GetChild(0).GetComponent<Animator>();
 
         slots[0] = Spells.Empty;
         slots[1] = Spells.Empty;
@@ -157,7 +157,7 @@ public class MagicAttackController : MonoBehaviour
                     animator.SetTrigger("castRock");
                     SpawnMagic(rockPrefap, upSpawner);
                     lastShoot = Time.time;
-                    magicMana[2] -= 25;
+                    magicMana[2] -= 15;
                     if (magicMana[2] < 0)
                     {
                         magicMana[2] = 0;
@@ -170,7 +170,7 @@ public class MagicAttackController : MonoBehaviour
 
         if (setFire)
         {
-            magicMana[0] -= 0.5f;
+            magicMana[0] -= 0.2f;
         }
 
         if (magicMana[0] <= 0 || slots[0] != Spells.Fire)

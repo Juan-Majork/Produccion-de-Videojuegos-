@@ -19,6 +19,11 @@ public class HealthController : MonoBehaviour
 
     public bool isInvicible { get; set; }
 
+    private void Awake()
+    {
+        HealthChanged.Invoke();
+    }
+
     public void restoreHP(float restore)
     {
         if (health == maxHealth)

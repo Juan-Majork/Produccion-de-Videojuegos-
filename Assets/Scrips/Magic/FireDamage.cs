@@ -56,6 +56,7 @@ public class FireDamage : MonoBehaviour
             {
                 tracked.RemoveAt(i);
                 break;
+
             }
         }
 

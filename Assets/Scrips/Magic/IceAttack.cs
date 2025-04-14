@@ -1,22 +1,13 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class nearAttack : MonoBehaviour
+public class IceAttack : MonoBehaviour
 {
     [SerializeField] private float damage;
+    [SerializeField] private float lowDamage;
+    [SerializeField] private float riseamage;
 
-    private float waitToDestroy = 0.2f;
-    public float actualTime = 1;
-
-    private BoxCollider2D attack;
-    private SpriteRenderer spriteRenderer;
-
-    private void Start()
-    {
-        attack = GetComponent<BoxCollider2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
-
+    [SerializeField] private float waitToDestroy;
+    private float actualTime = 0;
 
     void Update()
     {
@@ -24,13 +15,7 @@ public class nearAttack : MonoBehaviour
 
         if (actualTime >= waitToDestroy)
         {
-            attack.enabled = false;
-            spriteRenderer.enabled = false;
-        }
-        else
-        {
-            attack.enabled = true;
-            spriteRenderer.enabled = true;
+            Destroy(gameObject);
         }
     }
 
@@ -40,21 +25,25 @@ public class nearAttack : MonoBehaviour
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             healthController.takeDamage(damage);
+            Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("FireEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
+            healthController.takeDamage(damage + riseamage);
+            Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("IceEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
+            healthController.takeDamage(damage - lowDamage);
+            Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("RockEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             healthController.takeDamage(damage);
+            Destroy(gameObject);
         }
     }
 }

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Floor
   - Enemy
+  - FireEnemy
+  - IceEnemy
+  - RockEnemy
   - Rock
   - iceMagic
   layers:
@@ -15,8 +18,8 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
-  - 
+  - Floor
+  - Enemy
   - 
   - 
   - 

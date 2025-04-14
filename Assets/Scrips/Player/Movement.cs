@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = transform.GetChild(0).GetComponent<Animator>();
     }
 
     private void FixedUpdate()
