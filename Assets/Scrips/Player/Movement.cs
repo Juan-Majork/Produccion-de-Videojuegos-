@@ -39,6 +39,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && canJump)
         {
+            animator.SetTrigger("jump");
             currentVelocity.y = jumpForce;
             canJump = false;
         }
@@ -53,6 +54,8 @@ public class Movement : MonoBehaviour
         {
             Flip();
         }
+
+        animator.SetFloat("inAir", rb2D.linearVelocity.y);
     }
 
 
