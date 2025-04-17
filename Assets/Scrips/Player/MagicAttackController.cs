@@ -48,6 +48,7 @@ public class MagicAttackController : MonoBehaviour
 
 
     public Spells[] slots = new Spells[2];
+    public Spells currentSpell;
 
     Animator animator;
 
@@ -205,7 +206,10 @@ public class MagicAttackController : MonoBehaviour
             mana = maxMana;
         }
 
+        currentSpell = slots[0];
+
         changeMana.Invoke();
+        changeManaColor.Invoke();
     }
 
     private void Swap()
@@ -259,4 +263,5 @@ public class MagicAttackController : MonoBehaviour
     }
 
     public UnityEvent changeMana;
+    public UnityEvent changeManaColor;
 }

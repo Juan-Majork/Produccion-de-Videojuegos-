@@ -1,15 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ManaBarUI : MonoBehaviour
+public class BackgroundManaUI : MonoBehaviour
 {
     [SerializeField] private UnityEngine.UI.Image manaImagen;
 
     [SerializeField] private Color[] spellColor;
 
-    public void changeMana(MagicAttackController magicAttackController)
-    {
-        manaImagen.fillAmount = magicAttackController.manaPercentage;
-    }
     public void changeColor(MagicAttackController magicAttackController)
     {
         if (magicAttackController.currentSpell == Spells.Empty)
@@ -20,11 +17,11 @@ public class ManaBarUI : MonoBehaviour
         {
             manaImagen.color = spellColor[1];
         }
-        else if (magicAttackController.currentSpell == Spells.Water)
+        if (magicAttackController.currentSpell == Spells.Water)
         {
             manaImagen.color = spellColor[2];
         }
-        else if (magicAttackController.currentSpell == Spells.Rock)
+        if (magicAttackController.currentSpell == Spells.Rock)
         {
             manaImagen.color = spellColor[3];
         }

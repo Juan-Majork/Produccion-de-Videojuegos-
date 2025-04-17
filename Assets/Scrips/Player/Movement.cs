@@ -39,7 +39,8 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space) && canJump)
         {
-            animator.SetTrigger("jump");
+            //animator.SetTrigger("jump");
+
             currentVelocity.y = jumpForce;
             canJump = false;
         }
