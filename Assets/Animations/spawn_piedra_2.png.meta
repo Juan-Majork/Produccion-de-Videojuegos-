@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: e91452e1cd214dc4c9e582c3c9f0dcee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3902917959138455607
+    second: spawn_piedra_2_0
+  - first:
+      213: -6592631264676418331
+    second: spawn_piedra_2_1
+  - first:
+      213: 587925958541689359
+    second: spawn_piedra_2_2
+  - first:
+      213: 3112155103776834000
+    second: spawn_piedra_2_3
+  - first:
+      213: -5833785764357207759
+    second: spawn_piedra_2_4
+  - first:
+      213: 6212803698751210666
+    second: spawn_piedra_2_5
+  - first:
+      213: 6683283360927410737
+    second: spawn_piedra_2_6
+  - first:
+      213: 7133531700178319357
+    second: spawn_piedra_2_7
+  - first:
+      213: 7788465423692177535
+    second: spawn_piedra_2_8
+  - first:
+      213: -4957817025998596150
+    second: spawn_piedra_2_9
+  - first:
+      213: 4783144685063588025
+    second: spawn_piedra_2_10
+  - first:
+      213: 283192384836575730
+    second: spawn_piedra_2_11
+  - first:
+      213: -6611051494260138727
+    second: spawn_piedra_2_12
+  - first:
+      213: -4421541171749296076
+    second: spawn_piedra_2_13
+  - first:
+      213: -3419051008671282212
+    second: spawn_piedra_2_14
+  - first:
+      213: -2572906485133395712
+    second: spawn_piedra_2_15
+  - first:
+      213: -5523968375756952208
+    second: spawn_piedra_2_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spawn_piedra_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf4f027bcc06d9c0800000000000000
+      internalID: -3902917959138455607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn_piedra_2_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 4
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ece3d54bc44284a0800000000000000
+      internalID: -6592631264676418331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn_piedra_2_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 4
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02cb195b8bb82800800000000000000
+      internalID: 587925958541689359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn_piedra_2_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 4
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d18986f398903b20800000000000000
+      internalID: 3112155103776834000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn_piedra_2_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 4
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13902cb81ca3a0fa0800000000000000
+      internalID: -5833785764357207759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn_piedra_2_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 4
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa48c431c00583650800000000000000
+      internalID: 6212803698751210666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn_piedra_2_6
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 4
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a6b55aecacfbc50800000000000000
+      internalID: 6683283360927410737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn_piedra_2_7
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 4
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7fd1749456ff260800000000000000
+      internalID: 7133531700178319357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn_piedra_2_8
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 4
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70a59ca900361c60800000000000000
+      internalID: 7788465423692177535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn_piedra_2_9
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 4
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac758f7beab423bb0800000000000000
+      internalID: -4957817025998596150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 545617da1f706b14a993f7a294a28aea
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      spawn_piedra_2_0: -3902917959138455607
+      spawn_piedra_2_1: -6592631264676418331
+      spawn_piedra_2_2: 587925958541689359
+      spawn_piedra_2_3: 3112155103776834000
+      spawn_piedra_2_4: -5833785764357207759
+      spawn_piedra_2_5: 6212803698751210666
+      spawn_piedra_2_6: 6683283360927410737
+      spawn_piedra_2_7: 7133531700178319357
+      spawn_piedra_2_8: 7788465423692177535
+      spawn_piedra_2_9: -4957817025998596150
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
