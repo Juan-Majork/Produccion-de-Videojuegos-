@@ -13,7 +13,8 @@ public class Movement : MonoBehaviour
     public bool facingRight = true;
     private bool canJump = true;
 
-    private bool inWaterfall = false; 
+    private bool inWaterfall = false;
+    Vector2 currentVelocity;
 
     Animator animator;
     private void Awake()
@@ -26,7 +27,7 @@ public class Movement : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
 
-        Vector2 currentVelocity = rb2D.linearVelocity;
+        currentVelocity = rb2D.linearVelocity;
 
         if (inWaterfall) return; // bloquea input horizontal en la cascada
 
@@ -41,7 +42,7 @@ public class Movement : MonoBehaviour
         {
             //animator.SetTrigger("jump");
 
-            currentVelocity.y = jumpForce;
+            currentVelocity.y += jumpForce;
             canJump = false;
         }
 

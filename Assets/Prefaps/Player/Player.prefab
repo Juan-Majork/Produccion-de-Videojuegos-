@@ -268,7 +268,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.59375, y: 0.59375}
+  m_Size: {x: 1.625, y: 0.1875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -321,7 +321,7 @@ Transform:
   m_GameObject: {fileID: 5305247745453103740}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.28, y: 2.2799997, z: 0}
+  m_LocalPosition: {x: 2.83, y: 2.2799997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -524,6 +524,7 @@ GameObject:
   - component: {fileID: 7079116128542925071}
   - component: {fileID: 8445023206466291728}
   - component: {fileID: 5179925538202192255}
+  - component: {fileID: 7149584373858905592}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -613,12 +614,40 @@ MonoBehaviour:
   baseSpawner: {fileID: 3006559942451515554}
   upSpawner: {fileID: 7273078704913101236}
   slots: 0000000000000000
+  currentSpell: 0
   changeMana:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ManaBarUI, Assembly-CSharp
         m_MethodName: changeMana
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8720717843666149361}
+          m_ObjectArgumentAssemblyTypeName: MagicAttackController, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  changeManaColor:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ManaBarUI, Assembly-CSharp
+        m_MethodName: changeColor
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8720717843666149361}
+          m_ObjectArgumentAssemblyTypeName: MagicAttackController, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: BackgroundManaUI, Assembly-CSharp
+        m_MethodName: changeColor
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 8720717843666149361}
@@ -657,18 +686,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5179925538202192255}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 8203849355220837998}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
@@ -681,9 +698,45 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7506543982961422156}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: dead
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1489278558307290136}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: dead
+          m_BoolArgument: 0
+        m_CallState: 2
   Damage:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 7506543982961422156}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: hit
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 8445023206466291728}
         m_TargetAssemblyTypeName: PlayerDamageInvincibility, Assembly-CSharp
         m_MethodName: StartInvincibility
@@ -754,7 +807,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e985d9f66c7ec354c9573e9e87f933cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  invincibilityDuration: 3
+  invincibilityDuration: 1
+  flashColor: {r: 1, g: 1, b: 1, a: 0.24313726}
+  numOffFlashes: 3
 --- !u!61 &5179925538202192255
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -801,3 +856,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.1722499}
   m_EdgeRadius: 0
+--- !u!114 &7149584373858905592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199131965065546555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b034da52092a0414aab16cbec12508b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

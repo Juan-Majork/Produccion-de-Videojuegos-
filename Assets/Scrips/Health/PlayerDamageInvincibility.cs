@@ -4,6 +4,10 @@ public class PlayerDamageInvincibility : MonoBehaviour
 {
     [SerializeField] private float invincibilityDuration;
 
+    [SerializeField] private Color flashColor;
+
+    [SerializeField] private int numOffFlashes;
+
     private InvicibleController invicibleController;
 
     private void Awake()
@@ -13,6 +17,6 @@ public class PlayerDamageInvincibility : MonoBehaviour
 
     public void StartInvincibility()
     {
-        invicibleController.StartInvicibility(invincibilityDuration);
+        invicibleController.StartInvicibility(invincibilityDuration, flashColor, numOffFlashes);
     }
 }
