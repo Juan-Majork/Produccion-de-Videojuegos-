@@ -66,8 +66,15 @@ public class HealthController : MonoBehaviour
         HealthChanged.Invoke();
     }
 
+    public void MaxHealth()
+    {
+        maxHealth += 25;
+        health = maxHealth;
+        HealthChanged.Invoke();
+        Debug.Log("subio tu vida");
+    }
+
     public UnityEvent Death;
     public UnityEvent Damage;
-    public UnityEvent HealthRestore;
     public UnityEvent HealthChanged;
 }

@@ -42,7 +42,7 @@ public class Movement : MonoBehaviour
         {
             //animator.SetTrigger("jump");
 
-            currentVelocity.y += jumpForce;
+            currentVelocity.y = jumpForce;
             canJump = false;
         }
 
