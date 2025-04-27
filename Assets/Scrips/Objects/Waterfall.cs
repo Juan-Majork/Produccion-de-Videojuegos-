@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Waterfall : MonoBehaviour
 {
@@ -64,6 +65,7 @@ public class Waterfall : MonoBehaviour
     {    
         if (other.CompareTag("iceMagic") && !isFrozen)
         {
+            changeIce.Invoke();
             FreezeWaterfall();//congela la cascada
 
             // destruir la bala de hielo
@@ -83,4 +85,5 @@ public class Waterfall : MonoBehaviour
 
     }
 
+    public UnityEvent changeIce;
 }

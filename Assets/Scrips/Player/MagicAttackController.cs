@@ -98,6 +98,7 @@ public class MagicAttackController : MonoBehaviour
 
             if (timeSinceShoot >= waitShoot)
             {
+                animator.SetTrigger("baseAttack");
                 faceAttack.actualTime = 0;
                 lastShoot = Time.time;
             }
@@ -158,7 +159,7 @@ public class MagicAttackController : MonoBehaviour
                     animator.SetTrigger("castRock");
                     SpawnMagic(rockPrefap, upSpawner);
                     lastShoot = Time.time;
-                    magicMana[2] -= 15;
+                    magicMana[2] -= 20;
                     if (magicMana[2] < 0)
                     {
                         magicMana[2] = 0;
@@ -179,6 +180,8 @@ public class MagicAttackController : MonoBehaviour
             firePrefap.SetActive (false);
             setFire = false;
         }
+
+        animator.SetBool("isFire", setFire);
 
         if (slots[0] == Spells.Empty)
         {

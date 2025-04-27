@@ -56,7 +56,7 @@ public class HealthController : MonoBehaviour
         }
         if (health == 0)
         {
-            Death.Invoke();
+            IsDeath();
         }
         if (health > 0) 
         { 
@@ -72,6 +72,12 @@ public class HealthController : MonoBehaviour
         health = maxHealth;
         HealthChanged.Invoke();
         Debug.Log("subio tu vida");
+    }
+
+    public void IsDeath()
+    {
+        health = 0;
+        Death.Invoke();
     }
 
     public UnityEvent Death;
