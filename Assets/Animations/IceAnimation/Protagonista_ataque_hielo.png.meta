@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 30ecfdfd1f58c1340ab77253eed8ea45
+guid: 6612b246d6500ea438acc7e4047bf9ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4079926367987973054
-    second: Protagonista_movimineto_fuego_0
+      213: -1571332066130596157
+    second: Protagonista_ataque_hielo_0
   - first:
-      213: -7589169247272744431
-    second: Protagonista_movimineto_fuego_1
+      213: 4934693553486649392
+    second: Protagonista_ataque_hielo_1
   - first:
-      213: -7109850005020702211
-    second: Protagonista_movimineto_fuego_2
+      213: 229372872395441532
+    second: Protagonista_ataque_hielo_2
   - first:
-      213: 1380644555572622992
-    second: Protagonista_movimineto_fuego_3
+      213: -9014369041893143564
+    second: Protagonista_ataque_hielo_3
   - first:
-      213: 1855775354162906622
-    second: Protagonista_movimineto_fuego_4
+      213: -6863736822662984729
+    second: Protagonista_ataque_hielo_4
   - first:
-      213: 6017208169114423514
-    second: Protagonista_movimineto_fuego_5
+      213: 2711926963939618565
+    second: Protagonista_ataque_hielo_5
+  - first:
+      213: 594598049979111831
+    second: Protagonista_ataque_hielo_6
+  - first:
+      213: 3507492866950672175
+    second: Protagonista_ataque_hielo_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Protagonista_movimineto_fuego_0
+      name: Protagonista_ataque_hielo_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 26
-        height: 27
+        x: 8
+        y: 1
+        width: 22
+        height: 19
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,108 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebb3ca15a6fce9830800000000000000
-      internalID: 4079926367987973054
+      spriteID: 3ceea16afc1813ae0800000000000000
+      internalID: -1571332066130596157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Protagonista_movimineto_fuego_1
+      name: Protagonista_ataque_hielo_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 0
-        width: 28
-        height: 28
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 11a4dfb57cadda690800000000000000
-      internalID: -7589169247272744431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Protagonista_movimineto_fuego_2
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 0
-        width: 27
-        height: 27
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df98e6c071db45d90800000000000000
-      internalID: -7109850005020702211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Protagonista_movimineto_fuego_3
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 0
-        width: 29
-        height: 27
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 096bbf788e8092310800000000000000
-      internalID: 1380644555572622992
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Protagonista_movimineto_fuego_4
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 0
-        width: 20
-        height: 26
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef50ecf2ad901c910800000000000000
-      internalID: 1855775354162906622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Protagonista_movimineto_fuego_5
-      rect:
-        serializedVersion: 2
-        x: 253
-        y: 0
+        x: 43
+        y: 1
         width: 23
-        height: 24
+        height: 19
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +158,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad0d4a303fa618350800000000000000
-      internalID: 6017208169114423514
+      spriteID: 0385bfa44ad8b7440800000000000000
+      internalID: 4934693553486649392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonista_ataque_hielo_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1
+        width: 22
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75cd348965ee2300800000000000000
+      internalID: 229372872395441532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonista_ataque_hielo_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1
+        width: 22
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb4ea7dd1786e280800000000000000
+      internalID: -9014369041893143564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonista_ataque_hielo_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1
+        width: 22
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb8765b9bb1fb0a0800000000000000
+      internalID: -6863736822662984729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonista_ataque_hielo_5
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1
+        width: 21
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fac6e8433b2a520800000000000000
+      internalID: 2711926963939618565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonista_ataque_hielo_6
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1
+        width: 16
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7991521b6cf604800800000000000000
+      internalID: 594598049979111831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonista_ataque_hielo_7
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1
+        width: 21
+        height: 20
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2fafc2dd2e1da030800000000000000
+      internalID: 3507492866950672175
       vertices: []
       indices: 
       edges: []
@@ -250,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 985fa3a86a2778d43a083ecc534e1fc7
+    spriteID: 3bf0a423ed8f9e6488b711c14efd3bc4
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Protagonista_movimineto_fuego_0: 4079926367987973054
-      Protagonista_movimineto_fuego_1: -7589169247272744431
-      Protagonista_movimineto_fuego_2: -7109850005020702211
-      Protagonista_movimineto_fuego_3: 1380644555572622992
-      Protagonista_movimineto_fuego_4: 1855775354162906622
-      Protagonista_movimineto_fuego_5: 6017208169114423514
+      Protagonista_ataque_hielo_0: -1571332066130596157
+      Protagonista_ataque_hielo_1: 4934693553486649392
+      Protagonista_ataque_hielo_2: 229372872395441532
+      Protagonista_ataque_hielo_3: -9014369041893143564
+      Protagonista_ataque_hielo_4: -6863736822662984729
+      Protagonista_ataque_hielo_5: 2711926963939618565
+      Protagonista_ataque_hielo_6: 594598049979111831
+      Protagonista_ataque_hielo_7: 3507492866950672175
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

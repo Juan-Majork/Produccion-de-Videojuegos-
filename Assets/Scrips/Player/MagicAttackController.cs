@@ -137,6 +137,7 @@ public class MagicAttackController : MonoBehaviour
 
                 if (timeSinceShoot >= waitShoot)
                 {
+                    animator.SetTrigger("iceAttack");
                     SpawnMagic(waterPrefap, baseSpawner);
                     lastShoot = Time.time;
                     magicMana[1] -= 10;

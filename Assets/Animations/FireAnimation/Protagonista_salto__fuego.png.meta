@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: 362621908686602082
     second: Protagonista_salto__fuego_3
+  - first:
+      213: -981881088285984656
+    second: Protagonista_salto__fuego_4
+  - first:
+      213: -3529263055510971305
+    second: Protagonista_salto__fuego_5
+  - first:
+      213: -1962633459866355764
+    second: Protagonista_salto__fuego_6
+  - first:
+      213: -3205159608193225523
+    second: Protagonista_salto__fuego_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,10 +124,10 @@ TextureImporter:
       name: Protagonista_salto__fuego_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 19
         y: 3
-        width: 29
-        height: 27
+        width: 21
+        height: 32
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +146,10 @@ TextureImporter:
       name: Protagonista_salto__fuego_1
       rect:
         serializedVersion: 2
-        x: 60
+        x: 69
         y: 3
-        width: 29
-        height: 28
+        width: 21
+        height: 32
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +168,10 @@ TextureImporter:
       name: Protagonista_salto__fuego_2
       rect:
         serializedVersion: 2
-        x: 112
-        y: 4
-        width: 26
-        height: 26
+        x: 118
+        y: 3
+        width: 22
+        height: 32
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +190,10 @@ TextureImporter:
       name: Protagonista_salto__fuego_3
       rect:
         serializedVersion: 2
-        x: 164
-        y: 0
+        x: 168
+        y: 3
         width: 22
-        height: 17
+        height: 32
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,11 +208,99 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Protagonista_salto__fuego_4
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 3
+        width: 21
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0783a093a58af52f0800000000000000
+      internalID: -981881088285984656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonista_salto__fuego_5
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 3
+        width: 17
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75cdb5923f9850fc0800000000000000
+      internalID: -3529263055510971305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonista_salto__fuego_6
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 4
+        width: 21
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7be58444353c4e0800000000000000
+      internalID: -1962633459866355764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonista_salto__fuego_7
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc6639615cf483d0800000000000000
+      internalID: -3205159608193225523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4930880a276d46f4e888747ef83b315d
+    spriteID: cd21076f348e2cb4ca6fcf4d487b4cf7
     internalID: 0
     vertices: []
     indices: 
@@ -214,6 +314,10 @@ TextureImporter:
       Protagonista_salto__fuego_1: -9199540482278152279
       Protagonista_salto__fuego_2: -3746671309651732068
       Protagonista_salto__fuego_3: 362621908686602082
+      Protagonista_salto__fuego_4: -981881088285984656
+      Protagonista_salto__fuego_5: -3529263055510971305
+      Protagonista_salto__fuego_6: -1962633459866355764
+      Protagonista_salto__fuego_7: -3205159608193225523
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
