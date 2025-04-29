@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1801310261
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -9152689546471649384, guid: defb19cbf1588c940b6396936b24a98c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -144,6 +144,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5748303955810479968}
+  - {fileID: 9082181378012110800}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &6537310777123048094
@@ -185,9 +186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91e1ac01f91c3047a9320ec5c81c70a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 100
-  lowDamage: 50
-  riseamage: 50
   waitToFall: 0.25
   timeToDestroy:
     m_PersistentCalls:
@@ -263,9 +261,122 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -0.4996043, y: 0.50544024}
-      - {x: -0.5006535, y: -0.33847895}
-      - {x: -0.4233336, y: -0.5088157}
-      - {x: 0.37995893, y: -0.5102799}
+      - {x: -0.49951443, y: -0.24647851}
       - {x: 0.49423522, y: -0.25626302}
       - {x: 0.49431285, y: 0.5065003}
+  m_UseDelaunayMesh: 0
+--- !u!1 &4998344793873386301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9082181378012110800}
+  - component: {fileID: 5950913624296580979}
+  - component: {fileID: 5452868204531048832}
+  m_Layer: 0
+  m_Name: Down hit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9082181378012110800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4998344793873386301}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 205345906973565918}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5950913624296580979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4998344793873386301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a30ba2c198746a540a31973306abae49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
+  lowDamage: 0
+  riseamage: 0
+  timeToDestroy:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6133721695222871706}
+        m_TargetAssemblyTypeName: DestroyRock, Assembly-CSharp
+        m_MethodName: DestroyTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!60 &5452868204531048832
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4998344793873386301}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.4621668, y: -0.25484487}
+      - {x: -0.46179846, y: -0.34258184}
+      - {x: -0.3946918, y: -0.5071892}
+      - {x: 0.34817344, y: -0.5051657}
+      - {x: 0.4532444, y: -0.25912523}
   m_UseDelaunayMesh: 0

@@ -38,7 +38,7 @@ public class Movement : MonoBehaviour
             currentVelocity.x = horizontalInput * speed;
         }
 
-        if (Input.GetKey(KeyCode.Space) && canJump)
+        if (Input.GetKey(KeyCode.W) && canJump)
         {
             //animator.SetTrigger("jump");
 
