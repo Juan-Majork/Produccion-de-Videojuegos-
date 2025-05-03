@@ -9,6 +9,8 @@ public class IceAttack : MonoBehaviour
     [SerializeField] private float waitToDestroy;
     private float actualTime = 0;
 
+    [SerializeField] private float slowDuration;
+
     void Update()
     {
         actualTime += Time.deltaTime;
@@ -44,6 +46,18 @@ public class IceAttack : MonoBehaviour
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             healthController.takeDamage(damage);
             Destroy(gameObject);
+        }
+
+        if (collision.GetComponent<FollowPlayerArea>() != null)
+        {
+            FollowPlayerArea movement = collision.GetComponent<FollowPlayerArea>();
+            movement.ApplySlow(0.5f, slowDuration); // Reduce velocidad a la mitad durante 2 segundos
+        }
+
+        if (collision.GetComponent<MovePlatform>() != null)
+        {
+            MovePlatform platform = collision.GetComponent<MovePlatform>();
+            platform.ApplySlow(0.5f, slowDuration); // Reduce velocidad a la mitad durante 2 segundos
         }
     }
 }

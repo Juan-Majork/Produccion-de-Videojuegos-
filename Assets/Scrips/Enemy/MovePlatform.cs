@@ -8,6 +8,7 @@ public class MovePlatform : MonoBehaviour
     [SerializeField] private LayerMask faceFront;
 
     [SerializeField] private float velocity;
+    private float originalVelocity;
 
     [SerializeField] private float distDown;
     [SerializeField] private float distFront;
@@ -21,9 +22,13 @@ public class MovePlatform : MonoBehaviour
 
     [SerializeField] private bool lookRight;
 
+    private bool isSlowed = false;
+    private float slowTimer = 0f;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        originalVelocity = velocity;
     }
 
     private void Update()
@@ -53,6 +58,15 @@ public class MovePlatform : MonoBehaviour
                 flip();
             }
         }
+
+        if (isSlowed)
+        {
+            slowTimer -= Time.deltaTime;
+            if (slowTimer <= 0)
+            {
+                ResetSpeed();
+            }
+        }
     }
 
     private void flip()
@@ -66,6 +80,21 @@ public class MovePlatform : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(down.transform.position, down.transform.position + transform.up * -1 * distDown);
         Gizmos.DrawLine(front.transform.position, front.transform.position + transform.right * distFront);
+    }
+
+    public void ApplySlow(float slowFactor, float duration)
+    {
+        if (isSlowed) return;
+
+        isSlowed = true;
+        slowTimer = duration;
+        velocity *= slowFactor;
+    }
+
+    private void ResetSpeed()
+    {
+        velocity = originalVelocity;
+        isSlowed = false;
     }
 }
 

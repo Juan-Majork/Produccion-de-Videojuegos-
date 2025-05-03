@@ -10,6 +10,8 @@ public class FollowPlayerArea : MonoBehaviour
 
     [SerializeField] private float velocity;
 
+    private float originalVelocity;
+
     [SerializeField] private float maxDistances;
 
     public Vector3 startingPoint;
@@ -17,6 +19,10 @@ public class FollowPlayerArea : MonoBehaviour
     [SerializeField] private bool lookingRight;
 
     private Rigidbody2D rb2D;
+
+    private bool isSlowed = false;
+
+    private float slowTimer = 0f;
 
     public MovementState movementState;
     public enum MovementState
@@ -30,6 +36,7 @@ public class FollowPlayerArea : MonoBehaviour
     {
         startingPoint = transform.position;
         rb2D = GetComponent<Rigidbody2D>();
+        originalVelocity = velocity;
     }
 
     private void Update()
@@ -47,7 +54,15 @@ public class FollowPlayerArea : MonoBehaviour
                 break;
         }
 
-        
+        if (isSlowed)
+        {
+            slowTimer -= Time.deltaTime;
+            if (slowTimer <= 0)
+            {
+                ResetSpeed();
+            }
+        }
+
     }
 
     private void WaitingState()
@@ -133,5 +148,21 @@ public class FollowPlayerArea : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, fidingRadio);
         Gizmos.DrawWireSphere(startingPoint, maxDistances);
+    }
+
+
+    private void ResetSpeed()
+    {
+        velocity = originalVelocity;
+        isSlowed = false;
+    }
+
+    public void ApplySlow(float slowFactor, float duration)
+    {
+        if (isSlowed) return;
+
+        isSlowed = true;
+        slowTimer = duration;
+        velocity *= slowFactor; // reduce la velocidad
     }
 }
