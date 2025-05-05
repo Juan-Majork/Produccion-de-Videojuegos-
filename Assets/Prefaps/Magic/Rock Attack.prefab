@@ -224,7 +224,7 @@ PolygonCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 8416464668b0c2a4d984b65ea2d03d18, type: 2}
+  m_Material: {fileID: 6200000, guid: 34a3b7017e3e45c4787af687ba995744, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

@@ -30,7 +30,7 @@ public class EnemyWaveSpawner : MonoBehaviour
     {
         if (!playerDetected)//si el jugador fue detectado
         {
-            playerDetected = Physics2D.OverlapCircle(transform.position, detectionRadius, playerLayer);
+            playerDetected = Physics2D.Raycast(transform.position, transform.up, detectionRadius, playerLayer);
             if (playerDetected)
             {
                 ActivateWalls();//activar paredes
@@ -135,10 +135,10 @@ public class EnemyWaveSpawner : MonoBehaviour
     //dibuja radio de deteccion
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, detectionRadius);
-
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, enemyCheckRadius);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(transform.position, transform.position + transform.up * detectionRadius);
     }
 }

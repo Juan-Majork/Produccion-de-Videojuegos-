@@ -28,8 +28,6 @@ public class MagicAttackController : MonoBehaviour
     private float waitShoot;
     private float lastShoot;
 
-    private bool fireContinue1 = false;
-    private bool fireContinue2 = false;
     private float timeToSwap = 0;
 
     [SerializeField] 
@@ -85,14 +83,6 @@ public class MagicAttackController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.K))
         {
-            fireContinue1 = true;
-        }
-        else
-        {
-            fireContinue1 = false;
-        }
-        if (fireContinue1)
-        {
             waitShoot = 0.5f;
             float timeSinceShoot = Time.time - lastShoot;
 
@@ -102,30 +92,27 @@ public class MagicAttackController : MonoBehaviour
                 faceAttack.actualTime = 0;
                 lastShoot = Time.time;
             }
-
         }
 
         if (Input.GetKey (KeyCode.J))
         {
-            fireContinue2 = true;
-        }
-        else 
-        {
-            fireContinue2 = false;
-        }
-        if (fireContinue2)
-        {
             if (slots[0] == Spells.Fire)
             {
-                if (magicMana[0] > 0)
+                waitShoot = 0.2f;
+
+                float timeSinceShoot = Time.time - lastShoot;
+
+                if (magicMana[0] > 0 && !setFire && timeSinceShoot >= waitShoot)
                 {
                     firePrefap.SetActive(true);
                     setFire = true;
+                    lastShoot = Time.time;
                 }
-                else
+                else if (setFire && timeSinceShoot >= waitShoot)
                 {
                     firePrefap.SetActive(false);
                     setFire = false;
+                    lastShoot = Time.time;
                 }
             }
             if (slots[0] == Spells.Water && mana > 0)
@@ -148,7 +135,7 @@ public class MagicAttackController : MonoBehaviour
                     }
                 }
             }
-            if (slots[0] == Spells.Rock && mana > 0 && fireContinue2)
+            if (slots[0] == Spells.Rock && mana > 0)
             {
                 speedMagic = 0f;
                 waitShoot = 1f;
@@ -167,8 +154,6 @@ public class MagicAttackController : MonoBehaviour
                     }
                 }
             }
-
-
         }
 
         if (setFire)

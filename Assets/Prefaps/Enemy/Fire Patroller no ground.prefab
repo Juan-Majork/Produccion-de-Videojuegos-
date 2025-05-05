@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2620132874021324908, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: m_Name
-      value: Left Fire Patroller Prefap Variant
+      value: Fire Patroller no ground
       objectReference: {fileID: 0}
     - target: {fileID: 7923801138704398393, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923801138704398393, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7923801138704398393, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -34,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923801138704398393, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7923801138704398393, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: m_LocalRotation.z
@@ -46,15 +46,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7923801138704398393, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7923801138704398393, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8555426354089388544, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
-      propertyPath: lookRight
+      propertyPath: takeDown
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8555426354089388544, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
+      propertyPath: lookRight
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
