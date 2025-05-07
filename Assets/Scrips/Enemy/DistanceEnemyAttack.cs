@@ -25,5 +25,6 @@ public class DistanceEnemyAttack : MonoBehaviour
             healthController.takeDamage(damage);
             Destroy(gameObject);
         }
+
     }
 }

@@ -10,31 +10,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 110.69
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 26.483738
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 99.786476
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -42,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -51,6 +51,18 @@ PrefabInstance:
     - target: {fileID: 682680261468670232, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: isRight
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 682680261468670232, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: actualTime
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 682680261468670232, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: waitToShot
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 682680261468670232, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: fidingRadio
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 891401053513043721, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: magic
@@ -68,6 +80,18 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.2754717
       objectReference: {fileID: 0}
+    - target: {fileID: 4593016622566763846, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: health
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: maxHealth
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: Death.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -77,20 +101,32 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
-      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5888762865366670597}
+    - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 7683497426599620331}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
-      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Drop
       objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
-      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DestroyMe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SpawnMagic, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DestroyEnemy, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -103,6 +139,10 @@ PrefabInstance:
     - target: {fileID: 7229312838549245965, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_TagString
       value: RockEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915499636867325521, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -118,5 +158,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e13f46ea85bed194ebce07a5ad1a0e8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7683497426599620331 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3983071143621164263, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+  m_PrefabInstance: {fileID: 6766643224392815116}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 241da924aa42b1641a93d3a75ab9a54d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
