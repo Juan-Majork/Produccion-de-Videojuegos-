@@ -422,7 +422,7 @@ Transform:
   m_GameObject: {fileID: 8392580309608030574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.03, y: 0.28999984, z: 0}
+  m_LocalPosition: {x: -1.16, y: 0.28999984, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 7079116128542925071}
   - component: {fileID: 8445023206466291728}
   - component: {fileID: 7149584373858905592}
-  - component: {fileID: 4668919586585444175}
+  - component: {fileID: 5084013754261149149}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -937,8 +937,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b034da52092a0414aab16cbec12508b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!70 &4668919586585444175
-CapsuleCollider2D:
+--- !u!61 &5084013754261149149
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -971,6 +971,15 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.08227076, y: 0.6001273}
-  m_Size: {x: 0.8839329, y: 1.202546}
-  m_Direction: 0
+  m_Offset: {x: 0.09154081, y: 0.5919633}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.8657391, y: 1.1647735}
+  m_EdgeRadius: 0
