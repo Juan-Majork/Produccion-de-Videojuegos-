@@ -56,28 +56,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Full Rock Restored
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6305757748346610441, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7416980696383489065, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -2416575374709894015}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
---- !u!1 &6426280555321879245 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7416980696383489065, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
-  m_PrefabInstance: {fileID: 4593905508790562532}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &-2416575374709894015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6426280555321879245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 574de36d6c3b3104193021e8e71a2740, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
