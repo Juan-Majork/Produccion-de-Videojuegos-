@@ -159,10 +159,9 @@ public class FollowPlayerArea : MonoBehaviour
 
     public void ApplySlow(float slowFactor, float duration)
     {
-        if (isSlowed) return;
-
         isSlowed = true;
         slowTimer = duration;
-        velocity *= slowFactor; // reduce la velocidad
+        velocity = originalVelocity * slowFactor;
     }
+
 }

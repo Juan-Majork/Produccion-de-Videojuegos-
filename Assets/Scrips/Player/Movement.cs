@@ -16,6 +16,10 @@ public class Movement : MonoBehaviour
     private bool inWaterfall = false;
     Vector2 currentVelocity;
 
+    private bool isKnockedBack = false;
+    private float knockbackTimer = 0f;
+    [SerializeField] private float knockbackDuration = 0.2f;
+
     Animator animator;
     private void Awake()
     {
@@ -25,13 +29,22 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
+        if (isKnockedBack)
+        {
+            knockbackTimer -= Time.fixedDeltaTime;
+            if (knockbackTimer <= 0)
+            {
+                isKnockedBack = false;
+            }
+            return; // Ignora el movimiento mientras knockback true
+        }
 
+        horizontalInput = Input.GetAxis("Horizontal");
         currentVelocity = rb2D.linearVelocity;
 
-        if (inWaterfall) return; // bloquea input horizontal en la cascada
+        if (inWaterfall) return;
 
-        animator.SetBool("isWalking", horizontalInput != 0);//animacion de caminar
+        animator.SetBool("isWalking", horizontalInput != 0);
 
         if (horizontalInput != 0)
         {
@@ -40,8 +53,6 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W) && canJump)
         {
-            //animator.SetTrigger("jump");
-
             currentVelocity.y = jumpForce;
             canJump = false;
         }
@@ -59,6 +70,7 @@ public class Movement : MonoBehaviour
 
         animator.SetFloat("inAir", rb2D.linearVelocity.y);
     }
+
 
 
     private void Flip()
@@ -81,6 +93,15 @@ public class Movement : MonoBehaviour
     public void SetInWaterfall(bool state)
     {
         inWaterfall = state;
+    }
+
+    public void ApplyKnockback(Vector2 direction, float force)
+    {
+        isKnockedBack = true;
+        knockbackTimer = knockbackDuration;
+
+        rb2D.linearVelocity = Vector2.zero;
+        rb2D.AddForce(direction.normalized * force, ForceMode2D.Impulse);
     }
 
 

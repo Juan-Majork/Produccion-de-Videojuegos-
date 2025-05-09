@@ -24,22 +24,27 @@ public class MovePlatform : MonoBehaviour
 
     private bool isSlowed = false;
     private float slowTimer = 0f;
+    private EnemyKnockback enemyKnockback;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         originalVelocity = velocity;
+        enemyKnockback = GetComponent<EnemyKnockback>();
     }
 
     private void Update()
     {
-        if (lookRight)
+        if (enemyKnockback == null || !enemyKnockback.IsBeingKnockedBack())
         {
-            rb.linearVelocityX = velocity;
-        }
-        else
-        {
-            rb.linearVelocityX = -velocity;
+            if (lookRight)
+            {
+                rb.linearVelocity = new Vector2(velocity, rb.linearVelocity.y);
+            }
+            else
+            {
+                rb.linearVelocity = new Vector2(-velocity, rb.linearVelocity.y);
+            }
         }
 
 
@@ -84,12 +89,11 @@ public class MovePlatform : MonoBehaviour
 
     public void ApplySlow(float slowFactor, float duration)
     {
-        if (isSlowed) return;
-
         isSlowed = true;
         slowTimer = duration;
-        velocity *= slowFactor;
+        velocity = originalVelocity * slowFactor;
     }
+
 
     private void ResetSpeed()
     {
