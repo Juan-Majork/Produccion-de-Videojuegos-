@@ -30,6 +30,12 @@ public class FireDamage : MonoBehaviour
         {
             BurnTracker tracker = tracked[i];
 
+            MovePlatform move = tracker.collider.GetComponent<MovePlatform>();         
+            if (move != null)
+            {
+                move.ApplySlow(0.5f, 0.2f);
+            }
+
             if (tracker.burnApplied) continue;//si ya  se aplico el burn
 
             tracker.timeInside += Time.deltaTime;//suma el tiempo adentro
@@ -70,6 +76,11 @@ public class FireDamage : MonoBehaviour
         {
             if (tracked[i].collider == collision)
             {
+                MovePlatform move = collision.GetComponent<MovePlatform>();
+                if (move != null)
+                {
+                    move.ApplySlow(1f, 0f); // restaurar velocidad al salir del fuego
+                }
                 tracked.RemoveAt(i);
                 break;
             }

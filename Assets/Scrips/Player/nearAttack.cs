@@ -36,25 +36,26 @@ public class nearAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.CompareTag("Enemy") || collision.CompareTag("FireEnemy") ||
+            collision.CompareTag("IceEnemy") || collision.CompareTag("RockEnemy"))
         {
-            HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
-        }
-        if (collision.gameObject.CompareTag("FireEnemy"))
-        {
-            HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
-        }
-        if (collision.gameObject.CompareTag("IceEnemy"))
-        {
-            HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
-        }
-        if (collision.gameObject.CompareTag("RockEnemy"))
-        {
-            HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
+            HealthController healthController = collision.GetComponent<HealthController>();
+            if (healthController != null)
+            {
+                healthController.takeDamage(damage);
+            }
+
+            EnemyKnockback knockback = collision.GetComponent<EnemyKnockback>();
+            if (knockback != null)
+            {
+                Vector2 knockbackDir = collision.transform.position.x > transform.root.position.x
+                    ? Vector2.right
+                    : Vector2.left;
+
+                knockback.ApplyKnockback(knockbackDir);
+            }
+
         }
     }
+
 }
