@@ -24,6 +24,8 @@ public class FollowPlayerArea : MonoBehaviour
 
     private float slowTimer = 0f;
 
+    private EnemyKnockback enemyKnockback;
+
     public MovementState movementState;
     public enum MovementState
     {
@@ -37,10 +39,16 @@ public class FollowPlayerArea : MonoBehaviour
         startingPoint = transform.position;
         rb2D = GetComponent<Rigidbody2D>();
         originalVelocity = velocity;
+        enemyKnockback = GetComponent<EnemyKnockback>();
     }
 
     private void Update()
     {
+        if (enemyKnockback != null && enemyKnockback.IsBeingKnockedBack())
+        {
+            return; // No se mueve mientras este en knockback
+        }
+
         switch (movementState)
         {
             case MovementState.waiting:

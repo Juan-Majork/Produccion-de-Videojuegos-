@@ -42,9 +42,19 @@ public class Movement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         currentVelocity = rb2D.linearVelocity;
 
-        if (inWaterfall) return;
+        // Siempre actualiza la animacion del aire
+        animator.SetFloat("inAir", rb2D.linearVelocity.y);
 
+        // Si esta en cascada, no permite el movimiento, pero sigue las animaciones
+        if (inWaterfall)
+        {
+            animator.SetBool("isWalking", false);
+            return;
+        }
+
+        // Solo permitir movimiento si no esta en cascada
         animator.SetBool("isWalking", horizontalInput != 0);
+
 
         if (horizontalInput != 0)
         {
