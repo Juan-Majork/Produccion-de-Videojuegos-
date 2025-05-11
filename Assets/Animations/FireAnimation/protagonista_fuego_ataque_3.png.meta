@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: 09dcaae8d09692045accc58ea4c84133
+guid: d76fdeb089b0dfb4ca9b7e4f9bce35c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8404785378715820731
-    second: protagonista_fuego_ataque (3)_0
+      213: 8953975085745182191
+    second: protagonista_fuego_ataque_3_0
   - first:
-      213: -321304911431634329
-    second: protagonista_fuego_ataque (3)_1
+      213: 3754502719417119070
+    second: protagonista_fuego_ataque_3_1
   - first:
-      213: -7406733021454659003
-    second: protagonista_fuego_ataque (3)_2
+      213: 335009846986446106
+    second: protagonista_fuego_ataque_3_2
   - first:
-      213: -736556358531014796
-    second: protagonista_fuego_ataque (3)_3
+      213: -4992217922405142220
+    second: protagonista_fuego_ataque_3_3
   - first:
-      213: 9165306161596490036
-    second: protagonista_fuego_ataque (3)_4
+      213: 6607795601024930137
+    second: protagonista_fuego_ataque_3_4
   - first:
-      213: 4541540622041377893
-    second: protagonista_fuego_ataque (3)_5
+      213: -4274319734024912473
+    second: protagonista_fuego_ataque_3_5
   - first:
-      213: 1888672061158248561
-    second: protagonista_fuego_ataque (3)_6
-  - first:
-      213: 4565569862399019420
-    second: protagonista_fuego_ataque (3)_7
+      213: -3738896137260211658
+    second: protagonista_fuego_ataque_3_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: protagonista_fuego_ataque (3)_0
+      name: protagonista_fuego_ataque_3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 7
-        width: 50
-        height: 43
+        x: 13
+        y: 0
+        width: 24
+        height: 25
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54d1f308a343c5b80800000000000000
-      internalID: -8404785378715820731
+      spriteID: fe51a8976e8e24c70800000000000000
+      internalID: 8953975085745182191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagonista_fuego_ataque (3)_1
+      name: protagonista_fuego_ataque_3_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 7
-        width: 50
-        height: 43
+        x: 63
+        y: 0
+        width: 24
+        height: 25
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7627789a2ee7a8bf0800000000000000
-      internalID: -321304911431634329
+      spriteID: e517813c45caa1430800000000000000
+      internalID: 3754502719417119070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagonista_fuego_ataque (3)_2
+      name: protagonista_fuego_ataque_3_2
       rect:
         serializedVersion: 2
-        x: 100
-        y: 7
-        width: 50
-        height: 43
+        x: 113
+        y: 0
+        width: 24
+        height: 25
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5421a0e3f8ff53990800000000000000
-      internalID: -7406733021454659003
+      spriteID: a1592ed4ea136a400800000000000000
+      internalID: 335009846986446106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagonista_fuego_ataque (3)_3
+      name: protagonista_fuego_ataque_3_3
       rect:
         serializedVersion: 2
-        x: 150
-        y: 7
-        width: 50
-        height: 43
+        x: 163
+        y: 0
+        width: 24
+        height: 25
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47f14b4f4e937c5f0800000000000000
-      internalID: -736556358531014796
+      spriteID: 431f3bddf3418bab0800000000000000
+      internalID: -4992217922405142220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagonista_fuego_ataque (3)_4
+      name: protagonista_fuego_ataque_3_4
       rect:
         serializedVersion: 2
-        x: 200
-        y: 7
-        width: 50
-        height: 43
+        x: 213
+        y: 0
+        width: 24
+        height: 25
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 43168a3e465b13f70800000000000000
-      internalID: 9165306161596490036
+      spriteID: 951da7be61b93bb50800000000000000
+      internalID: 6607795601024930137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagonista_fuego_ataque (3)_5
+      name: protagonista_fuego_ataque_3_5
       rect:
         serializedVersion: 2
-        x: 250
-        y: 7
-        width: 50
-        height: 43
+        x: 263
+        y: 0
+        width: 18
+        height: 25
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,52 +243,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56c68c5322bc60f30800000000000000
-      internalID: 4541540622041377893
+      spriteID: 7a1c00529d09ea4c0800000000000000
+      internalID: -4274319734024912473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: protagonista_fuego_ataque (3)_6
+      name: protagonista_fuego_ataque_3_6
       rect:
         serializedVersion: 2
-        x: 300
-        y: 7
-        width: 50
-        height: 43
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
+        x: 309
+        y: 0
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 170da86ab39e53a10800000000000000
-      internalID: 1888672061158248561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: protagonista_fuego_ataque (3)_7
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 7
-        width: 50
-        height: 43
-      alignment: 9
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c99c585b9992c5f30800000000000000
-      internalID: 4565569862399019420
+      spriteID: 632668ec5c5cc1cc0800000000000000
+      internalID: -3738896137260211658
       vertices: []
       indices: 
       edges: []
@@ -300,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cb7dab53e7c856b4287a3c14cdbd1b4a
+    spriteID: 3067b95306f1a3b40bc15e8fade7ef11
     internalID: 0
     vertices: []
     indices: 
@@ -310,14 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      protagonista_fuego_ataque (3)_0: -8404785378715820731
-      protagonista_fuego_ataque (3)_1: -321304911431634329
-      protagonista_fuego_ataque (3)_2: -7406733021454659003
-      protagonista_fuego_ataque (3)_3: -736556358531014796
-      protagonista_fuego_ataque (3)_4: 9165306161596490036
-      protagonista_fuego_ataque (3)_5: 4541540622041377893
-      protagonista_fuego_ataque (3)_6: 1888672061158248561
-      protagonista_fuego_ataque (3)_7: 4565569862399019420
+      protagonista_fuego_ataque_3_0: 8953975085745182191
+      protagonista_fuego_ataque_3_1: 3754502719417119070
+      protagonista_fuego_ataque_3_2: 335009846986446106
+      protagonista_fuego_ataque_3_3: -4992217922405142220
+      protagonista_fuego_ataque_3_4: 6607795601024930137
+      protagonista_fuego_ataque_3_5: -4274319734024912473
+      protagonista_fuego_ataque_3_6: -3738896137260211658
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
