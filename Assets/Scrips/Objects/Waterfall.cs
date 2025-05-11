@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class Waterfall : MonoBehaviour
 {
-    [SerializeField] private enum Direction { Left, Right } // define la direccion de el empuje de la cascada
+    [SerializeField] private enum Direction { Left, Right, Up, Down } // define la direccion de el empuje de la cascada
     [SerializeField] private Direction pushDirection = Direction.Left; // direccion actual de el empuje
 
     [SerializeField] private float pushForce; //fuerza de el empuje
@@ -34,16 +34,15 @@ public class Waterfall : MonoBehaviour
             Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                Vector2 force = Vector2.zero;
+                Vector2 force = pushDirection switch
+                {
+                    Direction.Left => Vector2.left * pushForce,
+                    Direction.Right => Vector2.right * pushForce,
+                    Direction.Up => Vector2.up * pushForce,
+                    Direction.Down => Vector2.down * pushForce,
+                    _ => Vector2.zero
+                };
 
-                if (pushDirection == Direction.Left)
-                {
-                    force = Vector2.left * pushForce;//empuja hacia la izquierda
-                }
-                else if (pushDirection == Direction.Right)
-                {
-                    force = Vector2.right * pushForce;//empuja hacia la derecha
-                }
 
                 rb.AddForce(force, ForceMode2D.Force);//aplica la fuerza a el rigibody de el jugador
 
@@ -82,6 +81,16 @@ public class Waterfall : MonoBehaviour
         col.isTrigger = false; //remueve el trigger de el collider y lo hace solido
 
         gameObject.tag = newTag;//cambia el tag
+
+        //fuerza la salida del estado adentro del agua
+        Collider2D[] hits = Physics2D.OverlapBoxAll(col.bounds.center, col.bounds.size, 0f);
+        foreach (var hit in hits)
+        {
+            if (hit.CompareTag("Player"))
+            {
+                hit.GetComponent<Movement>().SetInWaterfall(false);
+            }
+        }
 
     }
 

@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6067160765679358894, guid: 5e0f328f3c3d58e41903ea3e56e06338, type: 3}
+      propertyPath: timeBeforeDestroy
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6378321209491889216, guid: 5e0f328f3c3d58e41903ea3e56e06338, type: 3}
       propertyPath: ManaRestore
       value: 100
