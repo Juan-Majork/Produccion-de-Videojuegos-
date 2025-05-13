@@ -35,6 +35,7 @@ public class Movement : MonoBehaviour
             if (knockbackTimer <= 0)
             {
                 isKnockedBack = false;
+                rb2D.linearVelocity = Vector2.zero;
             }
             return; // Ignora el movimiento mientras knockback true
         }
@@ -96,7 +97,14 @@ public class Movement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Floor") || collision.gameObject.CompareTag("Rock"))
         {
-            canJump = true;
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                if (contact.normal.y > 0.5f) // El contacto desde arriba
+                {
+                    canJump = true;
+                    break;
+                }
+            }
         }
     }
 
