@@ -14,6 +14,8 @@ public class Waterfall : MonoBehaviour
 
     private string newTag = "Floor";//cambia el tag
 
+    [SerializeField] private float timeToUnfreeze = 20;
+
     private void Awake()
     {
         //obtener lo componentes
@@ -92,7 +94,19 @@ public class Waterfall : MonoBehaviour
             }
         }
 
+        // Descongela despues 20 segundos
+        Invoke(nameof(UnfreezeWaterfall), timeToUnfreeze);
     }
+
+    public void UnfreezeWaterfall() // metodo para descongelar
+    {
+        isFrozen = false;
+        spriteRenderer.color = Color.blue; //color original
+
+        col.isTrigger = true; // vuelve a ser un trigger
+        gameObject.tag = "Untagged"; // cambiar el tag
+    }
+
 
     public UnityEvent changeIce;
 }

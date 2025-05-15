@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
-using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine;
+
 
 public class HealthController : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class HealthController : MonoBehaviour
     private float health;
     [SerializeField]
     private float maxHealth;
+
+    [SerializeField] private bool isPlayer = false; // Para distinguir entre enemigo y jugador
+    [SerializeField] private int lives = 2;
+    private Vector2 lastCheckpointPosition;
 
     public float hpPercentage
     {
@@ -50,7 +55,7 @@ public class HealthController : MonoBehaviour
 
         health -= damage;
 
-        if (health < 0) 
+        if (health < 0)
         {
             health = 0;
         }
@@ -58,8 +63,8 @@ public class HealthController : MonoBehaviour
         {
             IsDeath();
         }
-        if (health > 0) 
-        { 
+        if (health > 0)
+        {
             Damage.Invoke();
         }
 
@@ -76,8 +81,31 @@ public class HealthController : MonoBehaviour
 
     public void IsDeath()
     {
+        if (isPlayer)
+        {
+            lives--;
+
+            if (lives > 0)
+            {
+                // Respawn al checkpoint
+                transform.position = lastCheckpointPosition;
+                health = maxHealth;
+                HealthChanged.Invoke();
+                Debug.Log("Respawn, vidas restantes: " + lives);
+                return;
+            }
+        }
+
+        // Muerte definitiva
         health = 0;
         Death.Invoke();
+        Debug.Log("Game Over o Enemigo destruido");
+    }
+
+
+    public void SetCheckpoint(Vector2 position)
+    {
+        lastCheckpointPosition = position;
     }
 
     public UnityEvent Death;

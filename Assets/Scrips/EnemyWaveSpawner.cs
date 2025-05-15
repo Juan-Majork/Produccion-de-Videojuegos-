@@ -26,6 +26,9 @@ public class EnemyWaveSpawner : MonoBehaviour
     private bool waveInProgress = false;
     private float waveTimer = 0f;
 
+    [SerializeField] private Transform waveCenterPoint;
+    [SerializeField] private Transform playerTarget;
+
     void Update()
     {
         if (!playerDetected)//si el jugador fue detectado
@@ -35,7 +38,9 @@ public class EnemyWaveSpawner : MonoBehaviour
             {
                 ActivateWalls();//activar paredes
                 StartCoroutine(SpawnWave());//iniciar primer oleada
-                cinemachineCamera.enabled = false;
+                // Lockear la cámara al centro
+                cinemachineCamera.Follow = waveCenterPoint;
+                cinemachineCamera.LookAt = waveCenterPoint;
             }
         }
 
@@ -61,6 +66,9 @@ public class EnemyWaveSpawner : MonoBehaviour
                     waveInProgress = false;
                     gameObject.SetActive(false);
                     cinemachineCamera.enabled = true;
+                    cinemachineCamera.Follow = playerTarget;
+                    cinemachineCamera.LookAt = playerTarget;
+
                 }
             }
         }

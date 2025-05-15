@@ -95,7 +95,7 @@ public class Movement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Floor") || collision.gameObject.CompareTag("Rock"))
+        if (collision.gameObject.CompareTag("Floor"))
         {
             foreach (ContactPoint2D contact in collision.contacts)
             {
@@ -105,6 +105,11 @@ public class Movement : MonoBehaviour
                     break;
                 }
             }
+        }
+
+        if (collision.gameObject.CompareTag("Rock"))
+        {
+            canJump = true;
         }
     }
 
