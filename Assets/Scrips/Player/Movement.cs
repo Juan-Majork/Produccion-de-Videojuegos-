@@ -127,5 +127,14 @@ public class Movement : MonoBehaviour
         rb2D.AddForce(direction.normalized * force, ForceMode2D.Impulse);
     }
 
+    public void ResetMovementState()
+    {
+        isKnockedBack = false;
+        knockbackTimer = 0f;
+        inWaterfall = false;
+        canJump = true;
+        rb2D.linearVelocity = Vector2.zero;
+    }
+
 
 }

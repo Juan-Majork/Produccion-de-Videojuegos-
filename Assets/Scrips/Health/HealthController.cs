@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine.Events;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour
 {
@@ -10,9 +10,8 @@ public class HealthController : MonoBehaviour
     [SerializeField]
     private float maxHealth;
 
-    [SerializeField] private bool isPlayer = false; // Para distinguir entre enemigo y jugador
-    [SerializeField] private int lives = 2;
-    private Vector2 lastCheckpointPosition;
+    [SerializeField] private bool isPlayer = false; 
+    private bool isDead = false;
 
     public float hpPercentage
     {
@@ -28,6 +27,26 @@ public class HealthController : MonoBehaviour
     {
         HealthChanged.Invoke();
     }
+
+    private void Start()
+    {
+        if (isPlayer && CheckPointManager.Instance.HasCheckpoint())
+        {
+            transform.position = CheckPointManager.Instance.GetCheckpoint();
+            health = maxHealth;
+            isDead = false;
+            HealthChanged.Invoke();
+            Debug.Log("Jugador reapareció en el checkpoint.");
+
+            //Resetea el estado del movimiento
+            Movement movement = GetComponent<Movement>();
+            if (movement != null)
+            {
+                movement.ResetMovementState();
+            }
+        }
+    }
+
 
     public void restoreHP(float restore)
     {
@@ -48,7 +67,7 @@ public class HealthController : MonoBehaviour
 
     public void takeDamage(float damage)
     {
-        if (isInvicible)
+        if (isInvicible || isDead)
         {
             return;
         }
@@ -61,15 +80,17 @@ public class HealthController : MonoBehaviour
         }
         if (health == 0)
         {
+            isDead = true; 
             IsDeath();
         }
-        if (health > 0)
+        else
         {
             Damage.Invoke();
         }
 
         HealthChanged.Invoke();
     }
+
 
     public void MaxHealth()
     {
@@ -83,15 +104,24 @@ public class HealthController : MonoBehaviour
     {
         if (isPlayer)
         {
-            lives--;
+            CheckPointManager.Instance.LoseLife();
 
-            if (lives > 0)
+            if (CheckPointManager.Instance.HasLivesLeft())
             {
-                // Respawn al checkpoint
-                transform.position = lastCheckpointPosition;
-                health = maxHealth;
-                HealthChanged.Invoke();
-                Debug.Log("Respawn, vidas restantes: " + lives);
+                // Reinicia la escena para resetear enemigos, pero no perder el checkpoint
+                Death.Invoke();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                return;
+            }
+            else
+            {
+                // Sin vidas: resetear todo y volver al inicio
+                CheckPointManager.Instance.Reset(); // Resetea checkpoint y vidas
+                Death.Invoke();
+                Debug.Log("Game Over, volviendo al principio");
+
+
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 return;
             }
         }
@@ -103,10 +133,12 @@ public class HealthController : MonoBehaviour
     }
 
 
+
     public void SetCheckpoint(Vector2 position)
     {
-        lastCheckpointPosition = position;
+        CheckPointManager.Instance.SetCheckpoint(position);
     }
+
 
     public UnityEvent Death;
     public UnityEvent Damage;
