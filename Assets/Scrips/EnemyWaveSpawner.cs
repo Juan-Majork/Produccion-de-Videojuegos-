@@ -25,6 +25,7 @@ public class EnemyWaveSpawner : MonoBehaviour
     private List<GameObject> aliveEnemies = new List<GameObject>();//lista de enemigos vivos
     private bool waveInProgress = false;
     private float waveTimer = 0f;
+    [SerializeField] private float firstWaveDelay = 0.5f;
 
     [SerializeField] private Transform waveCenterPoint;
     [SerializeField] private Transform playerTarget;
@@ -33,11 +34,11 @@ public class EnemyWaveSpawner : MonoBehaviour
     {
         if (!playerDetected)//si el jugador fue detectado
         {
-            playerDetected = Physics2D.Raycast(transform.position, transform.up, detectionRadius, playerLayer);
+            playerDetected = Physics2D.OverlapCircle(transform.position, detectionRadius, playerLayer);
             if (playerDetected)
             {
                 ActivateWalls();//activar paredes
-                StartCoroutine(SpawnWave());//iniciar primer oleada
+                StartCoroutine(DelayedFirstWave());//iniciar primer oleada
                 // Lockear la cámara al centro
                 cinemachineCamera.Follow = waveCenterPoint;
                 cinemachineCamera.LookAt = waveCenterPoint;
@@ -120,6 +121,8 @@ public class EnemyWaveSpawner : MonoBehaviour
         return enemiesInRadius;
     }
 
+
+
     //llama cuando el enemigo muere
     public void NotifyEnemyDeath(GameObject enemy)
     {
@@ -149,4 +152,10 @@ public class EnemyWaveSpawner : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(transform.position, transform.position + transform.up * detectionRadius);
     }
+    IEnumerator DelayedFirstWave()
+    {
+        yield return new WaitForSeconds(firstWaveDelay);
+        StartCoroutine(SpawnWave());
+    }
+
 }

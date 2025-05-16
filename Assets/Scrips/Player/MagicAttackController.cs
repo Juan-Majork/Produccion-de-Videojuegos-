@@ -81,9 +81,10 @@ public class MagicAttackController : MonoBehaviour
             Swap();
         }
 
-        if (Input.GetKey(KeyCode.K))
-        {
-            waitShoot = 0.5f;
+        if (Input.GetKey(KeyCode.J) && !Input.GetKey(KeyCode.W))
+            {           
+            {
+                waitShoot = 0.5f;
             float timeSinceShoot = Time.time - lastShoot;
 
             if (timeSinceShoot >= waitShoot)
@@ -92,11 +93,16 @@ public class MagicAttackController : MonoBehaviour
                 faceAttack.actualTime = 0;
                 lastShoot = Time.time;
             }
+            }
         }
 
-        if (Input.GetKey (KeyCode.J))
-        {
-            if (slots[0] == Spells.Fire)
+       
+            
+            if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.J))
+            {
+
+                {
+                if (slots[0] == Spells.Fire)
             {
                 waitShoot = 0.2f;
 
@@ -153,6 +159,8 @@ public class MagicAttackController : MonoBehaviour
                         magicMana[2] = 0;
                     }
                 }
+            }
+
             }
         }
 
