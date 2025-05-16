@@ -11,4 +11,13 @@ public class KillPlayer : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            HealthController healthController = collision.gameObject.GetComponent<HealthController>();
+            healthController.takeDamage(500);
+        }
+    }
+
 }
