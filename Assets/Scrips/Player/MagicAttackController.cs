@@ -220,6 +220,11 @@ public class MagicAttackController : MonoBehaviour
         }
     }
 
+    public void DeactiveFire()
+    {
+        setFire = false;
+    }
+
     private void SpawnMagic(GameObject attackPrefap, Transform spawnPoint)
     {
         GameObject attack = Instantiate(attackPrefap, spawnPoint.position, spawnPoint.rotation);

@@ -66,5 +66,8 @@ TagManager:
   - name: Items
     uniqueID: 1945784835
     locked: 0
+  - name: Canvas
+    uniqueID: 685819429
+    locked: 0
   m_RenderingLayers:
   - Default

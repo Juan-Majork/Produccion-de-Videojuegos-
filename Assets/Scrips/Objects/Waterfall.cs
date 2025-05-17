@@ -3,10 +3,11 @@ using UnityEngine.Events;
 
 public class Waterfall : MonoBehaviour
 {
-    [SerializeField] private enum Direction { Left, Right, Up, Down } // define la direccion de el empuje de la cascada
+    [SerializeField] private enum Direction { Left, Right, Up, Down, LU } // define la direccion de el empuje de la cascada
     [SerializeField] private Direction pushDirection = Direction.Left; // direccion actual de el empuje
 
-    [SerializeField] private float pushForce; //fuerza de el empuje
+    [SerializeField] private float pushForceX; //fuerza de el empuje
+    [SerializeField] private float pushForceY; //fuerza de el empuje
     private bool isFrozen = false;// si la cascada esta congelada
 
     private Collider2D col;//referencia a el colider
@@ -16,11 +17,20 @@ public class Waterfall : MonoBehaviour
 
     [SerializeField] private float timeToUnfreeze = 20;
 
+    [SerializeField] private bool haveRender;
+
+    public bool ice = false;
+
+
     private void Awake()
     {
         //obtener lo componentes
         col = GetComponent<Collider2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        if (haveRender)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -38,15 +48,23 @@ public class Waterfall : MonoBehaviour
             {
                 Vector2 force = pushDirection switch
                 {
-                    Direction.Left => Vector2.left * pushForce,
-                    Direction.Right => Vector2.right * pushForce,
-                    Direction.Up => Vector2.up * pushForce,
-                    Direction.Down => Vector2.down * pushForce,
+                    Direction.Left => Vector2.left * pushForceX,
+                    Direction.Right => Vector2.right * pushForceX,
+                    Direction.Up => Vector2.up * pushForceX,
+                    Direction.Down => Vector2.down * pushForceX,
+                    Direction.LU => new Vector2 (-1 * pushForceX, 1 * pushForceY),
                     _ => Vector2.zero
                 };
 
-
-                rb.AddForce(force, ForceMode2D.Force);//aplica la fuerza a el rigibody de el jugador
+                if (pushDirection == Direction.LU)
+                {
+                    pushForceY = 2.5f;
+                    rb.AddForce(force, ForceMode2D.Impulse);
+                }
+                else
+                {
+                    rb.AddForce(force, ForceMode2D.Force);//aplica la fuerza a el rigibody de el jugador  
+                }
 
             }
         }
@@ -69,6 +87,7 @@ public class Waterfall : MonoBehaviour
             changeIce.Invoke();
             FreezeWaterfall();//congela la cascada
 
+            Destroy (other.gameObject);
             // destruir la bala de hielo
             //Destroy(other.gameObject);
         }
@@ -78,7 +97,12 @@ public class Waterfall : MonoBehaviour
     {
         isFrozen = true;//cambia el bool a congelado
 
-        spriteRenderer.color = Color.cyan; //cambia el color de el sprite (cambiarlo despues por un sprite)
+        if (haveRender)
+        {
+            spriteRenderer.color = Color.cyan; //cambia el color de el sprite (cambiarlo despues por un sprite)
+        }
+
+        ice = true;
 
         col.isTrigger = false; //remueve el trigger de el collider y lo hace solido
 
@@ -101,7 +125,13 @@ public class Waterfall : MonoBehaviour
     public void UnfreezeWaterfall() // metodo para descongelar
     {
         isFrozen = false;
-        spriteRenderer.color = Color.blue; //color original
+
+        if (haveRender)
+        {
+            spriteRenderer.color = Color.blue; //color original
+        }
+
+        ice = false;
 
         col.isTrigger = true; // vuelve a ser un trigger
         gameObject.tag = "Untagged"; // cambiar el tag

@@ -14,16 +14,20 @@ public class AttackPlayer : MonoBehaviour
 
             Movement movement = collision.gameObject.GetComponent<Movement>();
 
-            healthController.takeDamage(damage);
-
-            if (collision.transform.position.x - transform.position.x < 0) {
-                movement.ApplyKnockback(knockbackForceX,true, knockbackForceY);
-
-            }
-            if (collision.transform.position.x - transform.position.x > 0)
+            if (healthController.isInvicible == false)
             {
-                movement.ApplyKnockback(knockbackForceX, false, knockbackForceY);
+                healthController.takeDamage(damage);
 
+                if (collision.transform.position.x - transform.position.x < 0)
+                {
+                    movement.ApplyKnockback(knockbackForceX, true, knockbackForceY);
+
+                }
+                if (collision.transform.position.x - transform.position.x > 0)
+                {
+                    movement.ApplyKnockback(knockbackForceX, false, knockbackForceY);
+
+                }
             }
 
         }
