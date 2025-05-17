@@ -112,7 +112,7 @@ public class EnemyWaveSpawner : MonoBehaviour
 
         foreach (Collider2D collider in colliders)
         {
-            if (collider.CompareTag("Enemy"))
+            if (collider.CompareTag("Enemy") || collider.CompareTag("IceEnemy"))
             {
                 enemiesInRadius++;
             }

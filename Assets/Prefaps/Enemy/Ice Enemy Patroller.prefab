@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: IceEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8250018543426022046, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+      propertyPath: knockbackForceX
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

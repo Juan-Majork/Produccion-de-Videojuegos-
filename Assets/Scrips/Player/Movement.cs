@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
     private bool canJump = true;
 
     private bool inWaterfall = false;
-    Vector2 currentVelocity;
+    Vector3 currentVelocity;
 
     private bool isKnockedBack = false;
     private float knockbackTimer = 0f;
@@ -35,7 +35,7 @@ public class Movement : MonoBehaviour
             if (knockbackTimer <= 0)
             {
                 isKnockedBack = false;
-                rb2D.linearVelocity = Vector2.zero;
+                rb2D.linearVelocity = Vector3.zero;
             }
             return; // Ignora el movimiento mientras knockback true
         }
@@ -118,13 +118,25 @@ public class Movement : MonoBehaviour
         inWaterfall = state;
     }
 
-    public void ApplyKnockback(Vector2 direction, float force)
+    public void ApplyKnockback(float forceX,bool isRight,float forceY)
     {
         isKnockedBack = true;
         knockbackTimer = knockbackDuration;
 
-        rb2D.linearVelocity = Vector2.zero;
-        rb2D.AddForce(direction.normalized * force, ForceMode2D.Impulse);
+        rb2D.linearVelocity = Vector3.zero;
+        if (isRight)
+        {
+            rb2D.AddForce(Vector3.left * forceX, ForceMode2D.Impulse);
+            rb2D.AddForce(Vector3.up * forceY, ForceMode2D.Impulse);
+        }
+
+        if (!isRight) {
+            rb2D.AddForce(Vector3.right * forceX, ForceMode2D.Impulse);
+            rb2D.AddForce(Vector3.up * forceY, ForceMode2D.Impulse);
+        }
+        
+
+ 
     }
 
     public void ResetMovementState()
@@ -133,7 +145,7 @@ public class Movement : MonoBehaviour
         knockbackTimer = 0f;
         inWaterfall = false;
         canJump = true;
-        rb2D.linearVelocity = Vector2.zero;
+        rb2D.linearVelocity = Vector3.zero;
     }
 
 

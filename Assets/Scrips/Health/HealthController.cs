@@ -110,7 +110,7 @@ public class HealthController : MonoBehaviour
             {
                 // Reinicia la escena para resetear enemigos, pero no perder el checkpoint
                 Death.Invoke();
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                Invoke(nameof(SceneCall), 5f);
                 return;
             }
             else
@@ -119,9 +119,7 @@ public class HealthController : MonoBehaviour
                 CheckPointManager.Instance.Reset(); // Resetea checkpoint y vidas
                 Death.Invoke();
                 Debug.Log("Game Over, volviendo al principio");
-
-
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                Invoke(nameof(SceneCall), 5f);
                 return;
             }
         }
@@ -139,6 +137,10 @@ public class HealthController : MonoBehaviour
         CheckPointManager.Instance.SetCheckpoint(position);
     }
 
+    private void SceneCall()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
     public UnityEvent Death;
     public UnityEvent Damage;

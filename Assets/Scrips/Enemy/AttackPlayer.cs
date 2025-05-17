@@ -3,7 +3,8 @@ using UnityEngine;
 public class AttackPlayer : MonoBehaviour
 {
     [SerializeField] private float damage;
-    [SerializeField] private float knockbackForce = 10f;
+    [SerializeField] private float knockbackForceX = 10f;
+    [SerializeField] private float knockbackForceY = 10f;
 
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -15,8 +16,16 @@ public class AttackPlayer : MonoBehaviour
 
             healthController.takeDamage(damage);
 
-            Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized;
-            movement.ApplyKnockback(knockbackDirection, knockbackForce);
+            if (collision.transform.position.x - transform.position.x < 0) {
+                movement.ApplyKnockback(knockbackForceX,true, knockbackForceY);
+
+            }
+            if (collision.transform.position.x - transform.position.x > 0)
+            {
+                movement.ApplyKnockback(knockbackForceX, false, knockbackForceY);
+
+            }
+
         }
     }
 }

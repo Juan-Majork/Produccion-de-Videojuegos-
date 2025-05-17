@@ -57,4 +57,10 @@ public class CheckPointManager : MonoBehaviour
         Debug.Log("Juego reiniciado. Vidas: " + currentLives);
     }
 
+    public int GetCurrentLives()
+    {
+        return currentLives;
+    }
+
+
 }

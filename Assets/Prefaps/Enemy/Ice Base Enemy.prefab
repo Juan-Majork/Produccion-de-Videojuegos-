@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.2924527
       objectReference: {fileID: 0}
+    - target: {fileID: 6162484731328695432, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
+      propertyPath: knockbackForceX
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6167962067288010643, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
       propertyPath: m_Name
       value: Ice Base Enemy

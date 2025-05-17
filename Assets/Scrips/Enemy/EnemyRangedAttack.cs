@@ -80,8 +80,4 @@ public class EnemyRangedAttack : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, fidingRadio);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
-    }
 }
