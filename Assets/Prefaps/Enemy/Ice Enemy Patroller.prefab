@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: magic
       value: 
       objectReference: {fileID: 350418071711989240, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+    - target: {fileID: 3180378984495184304, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+      propertyPath: burning
+      value: 
+      objectReference: {fileID: 506785662298987808}
     - target: {fileID: 3432745019922619231, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -52,6 +56,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5631552299070490584, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6196843533949410770, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -80,6 +88,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: -6142244451239785419}
   m_SourcePrefab: {fileID: 100100000, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+--- !u!1 &506785662298987808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5631552299070490584, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+  m_PrefabInstance: {fileID: 5273499819941698296}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3397641141298819570 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7352659348669623050, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
