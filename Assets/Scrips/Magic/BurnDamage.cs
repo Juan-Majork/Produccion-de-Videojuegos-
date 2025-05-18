@@ -12,22 +12,9 @@ public class BurnDamage : MonoBehaviour
 
     private HealthController targetHealth;
 
-
-    [SerializeField] private GameObject burning;
-    [SerializeField] private Animator woodBurning;
-
     void Start()
     {
         targetHealth = GetComponent<HealthController>();
-
-        if (burning != null)
-        {
-            burning.SetActive(false); // Lo ocultás al principio
-        }
-
-        if (woodBurning != null) {
-            woodBurning.SetBool("isBurn", false);
-        }
     }
 
     void Update()
@@ -37,17 +24,6 @@ public class BurnDamage : MonoBehaviour
         //timers
         burnTimeLeft -= Time.deltaTime;
         timer += Time.deltaTime;
-
-        if (burning != null)
-        {
-            burning.SetActive(true); // solo si está asignado
-        }
-
-        if (woodBurning != null)
-        {
-            woodBurning.SetBool("isBurn", true);
-        }
-
 
         if (timer >= tickInterval)//si pasa el tiempo de es siguiente tick hace dano
         {
@@ -60,15 +36,6 @@ public class BurnDamage : MonoBehaviour
             isBurning = false;
             timer = 0f;
             burnTimeLeft = 0f;
-            if (burning != null)
-            {
-                burning.SetActive(false); // solo si está asignado
-            }
-
-            if (woodBurning != null)
-            {
-                woodBurning.SetBool("isBurn", false);
-            }
         }
     }
 
@@ -81,9 +48,5 @@ public class BurnDamage : MonoBehaviour
         burnTimeLeft = burnDuration;//reinicia el tiempo de quemadura
         timer = 0f;// reinicia el timer
         isBurning = true;// activa el burn
-        if (woodBurning != null)
-        {
-            woodBurning.SetBool("isBurn", true);
-        }
     }
 }

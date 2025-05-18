@@ -12,10 +12,6 @@ PrefabInstance:
       propertyPath: magic
       value: 
       objectReference: {fileID: 7960099501735484100, guid: a3d7c3db8f2300743af743ed4b35261f, type: 3}
-    - target: {fileID: 3180378984495184304, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
-      propertyPath: burning
-      value: 
-      objectReference: {fileID: 896843827608069310}
     - target: {fileID: 3432745019922619231, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.7160884
@@ -60,10 +56,6 @@ PrefabInstance:
       propertyPath: lookRight
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5631552299070490584, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6196843533949410770, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -89,8 +81,3 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
---- !u!1 &896843827608069310 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5631552299070490584, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
-  m_PrefabInstance: {fileID: 4779850064995885926}
-  m_PrefabAsset: {fileID: 0}

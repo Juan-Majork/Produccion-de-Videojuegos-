@@ -11,7 +11,6 @@ public class NextLevel : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             transitionToLevel.Invoke();
-            CheckPointManager.Instance.Reset();
         }
     }
 }

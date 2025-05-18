@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1856131252196921784, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1856131252196921784, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1856131252196921784, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -48,10 +48,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3933725944939867791, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
-      propertyPath: burning
-      value: 
-      objectReference: {fileID: 8214863805918504710}
     - target: {fileID: 4193090999698120558, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -77,8 +73,3 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
---- !u!1 &8214863805918504710 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 174965739875650606, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
-  m_PrefabInstance: {fileID: 8101014149290175272}
-  m_PrefabAsset: {fileID: 0}

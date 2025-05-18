@@ -8,10 +8,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 896843827608069310, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2620132874021324908, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: m_Name
       value: Fire Patroller no ground
