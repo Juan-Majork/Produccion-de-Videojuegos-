@@ -5,9 +5,14 @@ public class SetOnFireAnimation : MonoBehaviour
     private Animator animator;
     private ParticleSystem particulas;
 
+    [SerializeField] private bool activeAnimation;
+
     private void Awake()
     {
-        animator = GetComponentInChildren<Animator>();
+        if (activeAnimation)
+        {
+            animator = GetComponentInChildren<Animator>();
+        }
         particulas = GetComponentInChildren<ParticleSystem>();
     }
 
@@ -15,14 +20,20 @@ public class SetOnFireAnimation : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("fireMagic"))
         {
-            animator.SetTrigger("setOnFire");
+            if (activeAnimation)
+            {
+                animator.SetTrigger("setOnFire");
+            }
             particulas.Play();
         }
     }
 
     public void EndAnimation()
     {
-        animator.SetTrigger("destroy");
+        if (activeAnimation)
+        {
+            animator.SetTrigger("destroy");
+        }
         particulas.Stop();
     }
 }
