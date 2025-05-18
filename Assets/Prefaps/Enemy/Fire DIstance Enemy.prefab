@@ -10,11 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalPosition.z
@@ -60,12 +60,25 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9245283
       objectReference: {fileID: 0}
+    - target: {fileID: 3424858518355611944, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7229312838549245965, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_Name
       value: Fire DIstance Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8866092516025452043, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: burning
+      value: 
+      objectReference: {fileID: 762035669833902948}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+--- !u!1 &762035669833902948 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3011952565601946821, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+  m_PrefabInstance: {fileID: 2548986270385153953}
+  m_PrefabAsset: {fileID: 0}
