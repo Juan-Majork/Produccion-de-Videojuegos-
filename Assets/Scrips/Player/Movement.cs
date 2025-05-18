@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
             currentVelocity.x = horizontalInput * speed;
         }
 
-        if (Input.GetKey(KeyCode.K) && canJump)
+        if (Input.GetKey(KeyCode.W) && canJump)
         {
             currentVelocity.y = jumpForce;
             canJump = false;

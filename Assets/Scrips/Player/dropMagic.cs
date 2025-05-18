@@ -19,7 +19,7 @@ public class dropMagic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.L))
+        if (Input.GetKey(KeyCode.Q))
         {
             if (magicController.slots[0] == Spells.Empty)
             {

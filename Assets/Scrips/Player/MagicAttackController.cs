@@ -29,6 +29,7 @@ public class MagicAttackController : MonoBehaviour
     private float lastShoot;
 
     private float timeToSwap = 0;
+    private bool selectSlot = false;
 
     [SerializeField] 
     private GameObject firePrefap;
@@ -76,12 +77,24 @@ public class MagicAttackController : MonoBehaviour
         {
             timeToSwap -= Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.I))
+
+        /*
+        if (Input.GetKey(KeyCode.Alpha1) && selectSlot)
+        {
+            Swap();
+        }
+        if (Input.GetKey(KeyCode.Alpha2) && !selectSlot)
+        {
+            Swap();
+        }
+        */
+
+        if (Input.GetKey(KeyCode.E))
         {
             Swap();
         }
 
-        if (Input.GetKey(KeyCode.J) && !Input.GetKey(KeyCode.W))
+        if (/*Input.GetKey(KeyCode.J) && !Input.GetKey(KeyCode.W)*/ Input.GetMouseButton(0))
             {           
             {
                 waitShoot = 0.5f;
@@ -98,7 +111,7 @@ public class MagicAttackController : MonoBehaviour
 
        
             
-            if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.J))
+            if (/*Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.J)*/ Input.GetMouseButton(1))
             {
 
                 {
@@ -217,6 +230,7 @@ public class MagicAttackController : MonoBehaviour
             slots[0] = slots[1];
             slots[1] = first;
             timeToSwap = 0.5f;
+            selectSlot = !selectSlot;
         }
     }
 
