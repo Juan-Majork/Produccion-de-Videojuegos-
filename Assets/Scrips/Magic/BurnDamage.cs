@@ -11,10 +11,11 @@ public class BurnDamage : MonoBehaviour
     private bool isBurning = false;//si el objeto esta quemandose
 
     private HealthController targetHealth;
-
+    private ParticleSystem particle;
     void Start()
     {
         targetHealth = GetComponent<HealthController>();
+        particle = GetComponentInChildren<ParticleSystem>();
     }
 
     void Update()
@@ -36,6 +37,7 @@ public class BurnDamage : MonoBehaviour
             isBurning = false;
             timer = 0f;
             burnTimeLeft = 0f;
+            particle.Stop();
         }
     }
 
@@ -48,5 +50,6 @@ public class BurnDamage : MonoBehaviour
         burnTimeLeft = burnDuration;//reinicia el tiempo de quemadura
         timer = 0f;// reinicia el timer
         isBurning = true;// activa el burn
+        particle.Play();
     }
 }

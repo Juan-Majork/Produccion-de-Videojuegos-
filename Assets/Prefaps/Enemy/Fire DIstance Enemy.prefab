@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 891401053513043721, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: magic
+      value: 
+      objectReference: {fileID: 7960099501735484100, guid: a3d7c3db8f2300743af743ed4b35261f, type: 3}
     - target: {fileID: 3424858518355611944, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -63,6 +67,10 @@ PrefabInstance:
     - target: {fileID: 7229312838549245965, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_Name
       value: Fire DIstance Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7229312838549245965, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_TagString
+      value: FireEnemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

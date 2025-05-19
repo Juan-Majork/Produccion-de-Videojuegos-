@@ -48,21 +48,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4193090999698120558, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193090999698120558, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
-      propertyPath: m_Color.g
-      value: 0.8351666
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193090999698120558, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
-      propertyPath: m_Color.r
-      value: 0.2924527
-      objectReference: {fileID: 0}
+    - target: {fileID: 4171073761222220739, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
+      propertyPath: magic
+      value: 
+      objectReference: {fileID: 350418071711989240, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
     - target: {fileID: 6162484731328695432, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
-      propertyPath: knockbackForceX
-      value: 20
+      propertyPath: damage
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6167962067288010643, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
       propertyPath: m_Name

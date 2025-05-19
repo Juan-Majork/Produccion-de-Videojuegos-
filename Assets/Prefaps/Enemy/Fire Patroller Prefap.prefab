@@ -14,11 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 7960099501735484100, guid: a3d7c3db8f2300743af743ed4b35261f, type: 3}
     - target: {fileID: 3432745019922619231, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7160884
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3432745019922619231, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.5817585
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3432745019922619231, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -71,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 7352659348669623050, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_Name
       value: Fire Patroller Prefap
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352659348669623050, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+      propertyPath: m_TagString
+      value: FireEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 8250018543426022046, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: knockbackForceX

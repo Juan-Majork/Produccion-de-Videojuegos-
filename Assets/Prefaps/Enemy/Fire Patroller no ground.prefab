@@ -12,10 +12,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Patroller no ground
       objectReference: {fileID: 0}
-    - target: {fileID: 3470169098002762232, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
-      propertyPath: knockbackForceX
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 7923801138704398393, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -60,12 +56,9 @@ PrefabInstance:
       propertyPath: takeDown
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8555426354089388544, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
-      propertyPath: lookRight
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 9215135321795876516, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}

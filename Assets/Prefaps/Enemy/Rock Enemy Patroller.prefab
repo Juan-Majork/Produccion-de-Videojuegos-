@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Enemy Patroller
       objectReference: {fileID: 0}
+    - target: {fileID: 7352659348669623050, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+      propertyPath: m_TagString
+      value: RockEnemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
