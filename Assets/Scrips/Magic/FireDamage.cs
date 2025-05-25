@@ -45,7 +45,7 @@ public class FireDamage : MonoBehaviour
                 BurnDamage burn = tracker.collider.GetComponent<BurnDamage>();
                 if (burn != null)
                 {
-                    burn.ApplyBurn(burnDuration, damagePerSecond, tickInterval);//aplica el burn
+                    burn.ApplyBurn();//aplica el burn
                 }
 
                 tracker.burnApplied = true;//marca que fue aplicado

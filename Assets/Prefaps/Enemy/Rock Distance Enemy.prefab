@@ -22,19 +22,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
-      propertyPath: m_LocalRotation.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -42,15 +42,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 682680261468670232, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: isRight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151096376251585312, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1151096376251585312, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: knockbackForceX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: health
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: maxHealth
+      value: 125
+      objectReference: {fileID: 0}
     - target: {fileID: 7229312838549245965, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_Name
       value: Rock Distance Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866092516025452043, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: burnDuration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866092516025452043, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: damagePerTick
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

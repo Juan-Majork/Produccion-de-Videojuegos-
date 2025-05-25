@@ -8,9 +8,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2076335873041696554, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2076335873041696554, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
+      propertyPath: m_Color.g
+      value: 0.95408726
+      objectReference: {fileID: 0}
+    - target: {fileID: 2076335873041696554, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3397641141298819570, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
       propertyPath: m_Name
       value: Ice Enemy Patroller no ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274698911504740454, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
+      propertyPath: damage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274698911504740454, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
+      propertyPath: knockbackForceX
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281693821728318280, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
+      propertyPath: burnDuration
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7389478232410325415, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55,6 +79,10 @@ PrefabInstance:
     - target: {fileID: 9061443225234985886, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
       propertyPath: takeDown
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9061443225234985886, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
+      propertyPath: velocity
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

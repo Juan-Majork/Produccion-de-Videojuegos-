@@ -3,8 +3,6 @@ using UnityEngine;
 public class IceAttack : MonoBehaviour
 {
     [SerializeField] private float damage;
-    [SerializeField] private float lowDamage;
-    [SerializeField] private float riseamage;
 
     [SerializeField] private float waitToDestroy;
     private float actualTime = 0;
@@ -32,13 +30,13 @@ public class IceAttack : MonoBehaviour
         if (collision.gameObject.CompareTag("FireEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage + riseamage);
+            healthController.takeDamage(damage);
             Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("IceEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage - lowDamage);
+            healthController.takeDamage(damage);
             Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("RockEnemy"))

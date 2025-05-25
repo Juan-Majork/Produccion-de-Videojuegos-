@@ -124,7 +124,7 @@ public class MagicAttackController : MonoBehaviour
             if (slots[0] == Spells.Water && mana > 0)
             {
                 speedMagic = 10f;
-                waitShoot = 0.1f;
+                waitShoot = 1f;
 
                 float timeSinceShoot = Time.time - lastShoot;
 

@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class BurnDamage : MonoBehaviour
 {
-    private float burnDuration;//duracion de la quemadura
-    private float tickInterval;//tiempo entre cada tick de dano
-    private float damagePerTick;//dano por tick
+    [SerializeField] private float burnDuration;//duracion de la quemadura
+    private float tickInterval = 1;//tiempo entre cada tick de dano
+    [SerializeField] private float damagePerTick;//dano por tick
 
     private float timer;//timer de el dano
     private float burnTimeLeft;//tiempo restante de el burn
@@ -41,12 +41,8 @@ public class BurnDamage : MonoBehaviour
         }
     }
 
-    public void ApplyBurn(float duration, float dps, float interval)// void publico para aplicar la quemadura
+    public void ApplyBurn()// void publico para aplicar la quemadura
     {
-        burnDuration = duration; //cuanto dura la quemaduura
-        damagePerTick = dps;// dano por tick
-        tickInterval = interval;//cada cuanto se aplica el dano
-
         burnTimeLeft = burnDuration;//reinicia el tiempo de quemadura
         timer = 0f;// reinicia el timer
         isBurning = true;// activa el burn

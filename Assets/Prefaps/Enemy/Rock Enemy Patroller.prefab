@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: magic
       value: 
       objectReference: {fileID: 6426280555321879245, guid: 7bee06f2cfc7fa24c9b99bf3c4e23169, type: 3}
+    - target: {fileID: 3180378984495184304, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+      propertyPath: burnDuration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3180378984495184304, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+      propertyPath: damagePerTick
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3432745019922619231, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

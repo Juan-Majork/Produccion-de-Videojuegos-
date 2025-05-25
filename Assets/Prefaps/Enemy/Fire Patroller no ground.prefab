@@ -12,6 +12,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Patroller no ground
       objectReference: {fileID: 0}
+    - target: {fileID: 3470169098002762232, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
+      propertyPath: damage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189933384155017290, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
+      propertyPath: health
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189933384155017290, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
+      propertyPath: maxHealth
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 7923801138704398393, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -52,11 +64,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7959982157534255830, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
+      propertyPath: burnDuration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959982157534255830, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
+      propertyPath: damagePerTick
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8555426354089388544, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
       propertyPath: takeDown
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7063821514900455851, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
     m_RemovedGameObjects:
     - {fileID: 9215135321795876516, guid: 8259e093ac7369a4ab4a249903aca82f, type: 3}
     m_AddedGameObjects: []

@@ -48,6 +48,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3933725944939867791, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
+      propertyPath: burnDuration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933725944939867791, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
+      propertyPath: damagePerTick
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4171073761222220739, guid: f83de2ec9d0986248a8e442f3fc7915a, type: 3}
       propertyPath: magic
       value: 
