@@ -134,9 +134,6 @@ public class Movement : MonoBehaviour
             rb2D.AddForce(Vector3.right * forceX, ForceMode2D.Impulse);
             rb2D.AddForce(Vector3.up * forceY, ForceMode2D.Impulse);
         }
-        
-
- 
     }
 
     public void ResetMovementState()

@@ -114,6 +114,7 @@ MonoBehaviour:
   damage: 50
   waitToDestroy: 2
   slowDuration: 2
+  icePlataform: {fileID: 3242344490633166539, guid: 4d29f61bfde087742be5315701ef47e6, type: 3}
 --- !u!1 &3989965861668926935
 GameObject:
   m_ObjectHideFlags: 0

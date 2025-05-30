@@ -1085,7 +1085,7 @@ Transform:
   m_GameObject: {fileID: 138082517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -96.1, y: 10.1, z: -100}
+  m_LocalPosition: {x: 405.94, y: 27.53, z: -100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1672,6 +1672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corriente de agua (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4026128918582376358, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6063483306221850929, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
       propertyPath: m_LocalScale.x
       value: 7.1396375
@@ -2008,6 +2012,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &282262348
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 350418071711989240, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+      propertyPath: m_Name
+      value: Full Ice Restore
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267337659962538442, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 409.85983
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267337659962538442, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20.510944
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267337659962538442, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267337659962538442, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267337659962538442, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267337659962538442, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267337659962538442, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267337659962538442, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267337659962538442, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8267337659962538442, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
 --- !u!4 &289994156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1548391859709883015, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
@@ -2990,6 +3051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corriente de agua (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4026128918582376358, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6063483306221850929, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
       propertyPath: m_LocalScale.x
       value: 8.629783
@@ -3596,7 +3661,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.138832, y: 0.026499748, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4519,6 +4584,10 @@ PrefabInstance:
     - target: {fileID: 4026128918582376358, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
       propertyPath: m_Name
       value: Corriente de agua (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026128918582376358, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6063483306221850929, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
       propertyPath: m_LocalScale.x
@@ -6551,6 +6620,10 @@ PrefabInstance:
     - target: {fileID: 4026128918582376358, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
       propertyPath: m_Name
       value: Corriente de agua (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026128918582376358, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6063483306221850929, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
       propertyPath: m_LocalScale.x
@@ -30173,6 +30246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Corriente de agua (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4026128918582376358, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6063483306221850929, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
       propertyPath: m_LocalScale.x
       value: 10.513804
@@ -31238,6 +31315,10 @@ PrefabInstance:
     - target: {fileID: 4026128918582376358, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
       propertyPath: m_Name
       value: Corriente de agua (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026128918582376358, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6063483306221850929, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
       propertyPath: m_LocalScale.x
@@ -203843,9 +203924,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 977173980}
     m_Modifications:
+    - target: {fileID: 2402206035832602721, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
+      propertyPath: timeToUnfreeze
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4026128918582376358, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
       propertyPath: m_Name
       value: Corriente de agua (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4026128918582376358, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6063483306221850929, guid: 20d6d46053b37444fa6dc679c915c876, type: 3}
       propertyPath: m_LocalScale.x
@@ -205305,11 +205394,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7775472873931164796, guid: 60b9b9f08ce62684883599e3612bd1a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -96.1
+      value: 405.94
       objectReference: {fileID: 0}
     - target: {fileID: 7775472873931164796, guid: 60b9b9f08ce62684883599e3612bd1a4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 19.43
       objectReference: {fileID: 0}
     - target: {fileID: 7775472873931164796, guid: 60b9b9f08ce62684883599e3612bd1a4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -205568,3 +205657,4 @@ SceneRoots:
   - {fileID: 1916206260}
   - {fileID: 952849857}
   - {fileID: 5662812}
+  - {fileID: 282262348}

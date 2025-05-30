@@ -9,6 +9,9 @@ public class IceAttack : MonoBehaviour
 
     [SerializeField] private float slowDuration;
 
+    [SerializeField] private GameObject icePlataform;
+    private bool hasCreatedPlataform = false;
+
     void Update()
     {
         actualTime += Time.deltaTime;
@@ -56,6 +59,21 @@ public class IceAttack : MonoBehaviour
         {
             MovePlatform platform = collision.GetComponent<MovePlatform>();
             platform.ApplySlow(0.5f, slowDuration); // Reduce velocidad a la mitad durante 2 segundos
+        }
+
+        if(!hasCreatedPlataform && collision.gameObject.layer == LayerMask.NameToLayer("WaterFallLayer"))
+        {
+            Vector3 spawnPosition = transform.position;
+            spawnPosition.z = 0f;
+            GameObject newPlataform = Instantiate(icePlataform, spawnPosition, Quaternion.identity);
+            Waterfall waterfallScript = collision.GetComponent <Waterfall>();
+            if (waterfallScript != null) 
+            {
+                waterfallScript.RegisterIcePlataform(newPlataform);
+            }
+
+
+            hasCreatedPlataform = true;
         }
     }
 }

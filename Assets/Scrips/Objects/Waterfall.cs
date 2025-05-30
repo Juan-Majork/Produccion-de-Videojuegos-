@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -21,6 +23,7 @@ public class Waterfall : MonoBehaviour
 
     public bool ice = false;
 
+    private List<GameObject> icePlataforms = new List<GameObject>();
 
     private void Awake()
     {
@@ -123,6 +126,12 @@ public class Waterfall : MonoBehaviour
         Invoke(nameof(UnfreezeWaterfall), timeToUnfreeze);
     }
 
+
+    public void RegisterIcePlataform(GameObject plataform)
+    {
+        icePlataforms.Add(plataform);
+    }
+
     public void UnfreezeWaterfall() // metodo para descongelar
     {
         isFrozen = false;
@@ -136,8 +145,14 @@ public class Waterfall : MonoBehaviour
 
         col.isTrigger = true; // vuelve a ser un trigger
         gameObject.tag = "Untagged"; // cambiar el tag
+
+        //destruye las plataformas de la cascada
+        foreach(GameObject plataform in icePlataforms)
+        {
+            if(plataform != null)
+                Destroy(plataform);
+        }
+        icePlataforms.Clear();
     }
-
-
     public UnityEvent changeIce;
 }
