@@ -30,6 +30,8 @@ public class EnemyWaveSpawner : MonoBehaviour
     [SerializeField] private Transform waveCenterPoint;
     [SerializeField] private Transform playerTarget;
 
+    [SerializeField] LayerMask enemyLayer;
+
     void Update()
     {
         if (!playerDetected)//si el jugador fue detectado
@@ -79,8 +81,7 @@ public class EnemyWaveSpawner : MonoBehaviour
     IEnumerator SpawnWave()
     {
         if (currentWave < totalWaves)
-        {
-            waveInProgress = true;
+        { 
             aliveEnemies.Clear();
             Debug.Log($"Iniciando oleada {currentWave + 1}");
 
@@ -100,25 +101,16 @@ public class EnemyWaveSpawner : MonoBehaviour
             }
 
 
-            currentWave++;//avanzar al siguiente enemgio
+            currentWave++;//avanzar al siguiente 
+            waveInProgress = true;
         }
     }
 
     //verifica cuantos enemigos hay en el radio
     private int CheckEnemiesInRadius()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, enemyCheckRadius);
-        int enemiesInRadius = 0;
-
-        foreach (Collider2D collider in colliders)
-        {
-            if (collider.CompareTag("Enemy") || collider.CompareTag("IceEnemy"))
-            {
-                enemiesInRadius++;
-            }
-        }
-
-        return enemiesInRadius;
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, enemyCheckRadius,enemyLayer);
+        return colliders.Length;
     }
 
 

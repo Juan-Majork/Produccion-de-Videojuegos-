@@ -230,6 +230,12 @@ MonoBehaviour:
   walls1: {fileID: 7557127983428269279}
   walls2: {fileID: 3888093080198658705}
   cinemachineCamera: {fileID: 0}
+  firstWaveDelay: 0.5
+  waveCenterPoint: {fileID: 0}
+  playerTarget: {fileID: 0}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &7468470584099482233
 GameObject:
   m_ObjectHideFlags: 0
