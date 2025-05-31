@@ -2,31 +2,78 @@ using UnityEngine;
 
 public class ManaBarUI : MonoBehaviour
 {
-    [SerializeField] private UnityEngine.UI.Image manaImagen;
+    [SerializeField] private UnityEngine.UI.Image[] manaImagen;
+    [SerializeField] private UnityEngine.UI.Image[] simbolImagen;
 
-    [SerializeField] private Color[] spellColor;
+    private int selectedSpell = 0;
 
+    public void SelectMana(MagicAttackController magicAttackController)
+    {
+        if (magicAttackController.currentSpell == Spells.Fire)
+        {
+            selectedSpell = 0;
+        }
+        else if (magicAttackController.currentSpell == Spells.Water)
+        {
+            selectedSpell = 1;
+        }
+        else if (magicAttackController.currentSpell == Spells.Fire)
+        {
+            selectedSpell = 2;
+        }
+
+    }
     public void changeMana(MagicAttackController magicAttackController)
     {
-        manaImagen.fillAmount = magicAttackController.manaPercentage;
+        manaImagen[selectedSpell].fillAmount = magicAttackController.manaPercentage;
     }
     public void changeColor(MagicAttackController magicAttackController)
     {
         if (magicAttackController.currentSpell == Spells.Empty)
         {
-            manaImagen.color = spellColor[0];
+            manaImagen[0].enabled = false;
+            manaImagen[1].enabled = false;
+            manaImagen[2].enabled = false;
+
+            simbolImagen[0].enabled = false;
+            simbolImagen[1].enabled = false;
+            simbolImagen[2].enabled = false;
         }
         else if (magicAttackController.currentSpell == Spells.Fire)
         {
-            manaImagen.color = spellColor[1];
+            manaImagen[0].enabled = true;
+
+            manaImagen[1].enabled = false;
+            manaImagen[2].enabled = false;
+
+            simbolImagen[0].enabled = true;
+
+            simbolImagen[1].enabled = false;
+            simbolImagen[2].enabled = false;
         }
         else if (magicAttackController.currentSpell == Spells.Water)
         {
-            manaImagen.color = spellColor[2];
+            manaImagen[1].enabled = true;
+
+            manaImagen[0].enabled = false;
+            manaImagen[2].enabled = false;
+
+            simbolImagen[1].enabled = true;
+
+            simbolImagen[0].enabled = false;
+            simbolImagen[2].enabled = false;
         }
         else if (magicAttackController.currentSpell == Spells.Rock)
         {
-            manaImagen.color = spellColor[3];
+            manaImagen[2].enabled = true;
+
+            manaImagen[0].enabled = false;
+            manaImagen[1].enabled = false;
+
+            simbolImagen[2].enabled = true;
+
+            simbolImagen[0].enabled = false;
+            simbolImagen[1].enabled = false;
         }
     }
 }

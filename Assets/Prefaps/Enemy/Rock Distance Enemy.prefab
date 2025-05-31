@@ -9,6 +9,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 276965466507889593, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_LocalPosition.x
       value: 283.5
       objectReference: {fileID: 0}
@@ -60,6 +68,22 @@ PrefabInstance:
       propertyPath: knockbackForceX
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 3424858518355611944, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7137423961886953715, guid: 9b1b03c37b786984ab18cbc961f2adc4, type: 3}
+    - target: {fileID: 3424858518355611944, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424858518355611944, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424858518355611944, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: health
       value: 125
@@ -72,6 +96,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Distance Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7915499636867325521, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.558
+      objectReference: {fileID: 0}
     - target: {fileID: 8866092516025452043, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: burnDuration
       value: 4
@@ -79,6 +107,30 @@ PrefabInstance:
     - target: {fileID: 8866092516025452043, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: damagePerTick
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_Size.x
+      value: 0.7680867
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_Size.y
+      value: 0.82933545
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0021851063
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.010939062
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.8125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.875
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
