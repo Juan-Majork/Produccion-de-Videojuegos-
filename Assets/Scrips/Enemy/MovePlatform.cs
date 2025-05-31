@@ -8,7 +8,7 @@ public class MovePlatform : MonoBehaviour
     [SerializeField] private LayerMask faceDown;
     [SerializeField] private LayerMask faceFront;
 
-    [SerializeField] private float velocity;
+    [SerializeField] public float velocity;
     private float originalVelocity;
 
     [SerializeField] private float distDown;
@@ -102,5 +102,11 @@ public class MovePlatform : MonoBehaviour
         isSlowed = false;
     }
 
+    public void ApplyPush(float duration)
+    {
+        isSlowed = true;
+        slowTimer = duration;
+        velocity = originalVelocity * 0;
+    }
 }
 

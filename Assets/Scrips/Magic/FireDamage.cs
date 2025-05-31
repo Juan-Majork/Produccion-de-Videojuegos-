@@ -38,23 +38,21 @@ public class FireDamage : MonoBehaviour
                 if (move.CompareTag("IceEnemy"))
                 {
                     Rigidbody2D rb = tracker.collider.GetComponent<Rigidbody2D>();
-
-                    Debug.Log(transform.position.ToString());
                     
-
                     if (player.transform.position.x > tracker.collider.transform.position.x) 
                     {
                         Debug.Log("entra 2");
-                        rb.AddForceX(-10, ForceMode2D.Force);
+                        rb.AddForceX(-20, ForceMode2D.Impulse);
+                        
                     }
 
                     if (player.transform.position.x < tracker.collider.transform.position.x)
                     {
                         Debug.Log("entra 3");
-                        rb.AddForceX(10, ForceMode2D.Force);
+                        rb.AddForceX(20, ForceMode2D.Impulse);
+
                     }
 
-                    return;
                 }
                 move.ApplySlow(0.5f, 0.2f);
             }
@@ -105,6 +103,14 @@ public class FireDamage : MonoBehaviour
                 MovePlatform move = collision.GetComponent<MovePlatform>();
                 if (move != null)
                 {
+                    if (collision.gameObject.CompareTag("IceEnemy"))
+                    {
+                        move.ApplyPush(0.4f);
+                        tracked.RemoveAt(i);
+
+                        return;
+                    }
+
                     move.ApplySlow(1f, 0f); // restaurar velocidad al salir del fuego
                 }
                 tracked.RemoveAt(i);
