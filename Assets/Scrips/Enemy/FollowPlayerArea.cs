@@ -172,4 +172,11 @@ public class FollowPlayerArea : MonoBehaviour
         velocity = originalVelocity * slowFactor;
     }
 
+    public void ApplyIce(float duration)
+    {
+        isSlowed = true;
+        slowTimer = duration;
+        velocity = 0;
+    }
+
 }

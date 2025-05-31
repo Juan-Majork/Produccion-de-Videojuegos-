@@ -108,5 +108,14 @@ public class MovePlatform : MonoBehaviour
         slowTimer = duration;
         velocity = originalVelocity * 0;
     }
+
+    public void ApplyIce(float duration)
+    {
+        isSlowed = true;
+        slowTimer = duration;
+        velocity = 0;
+
+
+    }
 }
 

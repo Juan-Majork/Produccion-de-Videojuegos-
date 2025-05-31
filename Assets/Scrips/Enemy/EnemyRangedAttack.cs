@@ -11,15 +11,31 @@ public class EnemyRangedAttack : MonoBehaviour
     private Transform playerTransform;
 
     [SerializeField] private float waitToShot;
-    [SerializeField] private float actualTime;
+    [SerializeField] public float actualTime;
 
     [SerializeField] private bool isRight;
 
     [SerializeField] private float shotVelocity;
 
+    public bool isCold = false;
+    private float duration = 0;
+
 
     private void Update()
     {
+        if (isCold)
+        {
+            
+            duration += Time.deltaTime;
+            Debug.Log(duration.ToString());
+
+            if (duration > 2)
+            {
+                isCold = false;
+                duration = 0;   
+            }
+        }
+
         Collider2D playerCollider = Physics2D.OverlapCircle(transform.position, fidingRadio, playerLayer);
 
         if (playerCollider)
@@ -33,6 +49,11 @@ public class EnemyRangedAttack : MonoBehaviour
 
         if (playerTransform != null)
         {
+            if (isCold)
+            {
+                return;
+            }
+
             actualTime += Time.deltaTime;
 
             if (actualTime > waitToShot)

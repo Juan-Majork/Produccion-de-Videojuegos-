@@ -45,6 +45,8 @@ public class IceAttack : MonoBehaviour
         if (collision.gameObject.CompareTag("RockEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
+            EnemyRangedAttack rangeEnemy = collision.gameObject.GetComponent<EnemyRangedAttack>();
+            rangeEnemy.isCold = true;
             healthController.takeDamage(damage);
             Destroy(gameObject);
         }
@@ -52,13 +54,13 @@ public class IceAttack : MonoBehaviour
         if (collision.GetComponent<FollowPlayerArea>() != null)
         {
             FollowPlayerArea movement = collision.GetComponent<FollowPlayerArea>();
-            movement.ApplySlow(0.5f, slowDuration); // Reduce velocidad a la mitad durante 2 segundos
+            movement.ApplySlow  (0.5f, slowDuration); // Reduce velocidad a la mitad durante 2 segundos
         }
 
         if (collision.GetComponent<MovePlatform>() != null)
         {
             MovePlatform platform = collision.GetComponent<MovePlatform>();
-            platform.ApplySlow(0.5f, slowDuration); // Reduce velocidad a la mitad durante 2 segundos
+            platform.ApplyIce(1f); // Reduce velocidad a la mitad durante 2 segundos
         }
 
         if(!hasCreatedPlataform && collision.gameObject.layer == LayerMask.NameToLayer("WaterFallLayer"))
