@@ -2692,7 +2692,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &386028150
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2741,10 +2741,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 3872393122463093133, guid: 5959c80c6b59586468dd7870fe83db15, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -3073,7 +3073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &436633599
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3122,10 +3122,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -4112377022736399832, guid: 5959c80c6b59586468dd7870fe83db15, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -4287,7 +4287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &622429952
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4336,10 +4336,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 1607144120216834220, guid: 5959c80c6b59586468dd7870fe83db15, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -7064,7 +7064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &964343414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7245,7 +7245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1011907047
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24671,16 +24671,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -18, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -17, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -28347,17 +28337,17 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: facec1c653e5230409127e75797a65d5, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1138
+  - m_RefCount: 1137
     m_Data: {fileID: 11400000, guid: 197c6f9a4e469794c8f50ba53b3c3ce9, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 34
     m_Data: {fileID: -7708920532220806285, guid: 37b6c3402a84bb94f90422d792497dc5, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1138
+  - m_RefCount: 1137
     m_Data: {fileID: 9090703217934305862, guid: 11ed5baac81aa944497c0993179ac7d3, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1172
+  - m_RefCount: 1171
     m_Data:
       e00: 1
       e01: 0
@@ -28376,7 +28366,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1172
+  - m_RefCount: 1171
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -28813,9 +28803,9 @@ CompositeCollider2D:
         Y: -890625
     - - X: 475890624
         Y: 19890626
-      - X: -342890624
+      - X: -323890624
         Y: 19890626
-      - X: -342890624
+      - X: -323890624
         Y: -890625
       - X: 475890624
         Y: -890625
@@ -29883,8 +29873,8 @@ CompositeCollider2D:
       - {x: 125.31097, y: -0.089062504}
     - - {x: 47.589035, y: -0.089062504}
       - {x: 47.589035, y: 1.9890627}
-      - {x: -34.289062, y: 1.9890332}
-      - {x: -34.289036, y: -0.089062504}
+      - {x: -32.38906, y: 1.9890332}
+      - {x: -32.389034, y: -0.089062504}
     - - {x: -62.61097, y: -0.089062504}
       - {x: -62.61097, y: 1.9890627}
       - {x: -121.689064, y: 1.9890332}
@@ -31401,7 +31391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1427582702
 RectTransform:
   m_ObjectHideFlags: 0
