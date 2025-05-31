@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class MovePlatform : MonoBehaviour
 {
@@ -100,5 +101,6 @@ public class MovePlatform : MonoBehaviour
         velocity = originalVelocity;
         isSlowed = false;
     }
+
 }
 

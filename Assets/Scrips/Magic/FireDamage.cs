@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FireDamage : MonoBehaviour
@@ -7,6 +8,7 @@ public class FireDamage : MonoBehaviour
     [SerializeField] private float damagePerSecond;//dano por segundo
     [SerializeField] private float tickInterval;//cada cuanto se aplica la quemadura
     [SerializeField] private float requiredStayTime;//tiempo minimo que tiene que estar para aplicar burn
+    [SerializeField] private GameObject player;
 
     private class BurnTracker
     {
@@ -33,6 +35,27 @@ public class FireDamage : MonoBehaviour
             MovePlatform move = tracker.collider.GetComponent<MovePlatform>();         
             if (move != null)
             {
+                if (move.CompareTag("IceEnemy"))
+                {
+                    Rigidbody2D rb = tracker.collider.GetComponent<Rigidbody2D>();
+
+                    Debug.Log(transform.position.ToString());
+                    
+
+                    if (player.transform.position.x > tracker.collider.transform.position.x) 
+                    {
+                        Debug.Log("entra 2");
+                        rb.AddForceX(-10, ForceMode2D.Force);
+                    }
+
+                    if (player.transform.position.x < tracker.collider.transform.position.x)
+                    {
+                        Debug.Log("entra 3");
+                        rb.AddForceX(10, ForceMode2D.Force);
+                    }
+
+                    return;
+                }
                 move.ApplySlow(0.5f, 0.2f);
             }
 
@@ -49,7 +72,10 @@ public class FireDamage : MonoBehaviour
                 }
 
                 tracker.burnApplied = true;//marca que fue aplicado
+
             }
+
+           
         }
     }
 
