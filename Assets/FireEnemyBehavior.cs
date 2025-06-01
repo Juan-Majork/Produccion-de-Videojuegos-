@@ -3,6 +3,11 @@ using UnityEngine.Rendering;
 
 public class FireEnemyBehavior : MonoBehaviour
 {
+    [SerializeField] private LayerMask faceFront;
+    [SerializeField] private Transform front;
+    [SerializeField] private float distFront;
+    private bool infoFront;
+
     [SerializeField] private bool lookRight;
 
     [SerializeField] private float moveX;
@@ -43,7 +48,14 @@ public class FireEnemyBehavior : MonoBehaviour
                 animator.SetTrigger("jump");
             }
         }
-       
+
+        infoFront = Physics2D.Raycast(front.position, transform.right, distFront, faceFront);
+
+        if (infoFront)
+        {
+            flip();
+            actualJump = 0;
+        }
     }
 
     private void flip()
@@ -100,5 +112,11 @@ public class FireEnemyBehavior : MonoBehaviour
             canJump = true;
             actualTime = 0;
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawLine(front.transform.position, front.transform.position + transform.right * distFront);
     }
 }
