@@ -1,0 +1,104 @@
+using UnityEngine;
+using UnityEngine.Rendering;
+
+public class FireEnemyBehavior : MonoBehaviour
+{
+    [SerializeField] private bool lookRight;
+
+    [SerializeField] private float moveX;
+    [SerializeField] private float moveY;
+    private bool canJump;
+
+    private float timeToJump = 1;
+    private float actualTime;
+
+    [SerializeField] private int numOfJumps;
+    private int actualJump = 0;
+
+    private Rigidbody2D rb;
+    private Animator animator;
+
+    //private bool isSlowed = false;
+    //private float slowTimer = 0f;
+    //private EnemyKnockback enemyKnockback;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        //enemyKnockback = GetComponent<EnemyKnockback>();
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        actualTime += Time.deltaTime;
+        animator.SetFloat("inAir", rb.linearVelocity.y);
+
+        if (actualTime > timeToJump) 
+        {
+            if (canJump)
+            {
+                animator.SetTrigger("jump");
+            }
+        }
+       
+    }
+
+    private void flip()
+    {
+        lookRight = !lookRight;
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
+    }
+
+    public void jump()
+    {
+        if (!lookRight)
+        {
+            rb.AddForceX(-moveX, ForceMode2D.Impulse);
+            rb.AddForceY(moveY, ForceMode2D.Impulse);
+        }
+        if (lookRight)
+        {
+            rb.AddForceX(moveX, ForceMode2D.Impulse);
+            rb.AddForceY(moveY, ForceMode2D.Impulse);
+        }
+
+        actualJump++;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        {
+
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                if (contact.normal.y > 0.5f) // El contacto desde arriba
+                {
+                    if (actualJump >= numOfJumps)
+                    {
+                        actualJump = 0;
+                        flip();
+                    }
+
+                    canJump = true;
+                    actualTime = 0;
+                    break;
+                }
+            }
+        }
+
+        if (collision.gameObject.CompareTag("Rock"))
+        {
+            if (actualJump >= numOfJumps)
+            {
+                actualJump = 0;
+                flip();
+            }
+
+            canJump = true;
+            actualTime = 0;
+        }
+    }
+}
