@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class MusicPlayer : MonoBehaviour
 {
     [SerializeField] private AudioClip musicClipLevel;
+    [SerializeField] private AudioClip musicClipArena;
     private AudioSource musicSource;
 
     void Start()

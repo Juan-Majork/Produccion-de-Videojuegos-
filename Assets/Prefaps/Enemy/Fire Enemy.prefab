@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 4226926118246639750}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.325, y: -0.251, z: 0}
+  m_LocalPosition: {x: -0.449, y: -0.251, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -121,7 +121,7 @@ SpriteRenderer:
   m_SortingLayerID: 1092792119
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -386426463177033618, guid: 93b4f7da9f132664c984bb4500fd6dcb, type: 3}
+  m_Sprite: {fileID: 5028195318582158178, guid: f963bb6866d03904eacdeb25cd7387ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -147,7 +147,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -359,10 +359,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   front: {fileID: 2776274468623672293}
-  distFront: -1
+  distFront: -0.25
   lookRight: 0
-  moveX: 5
-  moveY: 11
+  moveX: 7
+  moveY: 14
   numOfJumps: 3
 --- !u!114 &374518150469695377
 MonoBehaviour:
