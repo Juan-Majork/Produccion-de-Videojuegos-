@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 597a23e9120b1654184b25a2a2984769
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8462352673604912988
+    second: Slime_hielo_muerte_movimiento_-_copia 1_0
+  - first:
+      213: 329355058741921107
+    second: Slime_hielo_muerte_movimiento_-_copia 1_1
+  - first:
+      213: -3030316816715785443
+    second: Slime_hielo_muerte_movimiento_-_copia 1_2
+  - first:
+      213: 8272756664290446612
+    second: Slime_hielo_muerte_movimiento_-_copia 1_3
+  - first:
+      213: 5815685218745952279
+    second: Slime_hielo_muerte_movimiento_-_copia 1_4
+  - first:
+      213: 9038502953036819669
+    second: Slime_hielo_muerte_movimiento_-_copia 1_5
+  - first:
+      213: 8161671151930304742
+    second: Slime_hielo_muerte_movimiento_-_copia 1_6
+  - first:
+      213: 6673152142294132078
+    second: Slime_hielo_muerte_movimiento_-_copia 1_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Slime_hielo_muerte_movimiento_-_copia 1_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8b3bd241faf8a80800000000000000
+      internalID: -8462352673604912988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_muerte_movimiento_-_copia 1_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3554a415eaa129400800000000000000
+      internalID: 329355058741921107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_muerte_movimiento_-_copia 1_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 2
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b53c619e622f5d0800000000000000
+      internalID: -3030316816715785443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_muerte_movimiento_-_copia 1_3
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d0740fa5cbec270800000000000000
+      internalID: 8272756664290446612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_muerte_movimiento_-_copia 1_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718a7d4c4e675b050800000000000000
+      internalID: 5815685218745952279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_muerte_movimiento_-_copia 1_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc24193c863f6d70800000000000000
+      internalID: 9038502953036819669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_muerte_movimiento_-_copia 1_6
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8eb589ba4144170800000000000000
+      internalID: 8161671151930304742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_muerte_movimiento_-_copia 1_7
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 2
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65249d748ccb9c50800000000000000
+      internalID: 6673152142294132078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e77544e660c9afb4c8d0990a3299e4bc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Slime_hielo_muerte_movimiento_-_copia 1_0: -8462352673604912988
+      Slime_hielo_muerte_movimiento_-_copia 1_1: 329355058741921107
+      Slime_hielo_muerte_movimiento_-_copia 1_2: -3030316816715785443
+      Slime_hielo_muerte_movimiento_-_copia 1_3: 8272756664290446612
+      Slime_hielo_muerte_movimiento_-_copia 1_4: 5815685218745952279
+      Slime_hielo_muerte_movimiento_-_copia 1_5: 9038502953036819669
+      Slime_hielo_muerte_movimiento_-_copia 1_6: 8161671151930304742
+      Slime_hielo_muerte_movimiento_-_copia 1_7: 6673152142294132078
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

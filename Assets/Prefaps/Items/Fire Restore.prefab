@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3483138937919999276, guid: 665665a065070ec499f60afdacb12075, type: 3}
+  m_Sprite: {fileID: -3486218316651411477, guid: c631757eb4adad34fb022bd673344c8c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -177,6 +177,22 @@ PrefabInstance:
     - target: {fileID: 5499098354619397822, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}
       propertyPath: m_Name
       value: Fire Restore
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711069955827737530, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}
+      propertyPath: m_Size.x
+      value: 1.715436
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711069955827737530, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}
+      propertyPath: m_Size.y
+      value: 1.7073975
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711069955827737530, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.00401932
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711069955827737530, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.008038551
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2799560623773739054, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}

@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574de36d6c3b3104193021e8e71a2740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 1
+  destroyTime: 0.75
 --- !u!1 &7480604226484862202
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,7 +394,7 @@ SpriteRenderer:
   m_SortingLayerID: 1092792119
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5917416234792819919, guid: 3ee102092b384eb40b17a380b89ab774, type: 3}
+  m_Sprite: {fileID: 6673152142294132078, guid: 597a23e9120b1654184b25a2a2984769, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

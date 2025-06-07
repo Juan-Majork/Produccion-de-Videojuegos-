@@ -17,7 +17,7 @@ public class ManaBarUI : MonoBehaviour
         {
             selectedSpell = 1;
         }
-        else if (magicAttackController.currentSpell == Spells.Fire)
+        else if (magicAttackController.currentSpell == Spells.Rock)
         {
             selectedSpell = 2;
         }

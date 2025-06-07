@@ -52,6 +52,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1865810694404278868, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2416817358646521777, guid: 480037e20e54bd84fbaefac8bee26e5b, type: 3}
+    - target: {fileID: 5934969755938623789, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
+      propertyPath: m_Size.x
+      value: 1.7199031
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934969755938623789, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
+      propertyPath: m_Size.y
+      value: 1.712914
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934969755938623789, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0034945607
+      objectReference: {fileID: 0}
+    - target: {fileID: 5934969755938623789, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0069893897
+      objectReference: {fileID: 0}
     - target: {fileID: 7416980696383489065, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
       propertyPath: m_Name
       value: Full Rock Restored
