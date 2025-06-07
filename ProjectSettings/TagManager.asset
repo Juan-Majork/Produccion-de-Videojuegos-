@@ -12,6 +12,7 @@ TagManager:
   - Rock
   - iceMagic
   - fireMagic
+  - hit
   layers:
   - Default
   - TransparentFX

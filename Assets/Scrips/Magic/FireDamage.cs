@@ -42,14 +42,14 @@ public class FireDamage : MonoBehaviour
                     if (player.transform.position.x > tracker.collider.transform.position.x) 
                     {
                         Debug.Log("entra 2");
-                        rb.AddForceX(-10, ForceMode2D.Impulse);
+                        rb.AddForceX(-6.5f, ForceMode2D.Impulse);
                         
                     }
 
                     if (player.transform.position.x < tracker.collider.transform.position.x)
                     {
                         Debug.Log("entra 3");
-                        rb.AddForceX(10, ForceMode2D.Impulse);
+                        rb.AddForceX(6.5f, ForceMode2D.Impulse);
 
                     }
 

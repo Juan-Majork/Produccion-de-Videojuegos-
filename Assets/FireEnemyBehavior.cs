@@ -14,7 +14,7 @@ public class FireEnemyBehavior : MonoBehaviour
     [SerializeField] private float moveY;
     private bool canJump;
 
-    private float timeToJump = 1;
+    private float timeToJump = 0.5f;
     private float actualTime;
 
     [SerializeField] private int numOfJumps;
@@ -46,6 +46,7 @@ public class FireEnemyBehavior : MonoBehaviour
             if (canJump)
             {
                 animator.SetTrigger("jump");
+                actualTime = 0;
             }
         }
 

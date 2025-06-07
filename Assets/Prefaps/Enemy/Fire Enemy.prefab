@@ -51,6 +51,8 @@ GameObject:
   - component: {fileID: 234521922348635942}
   - component: {fileID: 374518150469695377}
   - component: {fileID: 173059102292913115}
+  - component: {fileID: 5560397279115436209}
+  - component: {fileID: 7207378296695829640}
   m_Layer: 7
   m_Name: Fire Enemy
   m_TagString: FireEnemy
@@ -145,7 +147,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -271,7 +273,19 @@ MonoBehaviour:
         m_CallState: 2
   Damage:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7207378296695829640}
+        m_TargetAssemblyTypeName: ChangeColorFeedback, Assembly-CSharp
+        m_MethodName: DamageFeedback
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   HealthChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -327,8 +341,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d56098f0b4d4a146b76d1baaed57b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockbackDuration: 0.2
-  knockbackForce: 5
+  knockbackDuration: 0
+  knockbackForce: 0
 --- !u!114 &234521922348635942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,12 +357,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   faceFront:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   front: {fileID: 2776274468623672293}
   distFront: -1
   lookRight: 0
   moveX: 5
-  moveY: 6
+  moveY: 11
   numOfJumps: 3
 --- !u!114 &374518150469695377
 MonoBehaviour:
@@ -387,6 +401,32 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5560397279115436209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4928873563327398193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b034da52092a0414aab16cbec12508b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7207378296695829640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4928873563327398193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc0bcb9dc28f184a843915314964501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 4471360866499265021}
+  hitColor: {r: 0, g: 0.07224822, b: 1, a: 1}
 --- !u!1001 &7750815163840547044
 PrefabInstance:
   m_ObjectHideFlags: 0

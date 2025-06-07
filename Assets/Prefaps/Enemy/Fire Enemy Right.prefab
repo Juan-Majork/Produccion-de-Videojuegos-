@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: lookRight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 234521922348635942, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
+      propertyPath: faceFront.m_Bits
+      value: 192
+      objectReference: {fileID: 0}
     - target: {fileID: 961576778673675011, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -56,8 +60,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Enemy Right
       objectReference: {fileID: 0}
+    - target: {fileID: 5870302902394358517, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
+      propertyPath: Damage.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6406836986217338726}
+    - target: {fileID: 5870302902394358517, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
+      propertyPath: Damage.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DamageFeedback
+      objectReference: {fileID: 0}
+    - target: {fileID: 5870302902394358517, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
+      propertyPath: Damage.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChangeColorFeedback, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
+--- !u!114 &6406836986217338726 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7207378296695829640, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
+  m_PrefabInstance: {fileID: 4389998174727283694}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc0bcb9dc28f184a843915314964501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
