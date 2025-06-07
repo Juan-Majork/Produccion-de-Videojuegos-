@@ -3,6 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private void Start()
+    {
+        
+    }
 
     void Update()
     {

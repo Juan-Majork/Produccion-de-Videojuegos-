@@ -41,6 +41,7 @@ public class EnemyWaveSpawner : MonoBehaviour
             {
                 ActivateWalls();//activar paredes
                 StartCoroutine(DelayedFirstWave());//iniciar primer oleada
+                MusicPlayer.musicPlayer.BattleMusic();//Musica de la arena
                 // Lockear la cámara al centro
                 cinemachineCamera.Follow = waveCenterPoint;
                 cinemachineCamera.LookAt = waveCenterPoint;
@@ -66,6 +67,7 @@ public class EnemyWaveSpawner : MonoBehaviour
                     //si ya se completaron todas las waves
                     Debug.Log("Ultima oleada completada");
                     DeactivateWalls();
+                    MusicPlayer.musicPlayer.LevelMusic();
                     waveInProgress = false;
                     gameObject.SetActive(false);
                     cinemachineCamera.enabled = true;
