@@ -180,11 +180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: health
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: maxHealth
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: Death.m_PersistentCalls.m_Calls.Array.size
@@ -231,8 +231,12 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5625848324448307419, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+      propertyPath: tickInterval
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5625848324448307419, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: damagePerTick
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7169978473071823892, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
@@ -253,6 +257,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3919512067113939152, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6062341685998259402}
+    - targetCorrespondingSourceObject: {fileID: 3919512067113939152, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6096311708045827237}
   m_SourcePrefab: {fileID: 100100000, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
 --- !u!4 &615728255283710661 stripped
 Transform:
@@ -290,6 +297,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 1.5
+--- !u!114 &6096311708045827237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3140021391985248402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc244bbe76d21848871edbaf24104ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  knockbackForceX: 10
+  knockbackForceY: 10
 --- !u!1001 &4605628206893530366
 PrefabInstance:
   m_ObjectHideFlags: 0

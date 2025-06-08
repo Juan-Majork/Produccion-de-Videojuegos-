@@ -28,19 +28,19 @@ public class IceAttack : MonoBehaviour
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             healthController.takeDamage(damage);
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("FireEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             healthController.takeDamage(damage);
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("IceEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             healthController.takeDamage(damage);
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         if (collision.gameObject.CompareTag("RockEnemy"))
         {
@@ -48,7 +48,7 @@ public class IceAttack : MonoBehaviour
             EnemyRangedAttack rangeEnemy = collision.gameObject.GetComponent<EnemyRangedAttack>();
             rangeEnemy.isCold = true;
             healthController.takeDamage(damage);
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 
         if (collision.GetComponent<FollowPlayerArea>() != null)

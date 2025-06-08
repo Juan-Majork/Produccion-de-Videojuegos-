@@ -71,7 +71,7 @@ PrefabInstance:
     - target: {fileID: 3424858518355611944, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 7137423961886953715, guid: 9b1b03c37b786984ab18cbc961f2adc4, type: 3}
+      objectReference: {fileID: -1496941580569348172, guid: 84dee38ce916e9b44826e719e210ea15, type: 3}
     - target: {fileID: 3424858518355611944, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -86,11 +86,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: health
-      value: 125
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: maxHealth
-      value: 125
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: Damage.m_PersistentCalls.m_Calls.Array.size
@@ -133,8 +133,12 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8866092516025452043, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+      propertyPath: tickInterval
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8866092516025452043, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: damagePerTick
-      value: 15
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_Size.x
@@ -154,7 +158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.8125
+      value: 0.875
       objectReference: {fileID: 0}
     - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y

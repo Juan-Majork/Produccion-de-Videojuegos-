@@ -93,7 +93,7 @@ public class Movement : MonoBehaviour
         facingRight = !facingRight;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Floor"))
         {
@@ -112,6 +112,21 @@ public class Movement : MonoBehaviour
             canJump = true;
         }
     }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Floor"))
+        {
+            canJump = false;
+        }
+
+        if (collision.gameObject.CompareTag("Rock"))
+        {
+            canJump = false;
+        }
+    }
+
+
 
     public void SetInWaterfall(bool state)
     {

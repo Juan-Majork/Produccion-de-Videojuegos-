@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3180378984495184304, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: damagePerTick
-      value: 15
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3432745019922619231, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -90,11 +90,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678667901234385708, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: health
-      value: 75
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8678667901234385708, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: maxHealth
-      value: 75
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2329148750721868493, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}

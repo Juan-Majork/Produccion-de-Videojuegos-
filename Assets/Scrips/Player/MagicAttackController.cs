@@ -81,7 +81,7 @@ public class MagicAttackController : MonoBehaviour
             Swap();
         }
 
-        if (Input.GetKey(KeyCode.J) && !Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.J) && !Input.GetKey(KeyCode.W) && !setFire)
             {           
             {
                 waitShoot = 0.5f;
@@ -123,7 +123,7 @@ public class MagicAttackController : MonoBehaviour
             }
             if (slots[0] == Spells.Water && mana > 0)
             {
-                speedMagic = 10f;
+                speedMagic = 20f;
                 waitShoot = 1f;
 
                 float timeSinceShoot = Time.time - lastShoot;

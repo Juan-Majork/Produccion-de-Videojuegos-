@@ -3,7 +3,7 @@ using UnityEngine;
 public class BurnDamage : MonoBehaviour
 {
     [SerializeField] private float burnDuration;//duracion de la quemadura
-    private float tickInterval = 1;//tiempo entre cada tick de dano
+    [SerializeField] private float tickInterval = 1;//tiempo entre cada tick de dano
     [SerializeField] private float damagePerTick;//dano por tick
 
     private float timer;//timer de el dano

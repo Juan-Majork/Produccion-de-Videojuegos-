@@ -1,31 +1,34 @@
 fileFormatVersion: 2
-guid: 1f3ac5eb13d55774ea0e1947e369e8e8
+guid: 1d0a5d2271d3bc04898f8b0861cf8ea3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6561579209532236959
-    second: Enemigo_fuego_slieme_muerte_0
+      213: 351398112165190565
+    second: Protagonista_salto__hielo_0
   - first:
-      213: 6115575450394679549
-    second: Enemigo_fuego_slieme_muerte_1
+      213: 4950138533641044938
+    second: Protagonista_salto__hielo_1
   - first:
-      213: -2484048485075640556
-    second: Enemigo_fuego_slieme_muerte_2
+      213: 853280553591833396
+    second: Protagonista_salto__hielo_2
   - first:
-      213: -360755757164629430
-    second: Enemigo_fuego_slieme_muerte_3
+      213: 8912731673052502290
+    second: Protagonista_salto__hielo_3
   - first:
-      213: -6294395399212383936
-    second: Enemigo_fuego_slieme_muerte_4
+      213: 5329037727324988255
+    second: Protagonista_salto__hielo_4
   - first:
-      213: -3049821501810261335
-    second: Enemigo_fuego_slieme_muerte_5
+      213: 387889186766144149
+    second: Protagonista_salto__hielo_5
   - first:
-      213: 4064446122185413889
-    second: Enemigo_fuego_slieme_muerte_6
+      213: -4027725865013737972
+    second: Protagonista_salto__hielo_6
   - first:
-      213: 1221404345014021923
-    second: Enemigo_fuego_slieme_muerte_7
+      213: 5261242121724507637
+    second: Protagonista_salto__hielo_7
+  - first:
+      213: 2249031790834383717
+    second: Protagonista_salto__hielo_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,155 +124,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemigo_fuego_slieme_muerte_0
+      name: Protagonista_salto__hielo_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1
-        width: 28
-        height: 33
+        x: 14
+        y: 0
+        width: 22
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f94e1cdb6896f0b50800000000000000
-      internalID: 6561579209532236959
+      spriteID: 5ab5952a8ba60e400800000000000000
+      internalID: 351398112165190565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemigo_fuego_slieme_muerte_1
+      name: Protagonista_salto__hielo_1
       rect:
         serializedVersion: 2
-        x: 61
-        y: 1
-        width: 27
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 73
+        y: 0
+        width: 22
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df8dfdd6873eed450800000000000000
-      internalID: 6115575450394679549
+      spriteID: ac3c5a6f4cc62b440800000000000000
+      internalID: 4950138533641044938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemigo_fuego_slieme_muerte_2
+      name: Protagonista_salto__hielo_2
       rect:
         serializedVersion: 2
-        x: 109
-        y: 1
-        width: 30
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 123
+        y: 0
+        width: 23
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41f183a5013e68dd0800000000000000
-      internalID: -2484048485075640556
+      spriteID: 4330792842677db00800000000000000
+      internalID: 853280553591833396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemigo_fuego_slieme_muerte_3
+      name: Protagonista_salto__hielo_3
       rect:
         serializedVersion: 2
-        x: 159
-        y: 1
-        width: 30
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 173
+        y: 0
+        width: 22
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a42768bdc865efaf0800000000000000
-      internalID: -360755757164629430
+      spriteID: 219daa62c3260bb70800000000000000
+      internalID: 8912731673052502290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemigo_fuego_slieme_muerte_4
+      name: Protagonista_salto__hielo_4
       rect:
         serializedVersion: 2
-        x: 217
-        y: 1
-        width: 11
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 221
+        y: 0
+        width: 24
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 041c71acbb0d5a8a0800000000000000
-      internalID: -6294395399212383936
+      spriteID: f536cdb149b84f940800000000000000
+      internalID: 5329037727324988255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemigo_fuego_slieme_muerte_5
+      name: Protagonista_salto__hielo_5
       rect:
         serializedVersion: 2
-        x: 269
-        y: 1
-        width: 8
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 271
+        y: 0
+        width: 24
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a24044b08bdca5d0800000000000000
-      internalID: -3049821501810261335
+      spriteID: 5924965092f026500800000000000000
+      internalID: 387889186766144149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemigo_fuego_slieme_muerte_6
+      name: Protagonista_salto__hielo_6
       rect:
         serializedVersion: 2
-        x: 319
-        y: 1
-        width: 6
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 321
+        y: 0
+        width: 24
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1055399b630d76830800000000000000
-      internalID: 4064446122185413889
+      spriteID: c0604336aa4aa18c0800000000000000
+      internalID: -4027725865013737972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonista_salto__hielo_7
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 4
+        width: 31
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f536be95dfa30940800000000000000
+      internalID: 5261242121724507637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Protagonista_salto__hielo_8
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 0
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b7e357f7a263f10800000000000000
+      internalID: 2249031790834383717
       vertices: []
       indices: 
       edges: []
@@ -278,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6259d8c52a5b9b2439193235420bca9e
+    spriteID: e6c06190a4f03c44d84877baed5c7997
     internalID: 0
     vertices: []
     indices: 
@@ -288,13 +335,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Enemigo_fuego_slieme_muerte_0: 6561579209532236959
-      Enemigo_fuego_slieme_muerte_1: 6115575450394679549
-      Enemigo_fuego_slieme_muerte_2: -2484048485075640556
-      Enemigo_fuego_slieme_muerte_3: -360755757164629430
-      Enemigo_fuego_slieme_muerte_4: -6294395399212383936
-      Enemigo_fuego_slieme_muerte_5: -3049821501810261335
-      Enemigo_fuego_slieme_muerte_6: 4064446122185413889
+      Protagonista_salto__hielo_0: 351398112165190565
+      Protagonista_salto__hielo_1: 4950138533641044938
+      Protagonista_salto__hielo_2: 853280553591833396
+      Protagonista_salto__hielo_3: 8912731673052502290
+      Protagonista_salto__hielo_4: 5329037727324988255
+      Protagonista_salto__hielo_5: 387889186766144149
+      Protagonista_salto__hielo_6: -4027725865013737972
+      Protagonista_salto__hielo_7: 5261242121724507637
+      Protagonista_salto__hielo_8: 2249031790834383717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

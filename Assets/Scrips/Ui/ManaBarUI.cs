@@ -4,6 +4,7 @@ public class ManaBarUI : MonoBehaviour
 {
     [SerializeField] private UnityEngine.UI.Image[] manaImagen;
     [SerializeField] private UnityEngine.UI.Image[] simbolImagen;
+    [SerializeField] private UnityEngine.UI.Image[] secondimbolImagen;
 
     private int selectedSpell = 0;
 
@@ -74,6 +75,34 @@ public class ManaBarUI : MonoBehaviour
 
             simbolImagen[0].enabled = false;
             simbolImagen[1].enabled = false;
+        }
+
+        if (magicAttackController.slots[1] == Spells.Empty)
+        {
+            secondimbolImagen[0].enabled = false;
+            secondimbolImagen[1].enabled = false;
+            secondimbolImagen[2].enabled = false;
+        }
+        else if (magicAttackController.slots[1] == Spells.Fire)
+        {
+            secondimbolImagen[0].enabled = true;
+
+            secondimbolImagen[1].enabled = false;
+            secondimbolImagen[2].enabled = false;
+        }
+        else if (magicAttackController.slots[1] == Spells.Water)
+        {
+            secondimbolImagen[1].enabled = true;
+
+            secondimbolImagen[0].enabled = false;
+            secondimbolImagen[2].enabled = false;
+        }
+        else if (magicAttackController.slots[1] == Spells.Rock)
+        {
+            secondimbolImagen[2].enabled = true;
+
+            secondimbolImagen[0].enabled = false;
+            secondimbolImagen[1].enabled = false;
         }
     }
 }

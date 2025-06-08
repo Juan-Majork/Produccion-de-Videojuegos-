@@ -11,7 +11,7 @@ public class Collectable : MonoBehaviour
         m_MagicCollectable = GetComponent<MagicCollectableBehaviour>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         var player = collision.GetComponent<Movement>();
 
