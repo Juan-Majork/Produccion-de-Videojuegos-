@@ -166,6 +166,7 @@ MonoBehaviour:
   health: 20
   maxHealth: 20
   isPlayer: 0
+  isEnemy: 1
   Death:
     m_PersistentCalls:
       m_Calls:

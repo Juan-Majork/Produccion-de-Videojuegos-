@@ -198,6 +198,7 @@ MonoBehaviour:
   health: 10
   maxHealth: 10
   isPlayer: 0
+  isEnemy: 1
   Death:
     m_PersistentCalls:
       m_Calls:
@@ -270,6 +271,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0ad2367e6fc5e4aae650f949fd2c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  burnDuration: 0
+  tickInterval: 1
+  damagePerTick: 0
 --- !u!114 &4171073761222220739
 MonoBehaviour:
   m_ObjectHideFlags: 0

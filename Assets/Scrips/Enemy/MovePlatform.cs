@@ -4,6 +4,7 @@ using UnityEngine.Rendering;
 public class MovePlatform : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private HealthController healthController;
 
     [SerializeField] private LayerMask faceDown;
     [SerializeField] private LayerMask faceFront;
@@ -32,10 +33,17 @@ public class MovePlatform : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         originalVelocity = velocity;
         enemyKnockback = GetComponent<EnemyKnockback>();
+        healthController = GetComponent<HealthController>();
     }
 
     private void Update()
     {
+        if(healthController != null && healthController.IsDead)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         if (enemyKnockback == null || !enemyKnockback.IsBeingKnockedBack())
         {
             if (lookRight)

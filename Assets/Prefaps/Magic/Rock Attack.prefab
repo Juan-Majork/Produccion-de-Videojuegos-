@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5748303955810479968}
   - component: {fileID: 8018803777765138300}
   - component: {fileID: 8727197247230153560}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: -7570610807761305697}
   - component: {fileID: 6133721695222871706}
   - component: {fileID: 5690714111240885796}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Rock Attack
   m_TagString: Rock
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 9082181378012110800}
   - component: {fileID: 5950913624296580979}
   - component: {fileID: 5452868204531048832}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Down hit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

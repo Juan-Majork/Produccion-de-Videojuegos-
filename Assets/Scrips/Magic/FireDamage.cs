@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class FireDamage : MonoBehaviour
 {
-    [SerializeField] private float burnDuration;//duracion de la quemadura
-    [SerializeField] private float damagePerSecond;//dano por segundo
-    [SerializeField] private float tickInterval;//cada cuanto se aplica la quemadura
     [SerializeField] private float requiredStayTime;//tiempo minimo que tiene que estar para aplicar burn
     [SerializeField] private GameObject player;
 

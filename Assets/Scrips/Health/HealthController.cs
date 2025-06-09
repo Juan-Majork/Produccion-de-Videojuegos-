@@ -10,8 +10,10 @@ public class HealthController : MonoBehaviour
     [SerializeField]
     private float maxHealth;
 
-    [SerializeField] private bool isPlayer = false; 
+    [SerializeField] private bool isPlayer = false;
+    [SerializeField] private bool isEnemy = false;
     private bool isDead = false;
+    public bool IsDead => isDead;
 
     public float hpPercentage
     {
@@ -122,6 +124,11 @@ public class HealthController : MonoBehaviour
                 Invoke(nameof(SceneCall), 5f);
                 return;
             }
+        }
+
+        if (isEnemy)
+        {
+            gameObject.layer = LayerMask.NameToLayer("DeadEnemy");
         }
 
         // Muerte definitiva

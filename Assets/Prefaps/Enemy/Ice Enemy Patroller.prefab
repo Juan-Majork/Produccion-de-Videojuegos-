@@ -93,6 +93,10 @@ PrefabInstance:
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8678667901234385708, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+      propertyPath: isEnemy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678667901234385708, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: maxHealth
       value: 60
       objectReference: {fileID: 0}
