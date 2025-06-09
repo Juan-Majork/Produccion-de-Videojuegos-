@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
@@ -20,11 +21,28 @@ public class Movement : MonoBehaviour
     private float knockbackTimer = 0f;
     [SerializeField] private float knockbackDuration = 0.2f;
 
+    private PlayerInput playerInput;
+    private InputAction inputJump;
+
+
     Animator animator;
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = transform.GetChild(0).GetComponent<Animator>();
+
+        playerInput = GetComponent<PlayerInput>();
+        inputJump = playerInput.actions["Jump"];
+    }
+
+    private void OnEnable()
+    {
+        inputJump.started += _ => Jump();
+    }
+
+    private void OnDisable()
+    {
+        inputJump.started -= _ => Jump();
     }
 
     private void FixedUpdate()
@@ -62,12 +80,6 @@ public class Movement : MonoBehaviour
             currentVelocity.x = horizontalInput * speed;
         }
 
-        if (Input.GetKey(KeyCode.K) && canJump)
-        {
-            currentVelocity.y = jumpForce;
-            canJump = false;
-        }
-
         rb2D.linearVelocity = currentVelocity;
 
         if (horizontalInput > 0 && !facingRight)
@@ -82,7 +94,15 @@ public class Movement : MonoBehaviour
         animator.SetFloat("inAir", rb2D.linearVelocity.y);
     }
 
-
+    public void Jump()
+    {
+        if (canJump)
+        {
+            rb2D.AddForce(new Vector2(0, jumpForce));
+            Debug.Log("hi");
+            canJump = false;
+        }
+    }
 
     private void Flip()
     {

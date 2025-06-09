@@ -2,6 +2,7 @@ using System.Net.Sockets;
 using Unity.Burst.Intrinsics;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public enum Spells
 {
@@ -50,6 +51,12 @@ public class MagicAttackController : MonoBehaviour
 
     Animator animator;
 
+    private PlayerInput playerInput;
+
+    private InputAction inputAttack;
+    private InputAction inputMagicAttack;
+    private InputAction inputChangeSpell;
+
     public float manaPercentage
     {
         get
@@ -67,6 +74,24 @@ public class MagicAttackController : MonoBehaviour
         slots[0] = Spells.Empty;
         slots[1] = Spells.Empty;
 
+        playerInput = GetComponent<PlayerInput>();
+        inputAttack = playerInput.actions["Attack"];
+        inputMagicAttack = playerInput.actions["Magic attack"];
+        inputChangeSpell = playerInput.actions["Change Spell"];
+    }
+
+    private void OnEnable()
+    {
+        inputAttack.started += _ => BaseAttack();
+        inputMagicAttack.started += _ => MagicAttack();
+        inputChangeSpell.started += _ => Swap();
+    }
+
+    private void OnDisable()
+    {
+        inputAttack.started -= _ => BaseAttack();
+        inputMagicAttack.started -= _ => MagicAttack();
+        inputChangeSpell.started -= _ => Swap();
     }
 
     private void FixedUpdate()
@@ -75,93 +100,6 @@ public class MagicAttackController : MonoBehaviour
         if (timeToSwap > 0)
         {
             timeToSwap -= Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.I))
-        {
-            Swap();
-        }
-
-        if (Input.GetKey(KeyCode.J) && !Input.GetKey(KeyCode.W) && !setFire)
-            {           
-            {
-                waitShoot = 0.5f;
-            float timeSinceShoot = Time.time - lastShoot;
-
-            if (timeSinceShoot >= waitShoot)
-            {
-                animator.SetTrigger("baseAttack");
-                faceAttack.actualTime = 0;
-                lastShoot = Time.time;
-            }
-            }
-        }
-
-       
-            
-            if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.J))
-            {
-
-                {
-                if (slots[0] == Spells.Fire)
-            {
-                waitShoot = 0.2f;
-
-                float timeSinceShoot = Time.time - lastShoot;
-
-                if (magicMana[0] > 0 && !setFire && timeSinceShoot >= waitShoot)
-                {
-                    firePrefap.SetActive(true);
-                    setFire = true;
-                    lastShoot = Time.time;
-                }
-                else if (setFire && timeSinceShoot >= waitShoot)
-                {
-                    firePrefap.SetActive(false);
-                    setFire = false;
-                    lastShoot = Time.time;
-                }
-            }
-            if (slots[0] == Spells.Water && mana > 0)
-            {
-                speedMagic = 20f;
-                waitShoot = 1f;
-
-                float timeSinceShoot = Time.time - lastShoot;
-
-                if (timeSinceShoot >= waitShoot)
-                {
-                    animator.SetTrigger("iceAttack");
-                    SpawnMagic(waterPrefap, baseSpawner);
-                    lastShoot = Time.time;
-                    magicMana[1] -= 10;
-
-                    if (magicMana[1] < 0)
-                    {
-                        magicMana[1] = 0;
-                    }
-                }
-            }
-            if (slots[0] == Spells.Rock && mana > 0)
-            {
-                speedMagic = 0f;
-                waitShoot = 1f;
-
-                float timeSinceShoot = Time.time - lastShoot;
-
-                if (timeSinceShoot >= waitShoot)
-                {
-                    animator.SetTrigger("castRock");
-                    SpawnMagic(rockPrefap, upSpawner);
-                    lastShoot = Time.time;
-                    magicMana[2] -= 20;
-                    if (magicMana[2] < 0)
-                    {
-                        magicMana[2] = 0;
-                    }
-                }
-            }
-
-            }
         }
 
         if (setFire)
@@ -219,10 +157,89 @@ public class MagicAttackController : MonoBehaviour
             timeToSwap = 0.5f;
         }
     }
-
     public void DeactiveFire()
     {
         setFire = false;
+    }
+
+    private void BaseAttack()
+    {
+        if (!setFire)
+        {
+            waitShoot = 0.5f;
+            float timeSinceShoot = Time.time - lastShoot;
+
+            if (timeSinceShoot >= waitShoot)
+            {
+                animator.SetTrigger("baseAttack");
+                faceAttack.actualTime = 0;
+                lastShoot = Time.time;
+            }
+        }
+    }
+
+    private void MagicAttack()
+    {
+        if (slots[0] == Spells.Fire)
+        {
+            waitShoot = 0.2f;
+
+            float timeSinceShoot = Time.time - lastShoot;
+
+            if (magicMana[0] > 0 && !setFire && timeSinceShoot >= waitShoot)
+            {
+                firePrefap.SetActive(true);
+                setFire = true;
+                lastShoot = Time.time;
+            }
+            else if (setFire && timeSinceShoot >= waitShoot)
+            {
+                firePrefap.SetActive(false);
+                setFire = false;
+                lastShoot = Time.time;
+            }
+        }
+
+        if (slots[0] == Spells.Water && mana > 0)
+        {
+            speedMagic = 20f;
+            waitShoot = 1f;
+
+            float timeSinceShoot = Time.time - lastShoot;
+
+            if (timeSinceShoot >= waitShoot)
+            {
+                animator.SetTrigger("iceAttack");
+                SpawnMagic(waterPrefap, baseSpawner);
+                lastShoot = Time.time;
+                magicMana[1] -= 10;
+
+                if (magicMana[1] < 0)
+                {
+                    magicMana[1] = 0;
+                }
+            }
+        }
+
+        if (slots[0] == Spells.Rock && mana > 0)
+        {
+            speedMagic = 0f;
+            waitShoot = 1f;
+
+            float timeSinceShoot = Time.time - lastShoot;
+
+            if (timeSinceShoot >= waitShoot)
+            {
+                animator.SetTrigger("castRock");
+                SpawnMagic(rockPrefap, upSpawner);
+                lastShoot = Time.time;
+                magicMana[2] -= 20;
+                if (magicMana[2] < 0)
+                {
+                    magicMana[2] = 0;
+                }
+            }
+        }
     }
 
     private void SpawnMagic(GameObject attackPrefap, Transform spawnPoint)
