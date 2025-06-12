@@ -52,6 +52,7 @@ GameObject:
   - component: {fileID: 656926775076537260}
   - component: {fileID: 4197269635136866589}
   - component: {fileID: 6827381357048480852}
+  - component: {fileID: 4093069900691215946}
   m_Layer: 7
   m_Name: Patroller Enemy
   m_TagString: IceEnemy
@@ -218,6 +219,18 @@ MonoBehaviour:
           m_StringArgument: dead
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4093069900691215946}
+        m_TargetAssemblyTypeName: activateParticles, Assembly-CSharp
+        m_MethodName: StopParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: dead
+          m_BoolArgument: 0
+        m_CallState: 2
   Damage:
     m_PersistentCalls:
       m_Calls:
@@ -288,7 +301,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e13f46ea85bed194ebce07a5ad1a0e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magic: {fileID: 350418071711989240, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+  items:
+  - {fileID: 350418071711989240, guid: 1d4b31ee94d229f4cac50bf18b1f49c6, type: 3}
+  - {fileID: 5480800759445907824, guid: 694eaf505073895408b96a366356bc0f, type: 3}
 --- !u!114 &3180378984495184304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +319,7 @@ MonoBehaviour:
   burnDuration: 0
   tickInterval: 0.5
   damagePerTick: 2.5
+  isBurning: 0
 --- !u!114 &8237606870185599295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,6 +387,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 3392219426839795716}
   hitColor: {r: 0.0048007965, g: 0, b: 1, a: 1}
+--- !u!114 &4093069900691215946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7352659348669623050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397e5b5b2f891e1459e27b03772162f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7480604226484862202
 GameObject:
   m_ObjectHideFlags: 0

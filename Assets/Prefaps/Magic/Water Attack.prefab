@@ -74,7 +74,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96fec030ac02bcb438683c095199509e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 15
+  lowDamage: 10
+  riseDamage: 30
   waitToDestroy: 2
   slowDuration: 2
   icePlataform: {fileID: 3242344490633166539, guid: 4d29f61bfde087742be5315701ef47e6, type: 3}

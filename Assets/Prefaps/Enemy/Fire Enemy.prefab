@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 173059102292913115}
   - component: {fileID: 5560397279115436209}
   - component: {fileID: 7207378296695829640}
+  - component: {fileID: 238534442577568746}
   m_Layer: 7
   m_Name: Fire Enemy
   m_TagString: FireEnemy
@@ -272,6 +273,18 @@ MonoBehaviour:
           m_StringArgument: dead
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 238534442577568746}
+        m_TargetAssemblyTypeName: activateParticles, Assembly-CSharp
+        m_MethodName: StopParticles
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: dead
+          m_BoolArgument: 0
+        m_CallState: 2
   Damage:
     m_PersistentCalls:
       m_Calls:
@@ -289,7 +302,31 @@ MonoBehaviour:
         m_CallState: 2
   HealthChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7960099501735484100, guid: a3d7c3db8f2300743af743ed4b35261f, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5480800759445907824, guid: 694eaf505073895408b96a366356bc0f, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &218141869307740015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e13f46ea85bed194ebce07a5ad1a0e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magic: {fileID: 7960099501735484100, guid: a3d7c3db8f2300743af743ed4b35261f, type: 3}
+  items: []
 --- !u!114 &4299741662288546656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,6 +355,7 @@ MonoBehaviour:
   burnDuration: 4
   tickInterval: 0.5
   damagePerTick: 2.5
+  isBurning: 0
 --- !u!114 &8281246068820864281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,6 +467,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 4471360866499265021}
   hitColor: {r: 0, g: 0.07224822, b: 1, a: 1}
+--- !u!114 &238534442577568746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4928873563327398193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397e5b5b2f891e1459e27b03772162f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7750815163840547044
 PrefabInstance:
   m_ObjectHideFlags: 0

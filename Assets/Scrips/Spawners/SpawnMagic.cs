@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class SpawnMagic : MonoBehaviour
 {
-    [SerializeField] private GameObject magic;
+    [SerializeField] private GameObject[] items;
+    private int selectItem;
 
     public void Drop()
     {
-        Instantiate(magic, transform.position, transform.rotation); 
+        selectItem = Random.Range(0, items.Length);
+        Instantiate(items[selectItem], transform.position, transform.rotation); 
     }
 }

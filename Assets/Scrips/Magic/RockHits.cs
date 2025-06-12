@@ -5,7 +5,7 @@ public class RockHits : MonoBehaviour
 {
     [SerializeField] private float damage;
     [SerializeField] private float lowDamage;
-    [SerializeField] private float riseamage;
+    [SerializeField] private float riseDamage;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -18,19 +18,19 @@ public class RockHits : MonoBehaviour
         else if (collision.gameObject.CompareTag("FireEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
+            healthController.takeDamage(riseDamage);
 
         }
         else if (collision.gameObject.CompareTag("IceEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage);
+            healthController.takeDamage(lowDamage);
 
         }
         else if (collision.gameObject.CompareTag("RockEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
-            healthController.takeDamage(damage - lowDamage);
+            healthController.takeDamage(damage);
         }
 
         if (collision.gameObject)
