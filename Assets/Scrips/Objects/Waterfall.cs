@@ -14,6 +14,7 @@ public class Waterfall : MonoBehaviour
 
     private Collider2D col;//referencia a el colider
     private SpriteRenderer spriteRenderer;//referencia a el sprite renderer
+    private Color originalColor;
 
     private string newTag = "Floor";//cambia el tag
 
@@ -34,6 +35,8 @@ public class Waterfall : MonoBehaviour
         {
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
+
+        originalColor = spriteRenderer.color;
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -138,7 +141,7 @@ public class Waterfall : MonoBehaviour
 
         if (haveRender)
         {
-            spriteRenderer.color = Color.blue; //color original
+            spriteRenderer.color = originalColor; //color original
         }
 
         ice = false;

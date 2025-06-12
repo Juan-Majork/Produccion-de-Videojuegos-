@@ -6,6 +6,7 @@ public class SetOnFireAnimation : MonoBehaviour
     private ParticleSystem particulas;
 
     [SerializeField] private bool activeAnimation;
+    [SerializeField] private bool activeParticulas;
 
     private void Awake()
     {
@@ -13,7 +14,11 @@ public class SetOnFireAnimation : MonoBehaviour
         {
             animator = GetComponentInChildren<Animator>();
         }
-        particulas = GetComponentInChildren<ParticleSystem>();
+
+        if (activeParticulas)
+        {
+            particulas = GetComponentInChildren<ParticleSystem>();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -24,7 +29,11 @@ public class SetOnFireAnimation : MonoBehaviour
             {
                 animator.SetTrigger("setOnFire");
             }
-            particulas.Play();
+
+            if (activeParticulas)
+            {
+                particulas.Play();
+            }
         }
     }
 
@@ -34,6 +43,10 @@ public class SetOnFireAnimation : MonoBehaviour
         {
             animator.SetTrigger("destroy");
         }
-        particulas.Stop();
+
+        if (activeParticulas)
+        {
+            particulas.Stop();
+        }
     }
 }

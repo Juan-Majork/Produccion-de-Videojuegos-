@@ -241,6 +241,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7169978473071823892, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
     - {fileID: 4779208564875589684, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+    - {fileID: 2715216379123791044, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
     m_RemovedGameObjects:
     - {fileID: 9171731687652137073, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
     m_AddedGameObjects:
@@ -284,6 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeAnimation: 1
+  activeParticulas: 1
 --- !u!114 &6062341685998259402
 MonoBehaviour:
   m_ObjectHideFlags: 0

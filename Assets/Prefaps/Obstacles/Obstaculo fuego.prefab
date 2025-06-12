@@ -154,6 +154,7 @@ MonoBehaviour:
   health: 20
   maxHealth: 20
   isPlayer: 0
+  isEnemy: 0
   Death:
     m_PersistentCalls:
       m_Calls:
@@ -215,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeAnimation: 0
+  activeParticulas: 1
 --- !u!1001 &7117423932009290105
 PrefabInstance:
   m_ObjectHideFlags: 0
