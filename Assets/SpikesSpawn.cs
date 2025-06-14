@@ -11,7 +11,7 @@ public class SpikesSpawn : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!hasSpawned && collision.gameObject.CompareTag("Player"))
+        if (!hasSpawned && collision.gameObject.CompareTag("hit"))
         {
 
             foreach (GameObject spawnPoint in roofSpawns) 
