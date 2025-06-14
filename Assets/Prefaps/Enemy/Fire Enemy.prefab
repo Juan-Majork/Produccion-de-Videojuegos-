@@ -194,7 +194,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0020577312, y: -0.19376326}
+  m_Offset: {x: 0.0020577312, y: -0.17585668}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -204,7 +204,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.8510895, y: 0.6543238}
+  m_Size: {x: 0.8510895, y: 0.6185107}
   m_EdgeRadius: 0
 --- !u!114 &5870302902394358517
 MonoBehaviour:
@@ -339,7 +339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e13f46ea85bed194ebce07a5ad1a0e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - {fileID: 7960099501735484100, guid: a3d7c3db8f2300743af743ed4b35261f, type: 3}
+  - {fileID: 5480800759445907824, guid: 694eaf505073895408b96a366356bc0f, type: 3}
 --- !u!114 &4299741662288546656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,6 +357,7 @@ MonoBehaviour:
   burnDuration: 4
   tickInterval: 0.5
   damagePerTick: 2.5
+  timer: 0
   isBurning: 0
 --- !u!114 &8281246068820864281
 MonoBehaviour:
@@ -404,6 +407,8 @@ MonoBehaviour:
   moveX: 7
   moveY: 14
   numOfJumps: 3
+  isCold: 0
+  duration: 0
 --- !u!114 &374518150469695377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397e5b5b2f891e1459e27b03772162f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particle: {fileID: 5206292539633564671}
 --- !u!1001 &7750815163840547044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -571,5 +577,10 @@ PrefabInstance:
 --- !u!4 &2822441670128873193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5529082158563976717, guid: f3b4c2de6f608f7429411b8b906edc1a, type: 3}
+  m_PrefabInstance: {fileID: 7750815163840547044}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5206292539633564671 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2580591347697365787, guid: f3b4c2de6f608f7429411b8b906edc1a, type: 3}
   m_PrefabInstance: {fileID: 7750815163840547044}
   m_PrefabAsset: {fileID: 0}

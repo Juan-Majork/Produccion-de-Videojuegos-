@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 28ba2fc3b1fe6eb40a624b249abca267
+guid: d4c8f274e74600444bbb935391a54a0d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8432600064889391010
-    second: Arbol_quemado_1_0
+      213: -1947080570417003511
+    second: Cascada_Congelada_1_0
   - first:
-      213: 4306917759793380628
-    second: Arbol_quemado_1_1
+      213: 2701599375930993995
+    second: Cascada_Congelada_1_1
   - first:
-      213: 996999450825649966
-    second: Arbol_quemado_1_2
+      213: 4115428932617493632
+    second: Cascada_Congelada_1_2
   - first:
-      213: 6428627337562339865
-    second: Arbol_quemado_1_3
+      213: -426010094748388476
+    second: Cascada_Congelada_1_3
+  - first:
+      213: -4485887548539959062
+    second: Cascada_Congelada_1_4
+  - first:
+      213: 4063537330639408115
+    second: Cascada_Congelada_1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,30 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arbol_quemado_1_0
+      name: Cascada_Congelada_1_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 5
-        width: 48
-        height: 84
+        x: 7
+        y: 6
+        width: 20
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a70ba8c41d960570800000000000000
-      internalID: 8432600064889391010
+      spriteID: 904ca3b89849af4e0800000000000000
+      internalID: -1947080570417003511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arbol_quemado_1_1
+      name: Cascada_Congelada_1_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 5
-        width: 48
-        height: 84
+        x: 41
+        y: 6
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41d3e4d22ee35cb30800000000000000
-      internalID: 4306917759793380628
+      spriteID: b4da8c791520e7520800000000000000
+      internalID: 2701599375930993995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arbol_quemado_1_2
+      name: Cascada_Congelada_1_2
       rect:
         serializedVersion: 2
-        x: 175
-        y: 5
-        width: 50
-        height: 84
+        x: 75
+        y: 6
+        width: 20
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2fe8bbd7bd06dd00800000000000000
-      internalID: 996999450825649966
+      spriteID: 08cd70b4fc0fc1930800000000000000
+      internalID: 4115428932617493632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arbol_quemado_1_3
+      name: Cascada_Congelada_1_3
       rect:
         serializedVersion: 2
-        x: 255
-        y: 5
-        width: 50
-        height: 84
+        x: 109
+        y: 6
+        width: 20
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +196,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 91ab4c0d082173950800000000000000
-      internalID: 6428627337562339865
+      spriteID: 483bacf6312861af0800000000000000
+      internalID: -426010094748388476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cascada_Congelada_1_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 6
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae88de6ba0deeb1c0800000000000000
+      internalID: -4485887548539959062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cascada_Congelada_1_5
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 6
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb0d443ca5946830800000000000000
+      internalID: 4063537330639408115
       vertices: []
       indices: 
       edges: []
@@ -213,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9f0330af515fcc64f8c7ef15f20ca5d3
+    spriteID: a75582a317feef240b03f3fad77ffbc6
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Arbol_quemado_1_0: 8432600064889391010
-      Arbol_quemado_1_1: 4306917759793380628
-      Arbol_quemado_1_2: 996999450825649966
-      Arbol_quemado_1_3: 6428627337562339865
+      Cascada_Congelada_1_0: -1947080570417003511
+      Cascada_Congelada_1_1: 2701599375930993995
+      Cascada_Congelada_1_2: 4115428932617493632
+      Cascada_Congelada_1_3: -426010094748388476
+      Cascada_Congelada_1_4: -4485887548539959062
+      Cascada_Congelada_1_5: 4063537330639408115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

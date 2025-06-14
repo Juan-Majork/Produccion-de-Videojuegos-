@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 37f615a6bc5899a4dbb5db75b27e9179
+guid: b2049093437cec949b64045f29159897
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -789403778217370165
-    second: cascada_movimiento_1_0
+      213: -1624498460584912754
+    second: Cascada_congelada_3_0
   - first:
-      213: 2431537736166603230
-    second: cascada_movimiento_1_1
+      213: -5853557177415182351
+    second: Cascada_congelada_3_1
   - first:
-      213: 6723531583363239840
-    second: cascada_movimiento_1_2
+      213: -1147356647394061340
+    second: Cascada_congelada_3_2
   - first:
-      213: -2082998862698981403
-    second: cascada_movimiento_1_3
+      213: 8486107702278670173
+    second: Cascada_congelada_3_3
+  - first:
+      213: 3548561322885524387
+    second: Cascada_congelada_3_4
+  - first:
+      213: 833964247491687190
+    second: Cascada_congelada_3_5
+  - first:
+      213: 1782220629790934178
+    second: Cascada_congelada_3_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cascada_movimiento_1_0
+      name: Cascada_congelada_3_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 7
-        width: 18
-        height: 22
+        x: 7
+        y: 6
+        width: 20
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bcd900732797b05f0800000000000000
-      internalID: -789403778217370165
+      spriteID: e88daaec14f9479e0800000000000000
+      internalID: -1624498460584912754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cascada_movimiento_1_1
+      name: Cascada_congelada_3_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 7
-        width: 17
-        height: 22
+        x: 41
+        y: 6
+        width: 19
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed9fa2e20be8eb120800000000000000
-      internalID: 2431537736166603230
+      spriteID: 1f7dab7b2ccf3cea0800000000000000
+      internalID: -5853557177415182351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cascada_movimiento_1_2
+      name: Cascada_congelada_3_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 7
-        width: 18
-        height: 22
+        x: 75
+        y: 6
+        width: 20
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0af4c7e2a58ce4d50800000000000000
-      internalID: 6723531583363239840
+      spriteID: 4e3d4694535c310f0800000000000000
+      internalID: -1147356647394061340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cascada_movimiento_1_3
+      name: Cascada_congelada_3_3
       rect:
         serializedVersion: 2
-        x: 110
-        y: 7
-        width: 17
-        height: 22
+        x: 109
+        y: 6
+        width: 19
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +199,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e7d8411293b713e0800000000000000
-      internalID: -2082998862698981403
+      spriteID: d57c6007ef5b4c570800000000000000
+      internalID: 8486107702278670173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cascada_congelada_3_4
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 6
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab284ad8b50f3130800000000000000
+      internalID: 3548561322885524387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cascada_congelada_3_5
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 6
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6133e178016d29b00800000000000000
+      internalID: 833964247491687190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cascada_congelada_3_6
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 6
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4cf0e5838bbb810800000000000000
+      internalID: 1782220629790934178
       vertices: []
       indices: 
       edges: []
@@ -200,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae9f0e7c3f4476a43a3dba9ffb33bc4b
+    spriteID: ba3d636dac93ba24e8c6856e5aed0ff9
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cascada_movimiento_1_0: -789403778217370165
-      cascada_movimiento_1_1: 2431537736166603230
-      cascada_movimiento_1_2: 6723531583363239840
-      cascada_movimiento_1_3: -2082998862698981403
+      Cascada_congelada_3_0: -1624498460584912754
+      Cascada_congelada_3_1: -5853557177415182351
+      Cascada_congelada_3_2: -1147356647394061340
+      Cascada_congelada_3_3: 8486107702278670173
+      Cascada_congelada_3_4: 3548561322885524387
+      Cascada_congelada_3_5: 833964247491687190
+      Cascada_congelada_3_6: 1782220629790934178
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

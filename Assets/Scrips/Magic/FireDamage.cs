@@ -6,6 +6,8 @@ public class FireDamage : MonoBehaviour
 {
     [SerializeField] private float requiredStayTime;//tiempo minimo que tiene que estar para aplicar burn
     [SerializeField] private GameObject player;
+    [SerializeField] private float damage;
+    private float timeInFire = 0f;
 
     private class BurnTracker
     {
@@ -25,32 +27,15 @@ public class FireDamage : MonoBehaviour
 
     private void Update()
     {
+
         for (int i = tracked.Count - 1; i >= 0; i--)//recorre cada objeto dentro de el hechizo
         {
             BurnTracker tracker = tracked[i];
 
             MovePlatform move = tracker.collider.GetComponent<MovePlatform>();         
+            HealthController healthController = tracker.collider.GetComponent<HealthController>();
             if (move != null)
             {
-                if (move.CompareTag("IceEnemy"))
-                {
-                    Rigidbody2D rb = tracker.collider.GetComponent<Rigidbody2D>();
-                    
-                    if (player.transform.position.x > tracker.collider.transform.position.x) 
-                    {
-                        Debug.Log("entra 2");
-                        rb.AddForceX(-6.5f, ForceMode2D.Impulse);
-                        
-                    }
-
-                    if (player.transform.position.x < tracker.collider.transform.position.x)
-                    {
-                        Debug.Log("entra 3");
-                        rb.AddForceX(6.5f, ForceMode2D.Impulse);
-
-                    }
-
-                }
                 move.ApplySlow(0.5f, 0.2f);
             }
 
@@ -63,6 +48,7 @@ public class FireDamage : MonoBehaviour
                 BurnDamage burn = tracker.collider.GetComponent<BurnDamage>();
                 if (burn != null)
                 {
+                    burn.timer = 0;
                     burn.ApplyBurn();//aplica el burn
                 }
 
@@ -70,7 +56,25 @@ public class FireDamage : MonoBehaviour
 
             }
 
-           
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+       
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            HealthController healthController = collision.gameObject.GetComponent<HealthController>();
+            timeInFire += Time.deltaTime;
+
+            Debug.Log("no");
+
+            if (timeInFire >= 1)
+            {
+                healthController.takeDamage(damage);
+                timeInFire = 0f;
+            }
         }
     }
 
@@ -100,14 +104,6 @@ public class FireDamage : MonoBehaviour
                 MovePlatform move = collision.GetComponent<MovePlatform>();
                 if (move != null)
                 {
-                    if (collision.gameObject.CompareTag("IceEnemy"))
-                    {
-                        move.ApplyPush(0.4f);
-                        tracked.RemoveAt(i);
-
-                        return;
-                    }
-
                     move.ApplySlow(1f, 0f); // restaurar velocidad al salir del fuego
                 }
                 tracked.RemoveAt(i);

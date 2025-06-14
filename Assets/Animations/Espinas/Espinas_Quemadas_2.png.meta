@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: 28ba2fc3b1fe6eb40a624b249abca267
+guid: ebceb298df8899446b8e51c8722a87c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8432600064889391010
-    second: Arbol_quemado_1_0
+      213: 7082391627595173742
+    second: Espinas_Quemadas_2_0
   - first:
-      213: 4306917759793380628
-    second: Arbol_quemado_1_1
+      213: 7966071914574136225
+    second: Espinas_Quemadas_2_1
   - first:
-      213: 996999450825649966
-    second: Arbol_quemado_1_2
+      213: -2821606184889561016
+    second: Espinas_Quemadas_2_2
   - first:
-      213: 6428627337562339865
-    second: Arbol_quemado_1_3
+      213: 7900305624688407375
+    second: Espinas_Quemadas_2_3
+  - first:
+      213: -6118816239236055152
+    second: Espinas_Quemadas_2_4
+  - first:
+      213: 2803774647106733918
+    second: Espinas_Quemadas_2_5
+  - first:
+      213: 2906346146212589771
+    second: Espinas_Quemadas_2_6
+  - first:
+      213: -2924775219675818392
+    second: Espinas_Quemadas_2_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,106 +117,137 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arbol_quemado_1_0
+      name: Espinas_Quemadas_2_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 5
-        width: 48
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 10
+        width: 34
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a70ba8c41d960570800000000000000
-      internalID: 8432600064889391010
+      spriteID: e6fc20349a5b94260800000000000000
+      internalID: 7082391627595173742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arbol_quemado_1_1
+      name: Espinas_Quemadas_2_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 5
-        width: 48
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 34
+        y: 10
+        width: 34
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41d3e4d22ee35cb30800000000000000
-      internalID: 4306917759793380628
+      spriteID: 1a34863433c2d8e60800000000000000
+      internalID: 7966071914574136225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arbol_quemado_1_2
+      name: Espinas_Quemadas_2_2
       rect:
         serializedVersion: 2
-        x: 175
-        y: 5
-        width: 50
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 68
+        y: 10
+        width: 34
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2fe8bbd7bd06dd00800000000000000
-      internalID: 996999450825649966
+      spriteID: 840dc95df14a7d8d0800000000000000
+      internalID: -2821606184889561016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arbol_quemado_1_3
+      name: Espinas_Quemadas_2_3
       rect:
         serializedVersion: 2
-        x: 255
-        y: 5
-        width: 50
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 102
+        y: 10
+        width: 34
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 91ab4c0d082173950800000000000000
-      internalID: 6428627337562339865
+      spriteID: f43b298ab1683ad60800000000000000
+      internalID: 7900305624688407375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espinas_Quemadas_2_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 10
+        width: 34
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f717e9c09951ba0800000000000000
+      internalID: -6118816239236055152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espinas_Quemadas_2_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 10
+        width: 34
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e570b0fbf2209e620800000000000000
+      internalID: 2803774647106733918
       vertices: []
       indices: 
       edges: []
@@ -213,7 +256,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9f0330af515fcc64f8c7ef15f20ca5d3
+    spriteID: ff1c0982ba609d845ada4f0eef293e0d
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +266,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Arbol_quemado_1_0: 8432600064889391010
-      Arbol_quemado_1_1: 4306917759793380628
-      Arbol_quemado_1_2: 996999450825649966
-      Arbol_quemado_1_3: 6428627337562339865
+      Espinas_Quemadas_2_0: 7082391627595173742
+      Espinas_Quemadas_2_1: 7966071914574136225
+      Espinas_Quemadas_2_2: -2821606184889561016
+      Espinas_Quemadas_2_3: 7900305624688407375
+      Espinas_Quemadas_2_4: -6118816239236055152
+      Espinas_Quemadas_2_5: 2803774647106733918
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

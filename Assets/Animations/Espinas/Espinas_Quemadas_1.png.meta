@@ -1,22 +1,31 @@
 fileFormatVersion: 2
-guid: 42e82835e7267e1468532a60e51db0d6
+guid: db5b92c0eec46c5468b54eacbb7991bf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7322057417451290406
-    second: madera_quemada_2_0
+      213: 1026314783949268939
+    second: Espinas_Quemadas_1_0
   - first:
-      213: 1494559249725690479
-    second: madera_quemada_2_1
+      213: 3550626234643660790
+    second: Espinas_Quemadas_1_1
   - first:
-      213: 2742564201000836678
-    second: madera_quemada_2_2
+      213: -9161205849601245576
+    second: Espinas_Quemadas_1_2
   - first:
-      213: 7615583606977674046
-    second: madera_quemada_2_3
+      213: 256415603493365845
+    second: Espinas_Quemadas_1_3
   - first:
-      213: -2643938612183152128
-    second: madera_quemada_2_4
+      213: 1841445673513986432
+    second: Espinas_Quemadas_1_4
+  - first:
+      213: -4881805930167315944
+    second: Espinas_Quemadas_1_5
+  - first:
+      213: 1517020554200878865
+    second: Espinas_Quemadas_1_6
+  - first:
+      213: -725546311766589649
+    second: Espinas_Quemadas_1_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: madera_quemada_2_0
+      name: Espinas_Quemadas_1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
-        width: 33
-        height: 8
+        y: 3
+        width: 34
+        height: 43
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62fb2306d6c2d9560800000000000000
-      internalID: 7322057417451290406
+      spriteID: bc7270dbbd33e3e00800000000000000
+      internalID: 1026314783949268939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: madera_quemada_2_1
+      name: Espinas_Quemadas_1_1
       rect:
         serializedVersion: 2
         x: 34
-        y: 8
-        width: 33
-        height: 9
+        y: 3
+        width: 34
+        height: 43
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f629ca718bdbdb410800000000000000
-      internalID: 1494559249725690479
+      spriteID: 6ff3e169fbb564130800000000000000
+      internalID: 3550626234643660790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: madera_quemada_2_2
+      name: Espinas_Quemadas_1_2
       rect:
         serializedVersion: 2
         x: 68
-        y: 8
-        width: 33
-        height: 11
+        y: 3
+        width: 34
+        height: 43
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64e9b5e2c9b8f0620800000000000000
-      internalID: 2742564201000836678
+      spriteID: 87e794461dbdcd080800000000000000
+      internalID: -9161205849601245576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: madera_quemada_2_3
+      name: Espinas_Quemadas_1_3
       rect:
         serializedVersion: 2
         x: 102
-        y: 8
-        width: 33
-        height: 18
+        y: 3
+        width: 34
+        height: 43
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3b313301fcffa960800000000000000
-      internalID: 7615583606977674046
+      spriteID: 558e61102a8fe8300800000000000000
+      internalID: 256415603493365845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: madera_quemada_2_4
+      name: Espinas_Quemadas_1_4
       rect:
         serializedVersion: 2
-        x: 137
-        y: 8
-        width: 30
-        height: 20
+        x: 136
+        y: 3
+        width: 34
+        height: 43
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,30 +224,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00a42e427d7de4bd0800000000000000
-      internalID: -2643938612183152128
+      spriteID: 0892bfa65112e8910800000000000000
+      internalID: 1841445673513986432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: madera_quemada_2_5
+      name: Espinas_Quemadas_1_5
       rect:
         serializedVersion: 2
-        x: 171
-        y: 8
-        width: 30
-        height: 24
+        x: 170
+        y: 3
+        width: 34
+        height: 43
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4f8b8aaa5ef721842bda86d4b88a3ee2
-      internalID: 667557048
+      spriteID: 8125bf51f57504cb0800000000000000
+      internalID: -4881805930167315944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espinas_Quemadas_1_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 3
+        width: 34
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f0c12182a8d0510800000000000000
+      internalID: 1517020554200878865
       vertices: []
       indices: 
       edges: []
@@ -247,7 +278,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9f44bb9db1dbe834bb480b30c33583d8
+    spriteID: 0d54963cc21a3b141b218bae512d849e
     internalID: 0
     vertices: []
     indices: 
@@ -257,12 +288,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      madera_quemada_2_0: 7322057417451290406
-      madera_quemada_2_1: 1494559249725690479
-      madera_quemada_2_2: 2742564201000836678
-      madera_quemada_2_3: 7615583606977674046
-      madera_quemada_2_4: -2643938612183152128
-      madera_quemada_2_5: 667557048
+      Espinas_Quemadas_1_0: 1026314783949268939
+      Espinas_Quemadas_1_1: 3550626234643660790
+      Espinas_Quemadas_1_2: -9161205849601245576
+      Espinas_Quemadas_1_3: 256415603493365845
+      Espinas_Quemadas_1_4: 1841445673513986432
+      Espinas_Quemadas_1_5: -4881805930167315944
+      Espinas_Quemadas_1_6: 1517020554200878865
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

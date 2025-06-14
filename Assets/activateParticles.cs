@@ -3,12 +3,11 @@ using UnityEngine;
 public class activateParticles : MonoBehaviour
 {
     private BurnDamage burnDamage;
-    private ParticleSystem particle;
+    [SerializeField] private ParticleSystem particle;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        particle = GetComponentInChildren<ParticleSystem>();
         burnDamage = GetComponent<BurnDamage>();
     }
 

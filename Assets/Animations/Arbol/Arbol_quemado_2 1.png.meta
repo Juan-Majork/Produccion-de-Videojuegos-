@@ -1,0 +1,453 @@
+fileFormatVersion: 2
+guid: d6c9c7866d88ba04ca2ea1411b135163
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6224763056078119789
+    second: Arbol_quemado_2 1_0
+  - first:
+      213: -6548738516890464793
+    second: Arbol_quemado_2 1_1
+  - first:
+      213: -8289683434649217658
+    second: Arbol_quemado_2 1_2
+  - first:
+      213: -8761770988298914965
+    second: Arbol_quemado_2 1_3
+  - first:
+      213: -5809634601071894055
+    second: Arbol_quemado_2 1_4
+  - first:
+      213: 5276099786289320783
+    second: Arbol_quemado_2 1_5
+  - first:
+      213: -5383418294167468302
+    second: Arbol_quemado_2 1_6
+  - first:
+      213: 1391779187811113792
+    second: Arbol_quemado_2 1_7
+  - first:
+      213: -8791295428831916337
+    second: Arbol_quemado_2 1_8
+  - first:
+      213: -6315158245164407258
+    second: Arbol_quemado_2 1_9
+  - first:
+      213: 854448064873588926
+    second: Arbol_quemado_2 1_10
+  - first:
+      213: 4455121399889309370
+    second: Arbol_quemado_2 1_11
+  - first:
+      213: 6552896504026929024
+    second: Arbol_quemado_2 1_12
+  - first:
+      213: -1625073840390687104
+    second: Arbol_quemado_2 1_13
+  - first:
+      213: 5029217736370435202
+    second: Arbol_quemado_2 1_14
+  - first:
+      213: -4351210042914713941
+    second: Arbol_quemado_2 1_15
+  - first:
+      213: 8078990423328935293
+    second: Arbol_quemado_2 1_16
+  - first:
+      213: 3098372641463582353
+    second: Arbol_quemado_2 1_17
+  - first:
+      213: 2182702040702388741
+    second: Arbol_quemado_2 1_18
+  - first:
+      213: 8427797891670619708
+    second: Arbol_quemado_2 1_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 5
+        width: 49
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63e280f40dc26650800000000000000
+      internalID: 6224763056078119789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 5
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed43ddf3053e15a0800000000000000
+      internalID: -6548738516890464793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 5
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6851b4936d025fc80800000000000000
+      internalID: -8289683434649217658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 5
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b63be1f35bfe76680800000000000000
+      internalID: -8761770988298914965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 5
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1aa407c18006fa0800000000000000
+      internalID: -5809634601071894055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 5
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f431a493dc8783940800000000000000
+      internalID: 5276099786289320783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_6
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 4
+        width: 52
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f60fc285914a45b0800000000000000
+      internalID: -5383418294167468302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_7
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 4
+        width: 71
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b534f1cc7905310800000000000000
+      internalID: 1391779187811113792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_8
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 4
+        width: 74
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce45f0c26b0ff580800000000000000
+      internalID: -8791295428831916337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_9
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 4
+        width: 42
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626a890090d0c58a0800000000000000
+      internalID: -6315158245164407258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_10
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 4
+        width: 39
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb86fc9ecfb9bdb00800000000000000
+      internalID: 854448064873588926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arbol_quemado_2 1_11
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 4
+        width: 40
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abea4a71f45c3dd30800000000000000
+      internalID: 4455121399889309370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4ed428e7ab7160c4c9871b9fcade66a6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Arbol_quemado_2 1_0: 6224763056078119789
+      Arbol_quemado_2 1_1: -6548738516890464793
+      Arbol_quemado_2 1_10: 854448064873588926
+      Arbol_quemado_2 1_11: 4455121399889309370
+      Arbol_quemado_2 1_2: -8289683434649217658
+      Arbol_quemado_2 1_3: -8761770988298914965
+      Arbol_quemado_2 1_4: -5809634601071894055
+      Arbol_quemado_2 1_5: 5276099786289320783
+      Arbol_quemado_2 1_6: -5383418294167468302
+      Arbol_quemado_2 1_7: 1391779187811113792
+      Arbol_quemado_2 1_8: -8791295428831916337
+      Arbol_quemado_2 1_9: -6315158245164407258
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

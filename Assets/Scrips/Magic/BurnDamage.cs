@@ -6,7 +6,7 @@ public class BurnDamage : MonoBehaviour
     [SerializeField] private float tickInterval = 1;//tiempo entre cada tick de dano
     [SerializeField] private float damagePerTick;//dano por tick
 
-    private float timer;//timer de el dano
+    public float timer;//timer de el dano
     private float burnTimeLeft;//tiempo restante de el burn
     public bool isBurning = false;//si el objeto esta quemandose
 

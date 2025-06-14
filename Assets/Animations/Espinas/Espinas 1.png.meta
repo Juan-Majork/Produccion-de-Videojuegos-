@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 708a938b18a73f640a5f520bd3307621
+guid: 6a3ebf822339a80469abc7eccd073154
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -114070602320551126
-    second: madera_quemada_1_0
+      213: 1323928559899761343
+    second: Espinas 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: madera_quemada_1_0
+      name: Espinas 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 8
-        width: 33
-        height: 8
+        y: 11
+        width: 34
+        height: 9
       alignment: 9
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a236e5d346dba6ef0800000000000000
-      internalID: -114070602320551126
+      spriteID: fbad1d0c20a8f5210800000000000000
+      internalID: 1323928559899761343
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 9182aec298695414f9ba62f5e08cd9d0
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      madera_quemada_1_0: -114070602320551126
+      Espinas 1_0: 1323928559899761343
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -23,9 +23,8 @@ public class FireEnemyBehavior : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
 
-    //private bool isSlowed = false;
-    //private float slowTimer = 0f;
-    //private EnemyKnockback enemyKnockback;
+    public bool isCold = false;
+    public float duration = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,6 +37,21 @@ public class FireEnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isCold)
+        {
+            duration += Time.deltaTime;
+            Debug.Log(duration.ToString());
+
+            if (duration > 4)
+            {
+                isCold = false;
+                duration = 0;
+                animator.SetTrigger("hitGround");
+            }
+        }
+
+        if (isCold) return;
+
         actualTime += Time.deltaTime;
         animator.SetFloat("inAir", rb.linearVelocity.y);
 
@@ -89,6 +103,7 @@ public class FireEnemyBehavior : MonoBehaviour
             {
                 if (contact.normal.y > 0.5f) // El contacto desde arriba
                 {
+
                     if (actualJump >= numOfJumps)
                     {
                         actualJump = 0;

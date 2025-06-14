@@ -35,6 +35,9 @@ public class IceAttack : MonoBehaviour
         if (collision.gameObject.CompareTag("FireEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
+            FireEnemyBehavior fireEnemy = collision.gameObject.GetComponent<FireEnemyBehavior>();
+            fireEnemy.duration = 0;
+            fireEnemy.isCold = true;
             healthController.takeDamage(lowDamage);
             //Destroy(gameObject);
         }
@@ -48,6 +51,7 @@ public class IceAttack : MonoBehaviour
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             EnemyRangedAttack rangeEnemy = collision.gameObject.GetComponent<EnemyRangedAttack>();
+            rangeEnemy.duration = 0;
             rangeEnemy.isCold = true;
             healthController.takeDamage(riseDamage);
             //Destroy(gameObject);
@@ -59,13 +63,7 @@ public class IceAttack : MonoBehaviour
             movement.ApplySlow  (0.5f, slowDuration); // Reduce velocidad a la mitad durante 2 segundos
         }
 
-        if (collision.GetComponent<MovePlatform>() != null)
-        {
-            MovePlatform platform = collision.GetComponent<MovePlatform>();
-            platform.ApplyIce(1f); // Reduce velocidad a la mitad durante 2 segundos
-        }
-
-        if(!hasCreatedPlataform && collision.gameObject.layer == LayerMask.NameToLayer("WaterFallLayer"))
+        if (!hasCreatedPlataform && collision.gameObject.layer == LayerMask.NameToLayer("WaterFallLayer"))
         {
             Vector3 spawnPosition = transform.position;
             spawnPosition.z = 0f;
@@ -78,6 +76,11 @@ public class IceAttack : MonoBehaviour
 
 
             hasCreatedPlataform = true;
+        }
+
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Water"))
+        {
+            Destroy(gameObject);
         }
     }
 }

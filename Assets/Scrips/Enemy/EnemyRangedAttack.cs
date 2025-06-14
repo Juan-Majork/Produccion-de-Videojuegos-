@@ -18,14 +18,13 @@ public class EnemyRangedAttack : MonoBehaviour
     [SerializeField] private float shotVelocity;
 
     public bool isCold = false;
-    private float duration = 0;
+    public float duration = 0;
 
 
     private void Update()
     {
         if (isCold)
         {
-            
             duration += Time.deltaTime;
             Debug.Log(duration.ToString());
 

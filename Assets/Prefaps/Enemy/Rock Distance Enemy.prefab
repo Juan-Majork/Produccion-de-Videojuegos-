@@ -210,7 +210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_Size.y
-      value: 0.82933545
+      value: 0.8098683
       objectReference: {fileID: 0}
     - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_Offset.x
@@ -218,7 +218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_Offset.y
-      value: -0.010939062
+      value: -0.0012054741
       objectReference: {fileID: 0}
     - target: {fileID: 8985130564616751496, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -242,6 +242,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: -8640375669707187823}
   m_SourcePrefab: {fileID: 100100000, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+--- !u!198 &1353347887564282686 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5706056960931498290, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
+  m_PrefabInstance: {fileID: 6766643224392815116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4158053428324123137 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7229312838549245965, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
@@ -285,6 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397e5b5b2f891e1459e27b03772162f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particle: {fileID: 1353347887564282686}
 --- !u!114 &5888762865366670597 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 891401053513043721, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
