@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.066037595
       objectReference: {fileID: 0}
+    - target: {fileID: 6827381357048480852, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+      propertyPath: actualColor.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7352659348669623050, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_Name
       value: Ice Enemy Patroller

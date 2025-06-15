@@ -36,7 +36,7 @@ public class Waterfall : MonoBehaviour
             spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        originalColor = spriteRenderer.color;
+        //originalColor = spriteRenderer.color;
     }
 
     private void OnTriggerStay2D(Collider2D other)

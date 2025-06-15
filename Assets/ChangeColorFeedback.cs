@@ -6,11 +6,19 @@ public class ChangeColorFeedback : MonoBehaviour
     private SpriteFlash flash;
 
     [SerializeField] Color hitColor;
-    Color actualColor;
+    [SerializeField] Color actualColor;
 
     private void Awake()
     {
         flash = GetComponent<SpriteFlash>();
+    }
+
+    private void Update()
+    {
+        if (flash.CountOfFlashes >= 3)
+        {
+            spriteRenderer.color = actualColor;
+        }
     }
 
     public void DamageFeedback()

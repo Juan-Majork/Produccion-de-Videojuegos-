@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 891401053513043721, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: items.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 891401053513043721, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: 'items.Array.data[0]'
@@ -266,6 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 8241719826673976100}
   hitColor: {r: 0, g: 0.1141336, b: 1, a: 1}
+  actualColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &6525509425550094846
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -341,7 +341,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - {fileID: 7960099501735484100, guid: a3d7c3db8f2300743af743ed4b35261f, type: 3}
-  - {fileID: 5480800759445907824, guid: 694eaf505073895408b96a366356bc0f, type: 3}
 --- !u!114 &4299741662288546656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,6 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 4471360866499265021}
   hitColor: {r: 0, g: 0.07224822, b: 1, a: 1}
+  actualColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &238534442577568746
 MonoBehaviour:
   m_ObjectHideFlags: 0

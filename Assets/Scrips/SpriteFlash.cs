@@ -5,6 +5,9 @@ using UnityEngine;
 public class SpriteFlash : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
+    private int countOfFlashes;
+
+    public int CountOfFlashes => countOfFlashes;
 
     private void Awake()
     {
@@ -15,12 +18,14 @@ public class SpriteFlash : MonoBehaviour
     {
         Color startColor = spriteRenderer.color;
         float elapseFlashTime = 0;
-        float elapseFlashPercentage = 0;    
+        float elapseFlashPercentage = 0;
+        countOfFlashes = 0;
 
         while (elapseFlashTime < flashDuration)
         {
             elapseFlashTime += Time.deltaTime;
             elapseFlashPercentage = elapseFlashTime / flashDuration;
+            countOfFlashes++;
 
             if (elapseFlashPercentage > 1 )
             {
