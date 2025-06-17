@@ -6,7 +6,7 @@ public class FireDamage : MonoBehaviour
 {
     [SerializeField] private float requiredStayTime;//tiempo minimo que tiene que estar para aplicar burn
     [SerializeField] private GameObject player;
-    [SerializeField] private float damage;
+    [SerializeField] private float damage, lowDamage, riseDamage;
     private float timeInFire = 0f;
 
     private class BurnTracker
@@ -63,12 +63,34 @@ public class FireDamage : MonoBehaviour
     {
        
 
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        if (collision.gameObject.CompareTag("FireEnemy"))
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             timeInFire += Time.deltaTime;
 
-            Debug.Log("no");
+            if (timeInFire >= 1)
+            {
+                healthController.takeDamage(damage);
+                timeInFire = 0f;
+            }
+        }
+
+        else if (collision.gameObject.CompareTag("IceEnemy"))
+        {
+            HealthController healthController = collision.gameObject.GetComponent<HealthController>();
+            timeInFire += Time.deltaTime;
+
+            if (timeInFire >= 1)
+            {
+                healthController.takeDamage(damage);
+                timeInFire = 0f;
+            }
+        }
+
+        else if (collision.gameObject.CompareTag("RockEnemy"))
+        {
+            HealthController healthController = collision.gameObject.GetComponent<HealthController>();
+            timeInFire += Time.deltaTime;
 
             if (timeInFire >= 1)
             {

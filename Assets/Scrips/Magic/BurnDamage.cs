@@ -5,15 +5,22 @@ public class BurnDamage : MonoBehaviour
     [SerializeField] private float burnDuration;//duracion de la quemadura
     [SerializeField] private float tickInterval = 1;//tiempo entre cada tick de dano
     [SerializeField] private float damagePerTick;//dano por tick
+    [SerializeField] private bool haveParticles = false;
 
     public float timer;//timer de el dano
     private float burnTimeLeft;//tiempo restante de el burn
     public bool isBurning = false;//si el objeto esta quemandose
 
     private HealthController targetHealth;
+    private activateParticles particles;
     void Start()
     {
         targetHealth = GetComponent<HealthController>();
+
+        if (haveParticles)
+        {
+            particles = GetComponent<activateParticles>();
+        }
     }
 
     void Update()
@@ -35,6 +42,10 @@ public class BurnDamage : MonoBehaviour
             isBurning = false;
             timer = 0f;
             burnTimeLeft = 0f;
+            if (haveParticles)
+            {
+                particles.StopParticles();
+            }
         }
     }
 
@@ -43,5 +54,10 @@ public class BurnDamage : MonoBehaviour
         burnTimeLeft = burnDuration;//reinicia el tiempo de quemadura
         timer = 0f;// reinicia el timer
         isBurning = true;// activa el burn
+
+        if (haveParticles)
+        {
+            particles.StartParticles();
+        }
     }
 }

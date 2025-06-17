@@ -50,14 +50,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 3931806911
-    locked: 0
   - name: Player
     uniqueID: 2206744691
     locked: 0
   - name: Enemy
     uniqueID: 1092792119
+    locked: 0
+  - name: Background
+    uniqueID: 3931806911
     locked: 0
   - name: Water
     uniqueID: 462098023

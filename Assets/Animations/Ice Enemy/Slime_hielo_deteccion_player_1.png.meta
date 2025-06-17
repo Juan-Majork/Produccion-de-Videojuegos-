@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 5facf1db27983ce459eb205359510725
+guid: c0a4439db763bce4fbcf03b54b5f85e3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2868267618837732596
-    second: Slime_hielo_muerte_0
+      213: 7770090847350772617
+    second: Slime_hielo_deteccion_player_1_0
   - first:
-      213: -1379430112015143917
-    second: Slime_hielo_muerte_1
+      213: -2826478594460774398
+    second: Slime_hielo_deteccion_player_1_1
   - first:
-      213: 285765586425126829
-    second: Slime_hielo_muerte_2
+      213: -469076327645913094
+    second: Slime_hielo_deteccion_player_1_2
   - first:
-      213: 7366319654405589057
-    second: Slime_hielo_muerte_3
+      213: -5601433142951783168
+    second: Slime_hielo_deteccion_player_1_3
   - first:
-      213: -4292736064743314940
-    second: Slime_hielo_muerte_4
+      213: -4876645246324643506
+    second: Slime_hielo_deteccion_player_1_4
   - first:
-      213: 131620036951174164
-    second: Slime_hielo_muerte_5
+      213: -6358226554846472087
+    second: Slime_hielo_deteccion_player_1_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,133 +115,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slime_hielo_muerte_0
+      name: Slime_hielo_deteccion_player_1_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 17
-        width: 35
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4fc149dd3322ec720800000000000000
-      internalID: 2868267618837732596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_hielo_muerte_1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 17
-        width: 33
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 31c2cd42f974bdce0800000000000000
-      internalID: -1379430112015143917
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_hielo_muerte_2
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 17
-        width: 34
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: daf96eb694e37f300800000000000000
-      internalID: 285765586425126829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_hielo_muerte_3
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 17
-        width: 34
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 148c2de72bc6a3660800000000000000
-      internalID: 7366319654405589057
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_hielo_muerte_4
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 17
-        width: 29
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 40a67720b432d64c0800000000000000
-      internalID: -4292736064743314940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slime_hielo_muerte_5
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 17
+        x: 5
+        y: 2
         width: 27
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41c6ccbe9bb93d100800000000000000
-      internalID: 131620036951174164
+      spriteID: 9835bdc3578e4db60800000000000000
+      internalID: 7770090847350772617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_deteccion_player_1_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 2
+        width: 25
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2009be391b456c8d0800000000000000
+      internalID: -2826478594460774398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_deteccion_player_1_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 2
+        width: 27
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: affde16b0918d79f0800000000000000
+      internalID: -469076327645913094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_deteccion_player_1_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 2
+        width: 23
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0055241fb36b342b0800000000000000
+      internalID: -5601433142951783168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_deteccion_player_1_4
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2
+        width: 25
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49e83d6cfca25cb0800000000000000
+      internalID: -4876645246324643506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime_hielo_deteccion_player_1_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2
+        width: 27
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9689becb2aa03c7a0800000000000000
+      internalID: -6358226554846472087
       vertices: []
       indices: 
       edges: []
@@ -250,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dd6f1a0b99c7f534597c860431d97191
+    spriteID: 01fb8e648118d5c4cae60b0795a2c4b1
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Slime_hielo_muerte_0: 2868267618837732596
-      Slime_hielo_muerte_1: -1379430112015143917
-      Slime_hielo_muerte_2: 285765586425126829
-      Slime_hielo_muerte_3: 7366319654405589057
-      Slime_hielo_muerte_4: -4292736064743314940
-      Slime_hielo_muerte_5: 131620036951174164
+      Slime_hielo_deteccion_player_1_0: 7770090847350772617
+      Slime_hielo_deteccion_player_1_1: -2826478594460774398
+      Slime_hielo_deteccion_player_1_2: -469076327645913094
+      Slime_hielo_deteccion_player_1_3: -5601433142951783168
+      Slime_hielo_deteccion_player_1_4: -4876645246324643506
+      Slime_hielo_deteccion_player_1_5: -6358226554846472087
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

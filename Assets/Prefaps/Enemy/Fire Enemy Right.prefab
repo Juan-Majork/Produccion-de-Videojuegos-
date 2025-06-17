@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.451
       objectReference: {fileID: 0}
+    - target: {fileID: 4299741662288546656, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
+      propertyPath: haveParticles
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4928873563327398193, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
       propertyPath: m_Name
       value: Fire Enemy Right

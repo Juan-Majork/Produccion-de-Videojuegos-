@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: damagePerTick
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3180378984495184304, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
+      propertyPath: haveParticles
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3432745019922619231, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
