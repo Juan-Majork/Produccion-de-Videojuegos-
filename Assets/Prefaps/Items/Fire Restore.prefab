@@ -205,6 +205,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5499098354619397822, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6067160765679358894}
+    - targetCorrespondingSourceObject: {fileID: 5499098354619397822, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4269597324354495171}
+    - targetCorrespondingSourceObject: {fileID: 5499098354619397822, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6697671852241985930}
+    - targetCorrespondingSourceObject: {fileID: 5499098354619397822, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5023158642681785611}
   m_SourcePrefab: {fileID: 100100000, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}
 --- !u!1 &4580695265439977187 stripped
 GameObject:
@@ -224,6 +233,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeBeforeDestroy: 15
+--- !u!114 &4269597324354495171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580695265439977187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc1a196daa51ffc419806bb9829aeb19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6697671852241985930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580695265439977187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32bfc657d916dfc47b4a436631ad0ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 2931348206117438106}
+  noColor: {r: 1, g: 1, b: 1, a: 0}
+  actualColor: {r: 1, g: 1, b: 1, a: 1}
+  disappearTime:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6697671852241985930}
+        m_TargetAssemblyTypeName: DisappearItem, Assembly-CSharp
+        m_MethodName: Disappear
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5023158642681785611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4580695265439977187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b034da52092a0414aab16cbec12508b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5329573371755530961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4194870493016601228, guid: 8ef752a12e04cc24f849c7a5dfd85ccb, type: 3}

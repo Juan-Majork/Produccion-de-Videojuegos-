@@ -288,7 +288,7 @@ MonoBehaviour:
   velocity: 3
   distDown: 1
   distFront: 0.75
-  fidingRadio: 6.5
+  fidingRadio: 8
   down: {fileID: 3802686520856415580}
   front: {fileID: 3516713513700618824}
   takeDown: 1
