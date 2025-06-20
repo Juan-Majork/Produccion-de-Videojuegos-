@@ -123,6 +123,8 @@ GameObject:
   - component: {fileID: -7570610807761305697}
   - component: {fileID: 6133721695222871706}
   - component: {fileID: 5690714111240885796}
+  - component: {fileID: 3889659816805414449}
+  - component: {fileID: 168772308152048225}
   m_Layer: 10
   m_Name: Rock Attack
   m_TagString: Rock
@@ -266,6 +268,37 @@ PolygonCollider2D:
       - {x: 0.4532065, y: -0.25961187}
       - {x: 0.49431285, y: 0.5065003}
   m_UseDelaunayMesh: 0
+--- !u!114 &3889659816805414449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014235620413354036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b034da52092a0414aab16cbec12508b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &168772308152048225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014235620413354036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32bfc657d916dfc47b4a436631ad0ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  noColor: {r: 1, g: 1, b: 1, a: 0}
+  actualColor: {r: 1, g: 1, b: 1, a: 1}
+  duration: 5
+  disappearTime:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4998344793873386301
 GameObject:
   m_ObjectHideFlags: 0

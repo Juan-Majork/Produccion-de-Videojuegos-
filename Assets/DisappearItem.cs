@@ -10,6 +10,8 @@ public class DisappearItem : MonoBehaviour
     [SerializeField] Color noColor;
     [SerializeField] Color actualColor;
 
+    [SerializeField] private float duration;
+
     private void Awake()
     {
         flash = GetComponent<SpriteFlash>();
@@ -17,7 +19,7 @@ public class DisappearItem : MonoBehaviour
 
     private void Update()
     {
-        if (timeToDesappear < 12)
+        if (timeToDesappear < duration)
         {
             timeToDesappear += Time.deltaTime;
         }

@@ -22,7 +22,7 @@ public class MusicPlayer : MonoBehaviour
 
         musicSource = GetComponent<AudioSource>();
 
-        if (SceneManager.GetActiveScene().name == "SampleScene")
+        if (SceneManager.GetActiveScene().name == "level1")
         {
             LevelMusic();
         }

@@ -23,6 +23,6 @@ public class GameManager : MonoBehaviour
 
     private void levelSelect()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("level1");
     }
 }

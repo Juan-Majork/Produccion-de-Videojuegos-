@@ -4,6 +4,10 @@ using UnityEngine.InputSystem;
 public class Movement : MonoBehaviour
 {
     private float horizontalInput;
+
+    private Vector2 moveDirection;
+    public InputActionReference move;
+
     [SerializeField]
     private float speed;
     [SerializeField]
@@ -45,6 +49,11 @@ public class Movement : MonoBehaviour
         inputJump.started -= _ => Jump();
     }
 
+    private void Update()
+    {
+        moveDirection = move.action.ReadValue<Vector2>();
+    }
+
     private void FixedUpdate()
     {
         if (isKnockedBack)
@@ -77,7 +86,7 @@ public class Movement : MonoBehaviour
 
         if (horizontalInput != 0)
         {
-            currentVelocity.x = horizontalInput * speed;
+            currentVelocity.x = moveDirection.x * speed;
         }
 
         rb2D.linearVelocity = currentVelocity;
@@ -99,7 +108,6 @@ public class Movement : MonoBehaviour
         if (canJump)
         {
             rb2D.AddForce(new Vector2(0, jumpForce));
-            Debug.Log("hi");
             canJump = false;
         }
     }

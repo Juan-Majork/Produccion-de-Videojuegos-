@@ -260,6 +260,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 2931348206117438106}
   noColor: {r: 1, g: 1, b: 1, a: 0}
   actualColor: {r: 1, g: 1, b: 1, a: 1}
+  duration: 12
   disappearTime:
     m_PersistentCalls:
       m_Calls:
