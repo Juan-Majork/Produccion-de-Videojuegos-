@@ -7,6 +7,7 @@ public class EnemyRangedAttack : MonoBehaviour
     [SerializeField] private Transform spawn;
     private SpriteRenderer render;
     private Color originalColor;
+    [SerializeField] private Color iceColor;
 
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float fidingRadio;
@@ -32,7 +33,7 @@ public class EnemyRangedAttack : MonoBehaviour
     {
         if (isCold)
         {
-            render.color = Color.cyan;
+            render.color = iceColor;
             duration += Time.deltaTime;
             Debug.Log(duration.ToString());
 

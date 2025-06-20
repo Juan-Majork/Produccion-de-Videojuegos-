@@ -7,6 +7,7 @@ public class FireEnemyBehavior : MonoBehaviour
     [SerializeField] private Transform front;
     private SpriteRenderer render;
     private Color originalColor;
+    [SerializeField] private Color iceColor;
     [SerializeField] private float distFront;
     private bool infoFront;
 
@@ -43,7 +44,7 @@ public class FireEnemyBehavior : MonoBehaviour
     {
         if (isCold)
         {
-            render.color = Color.cyan;
+            render.color = iceColor;
             duration += Time.deltaTime;
             Debug.Log(duration.ToString());
 
