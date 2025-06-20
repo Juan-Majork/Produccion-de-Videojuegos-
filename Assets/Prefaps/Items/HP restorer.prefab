@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2327758763715112948}
   - component: {fileID: 9037197076172171146}
   - component: {fileID: 7841474194940121891}
+  - component: {fileID: 6053965606219228104}
   m_Layer: 0
   m_Name: HP restorer
   m_TagString: Untagged
@@ -93,6 +94,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 25
+--- !u!114 &6053965606219228104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5480800759445907824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc1a196daa51ffc419806bb9829aeb19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6673224650856899459
 GameObject:
   m_ObjectHideFlags: 0

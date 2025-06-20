@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 13e510413f9bba843b91dbc8bbeb6a30
+guid: 93a40badaa2fbcf459d5f75ed0637655
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3337038689812066966
-    second: pixil-frame-0_0
+      213: -6270644300501426186
+    second: Puente_grande_quemado_1_0
+  - first:
+      213: -3813984275536629260
+    second: Puente_grande_quemado_1_1
+  - first:
+      213: -3757405516437074215
+    second: Puente_grande_quemado_1_2
+  - first:
+      213: 7802163408959526298
+    second: Puente_grande_quemado_1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,12 +109,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixil-frame-0_0
+      name: Puente_grande_quemado_1_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 92
+        x: 12
+        y: 17
+        width: 185
         height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6d4404fdf470b1d0800000000000000
-      internalID: -3337038689812066966
+      spriteID: 6ffd8c36b323af8a0800000000000000
+      internalID: -6270644300501426186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puente_grande_quemado_1_1
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 17
+        width: 185
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1b6bd3281021bc0800000000000000
+      internalID: -3813984275536629260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puente_grande_quemado_1_2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 17
+        width: 185
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9decca327930bdbc0800000000000000
+      internalID: -3757405516437074215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puente_grande_quemado_1_3
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 17
+        width: 185
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a955596684ad64c60800000000000000
+      internalID: 7802163408959526298
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 004c0a351b0b2c14882b7139aa612f7f
+    spriteID: 321c8d0c7e6ee2343b8d1e94657c9f7f
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pixil-frame-0_0: -3337038689812066966
+      Puente_grande_quemado_1_0: -6270644300501426186
+      Puente_grande_quemado_1_1: -3813984275536629260
+      Puente_grande_quemado_1_2: -3757405516437074215
+      Puente_grande_quemado_1_3: 7802163408959526298
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

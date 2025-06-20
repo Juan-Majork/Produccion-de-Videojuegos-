@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3918167515690401178}
   - component: {fileID: 6286692497011808274}
   - component: {fileID: 4599034465250470071}
+  - component: {fileID: 2448423620314327430}
   m_Layer: 0
   m_Name: Max Health Collectable
   m_TagString: Untagged
@@ -145,5 +146,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8fe7f61642d5ef44481208d12c0fd68e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2448423620314327430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2813190282318829935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc1a196daa51ffc419806bb9829aeb19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
