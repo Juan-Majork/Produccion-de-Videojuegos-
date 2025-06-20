@@ -5,6 +5,8 @@ public class EnemyRangedAttack : MonoBehaviour
 {
     [SerializeField] private GameObject shot;
     [SerializeField] private Transform spawn;
+    private SpriteRenderer render;
+    private Color originalColor;
 
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private float fidingRadio;
@@ -20,16 +22,23 @@ public class EnemyRangedAttack : MonoBehaviour
     public bool isCold = false;
     public float duration = 0;
 
+    private void Awake()
+    {
+        render = GetComponent<SpriteRenderer>();
+        originalColor = render.color;
+    }
 
     private void Update()
     {
         if (isCold)
         {
+            render.color = Color.cyan;
             duration += Time.deltaTime;
             Debug.Log(duration.ToString());
 
             if (duration > 2)
             {
+                render.color = originalColor;
                 isCold = false;
                 duration = 0;   
             }
