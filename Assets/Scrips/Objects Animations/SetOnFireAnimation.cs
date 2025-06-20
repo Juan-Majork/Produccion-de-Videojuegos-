@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SetOnFireAnimation : MonoBehaviour
 {
+    [SerializeField]
     private Animator animator;
     private ParticleSystem particulas;
 
@@ -12,7 +13,11 @@ public class SetOnFireAnimation : MonoBehaviour
     {
         if (activeAnimation)
         {
-            animator = GetComponentInChildren<Animator>();
+            if (animator == null) 
+            {
+                animator = GetComponentInChildren<Animator>();
+            }
+            
         }
 
         if (activeParticulas)

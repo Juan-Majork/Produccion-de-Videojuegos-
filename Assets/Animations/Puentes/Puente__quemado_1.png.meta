@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 2b153031ee8803149afd90d11fe99da2
+guid: 40d00bae2780ca748b36e965dc1576a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -167450122150791607
-    second: Puente_0
+      213: 8451685141884661517
+    second: Puente__quemado_1_0
+  - first:
+      213: -3520317742659123182
+    second: Puente__quemado_1_1
+  - first:
+      213: -403685754842812737
+    second: Puente__quemado_1_2
+  - first:
+      213: 4622637658505252931
+    second: Puente__quemado_1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,12 +109,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Puente_0
+      name: Puente__quemado_1_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 13
-        width: 183
+        x: 6
+        y: 4
+        width: 92
         height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9463b9740091dadf0800000000000000
-      internalID: -167450122150791607
+      spriteID: d0f6b7b8bda6a4570800000000000000
+      internalID: 8451685141884661517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puente__quemado_1_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 4
+        width: 92
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2184c4c1aa1552fc0800000000000000
+      internalID: -3520317742659123182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puente__quemado_1_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 4
+        width: 92
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe65bdd1f1d56af0800000000000000
+      internalID: -403685754842812737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puente__quemado_1_3
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 4
+        width: 92
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3409c886578e62040800000000000000
+      internalID: 4622637658505252931
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a21360e6f55f60b488ecdc2b98d34397
+    spriteID: 1bb55fc6321a38b49a02b9ddcacd3c23
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Puente_0: -167450122150791607
+      Puente__quemado_1_0: 8451685141884661517
+      Puente__quemado_1_1: -3520317742659123182
+      Puente__quemado_1_2: -403685754842812737
+      Puente__quemado_1_3: 4622637658505252931
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

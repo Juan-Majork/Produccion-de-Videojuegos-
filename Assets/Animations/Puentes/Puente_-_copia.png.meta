@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2b153031ee8803149afd90d11fe99da2
+guid: 243e9ac4002cd3849ab101ed4f5778bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -167450122150791607
-    second: Puente_0
+      213: 5868181746473948215
+    second: Puente_-_copia_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Puente_0
+      name: Puente_-_copia_0
       rect:
         serializedVersion: 2
         x: 13
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9463b9740091dadf0800000000000000
-      internalID: -167450122150791607
+      spriteID: 734d20c1538ff6150800000000000000
+      internalID: 5868181746473948215
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a21360e6f55f60b488ecdc2b98d34397
+    spriteID: 6bec69faf7b8f2b43898681c6b8f3dfa
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Puente_0: -167450122150791607
+      Puente_-_copia_0: 5868181746473948215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
