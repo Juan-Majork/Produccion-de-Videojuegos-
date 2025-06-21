@@ -14,7 +14,7 @@ public class UiLives : MonoBehaviour
     {
         if (CheckPointManager.Instance != null)
         {
-            livesText.text = "Lives: " + CheckPointManager.Instance.GetCurrentLives();
+            livesText.text = "X " + CheckPointManager.Instance.GetCurrentLives();
         }
     }
 }

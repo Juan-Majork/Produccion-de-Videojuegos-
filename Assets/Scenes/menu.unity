@@ -289,8 +289,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -282.435, y: -238.23602}
-  m_SizeDelta: {x: 498.319, y: 93.435}
+  m_AnchoredPosition: {x: -282.435, y: -259}
+  m_SizeDelta: {x: 498.319, y: 210.907}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140272669
 MonoBehaviour:
@@ -380,8 +380,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 4125757672332989604, guid: cb05692bdd397eb48b090d2913643331, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -435,8 +435,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1661, y: -456}
-  m_SizeDelta: {x: 420.851, y: 78.91}
+  m_AnchoredPosition: {x: -1661, y: -394.895}
+  m_SizeDelta: {x: 420.851, y: 201.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &215718234
 MonoBehaviour:
@@ -526,8 +526,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -7954874066926684208, guid: 8b57285ad3aac784e822f94b28821e8c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -603,15 +603,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Game Design\n\n-Mi\xF1ones Facundo"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -741,8 +741,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1021,8 +1021,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Close
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1211,8 +1211,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -282.435, y: 220}
-  m_SizeDelta: {x: 498.319, y: 93.435}
+  m_AnchoredPosition: {x: -282.435, y: 239}
+  m_SizeDelta: {x: 498.319, y: 210.907}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &907296083
 MonoBehaviour:
@@ -1302,8 +1302,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 4125757672332989604, guid: cb05692bdd397eb48b090d2913643331, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1463,8 +1463,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1601,8 +1601,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1844,15 +1844,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Programadores\n\n-Perez Juan Ignacio \n-Frias Marcos Hernan"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1980,15 +1980,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Game Producer\n\n-L\xF3pez Lange Lautaro"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2091,8 +2091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 566, y: -66}
-  m_SizeDelta: {x: 1066.032, y: 77.773}
+  m_AnchoredPosition: {x: 587.77924, y: -66}
+  m_SizeDelta: {x: 1109.591, y: 77.773}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1563867711
 MonoBehaviour:
@@ -2116,8 +2116,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Rise of the Spellmaster
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2252,8 +2252,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2388,15 +2388,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Musica\n\n-L\xF3pez Lange Lautaro"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2524,15 +2524,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Artistas\n\n-Camardelli, Geronimo  \n-Campregher Lautaro Valentino"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2638,8 +2638,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -282.435, y: -6.1580276}
-  m_SizeDelta: {x: 498.319, y: 93.435}
+  m_AnchoredPosition: {x: -369.636, y: -5.022}
+  m_SizeDelta: {x: 672.719, y: 186.196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1749755768
 MonoBehaviour:
@@ -2717,8 +2717,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -8398587842119150754, guid: 31980831b7670684ca1aeb2eb7bcde6e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2889,15 +2889,15 @@ MonoBehaviour:
 
     -Campregher Lautaro Valentino'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
