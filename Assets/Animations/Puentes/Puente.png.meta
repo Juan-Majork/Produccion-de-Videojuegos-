@@ -103,10 +103,10 @@ TextureImporter:
       name: Puente_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 13
-        width: 183
-        height: 11
+        x: 6
+        y: 4
+        width: 92
+        height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a21360e6f55f60b488ecdc2b98d34397
+    spriteID: e0e15675167c44945911b977e3d5c594
     internalID: 0
     vertices: []
     indices: 

@@ -23,6 +23,29 @@ public class GameManager : MonoBehaviour
 
     private void levelSelect()
     {
-        SceneManager.LoadScene("SampleScene");
+        if (SceneManager.GetActiveScene().name == "level1")
+        {
+            SceneManager.LoadScene("level1");
+        }
+        else if (SceneManager.GetActiveScene().name == "boss1")
+        {
+            SceneManager.LoadScene("boss1");
+        }
+       
+    }
+
+    public void NextLevel(int select)
+    {
+        // 1 = primer nivel
+        // 2 = nivel del jefe
+
+        if (select == 1)
+        {
+            SceneManager.LoadScene("level1");
+        }
+        else if (select == 2)
+        {
+            SceneManager.LoadScene("boss1");
+        }
     }
 }

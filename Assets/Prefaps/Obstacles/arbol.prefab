@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 8310908232207991069}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 5.25
       objectReference: {fileID: 0}
+    - target: {fileID: 2715216379123791044, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 7059620172651319825}
     - target: {fileID: 2715216379123791044, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: activeAnimation
       value: 1

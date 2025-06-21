@@ -5,6 +5,9 @@ public class FireEnemyBehavior : MonoBehaviour
 {
     [SerializeField] private LayerMask faceFront;
     [SerializeField] private Transform front;
+    private SpriteRenderer render;
+    private Color originalColor;
+    [SerializeField] private Color iceColor;
     [SerializeField] private float distFront;
     private bool infoFront;
 
@@ -30,6 +33,8 @@ public class FireEnemyBehavior : MonoBehaviour
     void Start()
     {
         //enemyKnockback = GetComponent<EnemyKnockback>();
+        render = GetComponent<SpriteRenderer>();
+        originalColor = render.color;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
@@ -39,11 +44,13 @@ public class FireEnemyBehavior : MonoBehaviour
     {
         if (isCold)
         {
+            render.color = iceColor;
             duration += Time.deltaTime;
             Debug.Log(duration.ToString());
 
             if (duration > 4)
             {
+                render.color = originalColor;
                 isCold = false;
                 duration = 0;
                 animator.SetTrigger("hitGround");

@@ -25,21 +25,22 @@ public class BossEnemySpawn : MonoBehaviour
         InvokedSlime slime1 = enemy1.GetComponent<InvokedSlime>();
         if (slime1 != null)
         {
-            slime1.SetPoints(pointA, pointB);
+            slime1.Initialize(pointA, pointB, pointB.position); 
             slime1.SetBossSpawner(this);
         }
 
         if (secondPhase)
-        {           
+        {
             GameObject enemy2 = Instantiate(enemy, pointB.position, Quaternion.identity);
             InvokedSlime slime2 = enemy2.GetComponent<InvokedSlime>();
             if (slime2 != null)
             {
-                slime2.SetPoints(pointB, pointA);
+                slime2.Initialize(pointA, pointB, pointA.position); 
                 slime2.SetBossSpawner(this);
             }
         }
     }
+
     public void ResetSpawn()
     {
         hasSpawned = false;
