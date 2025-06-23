@@ -161,7 +161,6 @@ public class MovePlatform : MonoBehaviour
     private void FollowingState()
     {
         Collider2D playerCollider = Physics2D.OverlapCircle(transform.position, fidingRadio, playerLayer);
-        Debug.Log(state.ToString());
 
         if (playerCollider == null)
         {
