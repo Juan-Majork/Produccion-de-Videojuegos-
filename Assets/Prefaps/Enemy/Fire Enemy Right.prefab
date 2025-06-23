@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: faceFront.m_Bits
       value: 192
       objectReference: {fileID: 0}
+    - target: {fileID: 374518150469695377, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 961576778673675011, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -71,6 +75,14 @@ PrefabInstance:
     - target: {fileID: 4928873563327398193, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
       propertyPath: m_Name
       value: Fire Enemy Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 5870302902394358517, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
+      propertyPath: health
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5870302902394358517, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
+      propertyPath: maxHealth
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 5870302902394358517, guid: 1e1d2479364063342b52b8685f1b0262, type: 3}
       propertyPath: Damage.m_PersistentCalls.m_Calls.Array.data[0].m_Target

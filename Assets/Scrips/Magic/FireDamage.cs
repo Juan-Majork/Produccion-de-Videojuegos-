@@ -68,7 +68,7 @@ public class FireDamage : MonoBehaviour
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             timeInFire += Time.deltaTime;
 
-            if (timeInFire >= 1)
+            if (timeInFire >= 0.5f)
             {
                 healthController.takeDamage(damage);
                 timeInFire = 0f;
@@ -80,7 +80,7 @@ public class FireDamage : MonoBehaviour
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             timeInFire += Time.deltaTime;
 
-            if (timeInFire >= 1)
+            if (timeInFire >= 0.5f)
             {
                 healthController.takeDamage(damage);
                 timeInFire = 0f;
@@ -92,7 +92,7 @@ public class FireDamage : MonoBehaviour
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             timeInFire += Time.deltaTime;
 
-            if (timeInFire >= 1)
+            if (timeInFire >= 1f)  º    
             {
                 healthController.takeDamage(damage);
                 timeInFire = 0f;

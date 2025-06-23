@@ -163,8 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c999f0142bef6d448a6e2bcfac0cc40e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
-  maxHealth: 20
+  health: 50
+  maxHealth: 50
   isPlayer: 0
   isEnemy: 1
   Death:
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc244bbe76d21848871edbaf24104ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 5
   knockbackForceX: 20
   knockbackForceY: 10
 --- !u!114 &3814419966413130086
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   burnDuration: 0
   tickInterval: 0.5
-  damagePerTick: 2.5
+  damagePerTick: 4
   haveParticles: 1
   timer: 0
   isBurning: 0

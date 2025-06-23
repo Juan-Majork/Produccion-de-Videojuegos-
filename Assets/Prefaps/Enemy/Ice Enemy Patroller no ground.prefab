@@ -26,15 +26,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3557824313344068052, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
       propertyPath: health
-      value: 60
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3557824313344068052, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
       propertyPath: maxHealth
-      value: 60
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4274698911504740454, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
       propertyPath: damage
-      value: 25
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4274698911504740454, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
       propertyPath: knockbackForceX
@@ -46,7 +46,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7281693821728318280, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
       propertyPath: damagePerTick
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7389478232410325415, guid: 50463445f639ac54bb6b62e7ea3231d4, type: 3}
       propertyPath: m_LocalPosition.x

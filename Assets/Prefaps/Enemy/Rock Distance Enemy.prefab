@@ -114,11 +114,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: health
-      value: 80
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: maxHealth
-      value: 80
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7061490016087951077, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: Death.m_PersistentCalls.m_Calls.Array.size
@@ -234,7 +234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8866092516025452043, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: damagePerTick
-      value: 2.5
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 8866092516025452043, guid: 8f726b47945676e42985d9105be1cd05, type: 3}
       propertyPath: haveParticles
