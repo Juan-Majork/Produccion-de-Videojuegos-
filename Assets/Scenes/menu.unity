@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 741.8633, y: -287.09827}
+  m_AnchoredPosition: {x: 741.8633, y: -151}
   m_SizeDelta: {x: 1435.508, y: 602.543}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &12366636
@@ -678,8 +678,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Game Design\n\n-Mi\xF1ones Facundo"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
-  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
+  m_sharedMaterial: {fileID: -5802845052759080862, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1096,8 +1096,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Close
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
-  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
+  m_sharedMaterial: {fileID: -5802845052759080862, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1995,8 +1995,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Programadores\n\n-Perez Juan Ignacio \n-Frias Marcos Hernan"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
-  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
+  m_sharedMaterial: {fileID: -5802845052759080862, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2131,8 +2131,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Game Producer\n\n-L\xF3pez Lange Lautaro"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
-  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
+  m_sharedMaterial: {fileID: -5802845052759080862, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2403,8 +2403,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Musica\n\n-L\xF3pez Lange Lautaro"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
-  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
+  m_sharedMaterial: {fileID: -5802845052759080862, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2539,8 +2539,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Artistas\n\n-Camardelli, Geronimo  \n-Campregher Lautaro Valentino"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
-  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
+  m_sharedMaterial: {fileID: -5802845052759080862, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2949,8 +2949,8 @@ MonoBehaviour:
 
     -Campregher Lautaro Valentino'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
-  m_sharedMaterial: {fileID: -1899315989292470643, guid: 4d25bbf0fb3548e4ebd418d1ea9aa509, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
+  m_sharedMaterial: {fileID: -5802845052759080862, guid: a7779d8dcae71d64d8116740ca47d4f2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
