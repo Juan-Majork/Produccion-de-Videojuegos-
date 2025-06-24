@@ -390,7 +390,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   front: {fileID: 2776274468623672293}
-  iceColor: {r: 0.13333334, g: 0.36078432, b: 1, a: 0}
+  iceColor: {r: 0.13333334, g: 0.36078432, b: 1, a: 1}
   distFront: -0.25
   lookRight: 0
   moveX: 7
