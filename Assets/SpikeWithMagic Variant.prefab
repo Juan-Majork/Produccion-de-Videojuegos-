@@ -8,6 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8626904854607755302, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
+      propertyPath: magic
+      value: 
+      objectReference: {fileID: 6426280555321879245, guid: 7bee06f2cfc7fa24c9b99bf3c4e23169, type: 3}
+    - target: {fileID: 807026642806141058, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 807026642806141058, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 807026642806141058, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 807026642806141058, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -104.843994
@@ -55,27 +71,5 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6879392848051110103, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 935071173649177103}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
---- !u!1 &5554434981798991873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6879392848051110103, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
-  m_PrefabInstance: {fileID: 1327948874497841366}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &935071173649177103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5554434981798991873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e13f46ea85bed194ebce07a5ad1a0e8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items:
-  - {fileID: 6426280555321879245, guid: 7bee06f2cfc7fa24c9b99bf3c4e23169, type: 3}

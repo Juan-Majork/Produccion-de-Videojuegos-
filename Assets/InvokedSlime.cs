@@ -19,7 +19,6 @@ public class InvokedSlime : MonoBehaviour
         bossSpawner = spawner;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -40,7 +39,6 @@ public class InvokedSlime : MonoBehaviour
         targetPosition = transform.position == pointA.position ? pointB.position : pointA.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!isCharging)
@@ -48,8 +46,9 @@ public class InvokedSlime : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
             if(Vector2.Distance(transform.position,targetPosition)< 0.1f)
             {
-                Destroy(gameObject);
-                bossSpawner.ResetSpawn();
+                targetPosition = (Vector2)targetPosition == (Vector2)pointA.position ? pointB.position : pointA.position;
+                isCharging = true;
+                Invoke(nameof(StartMoving), chargeTime);
             }
         }
 
@@ -61,4 +60,14 @@ public class InvokedSlime : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!isCharging && collision.gameObject.CompareTag("Player"))
+        {
+            targetPosition = (Vector2)targetPosition == (Vector2)pointA.position ? pointB.position : pointA.position;
+
+            isCharging = true;
+            Invoke(nameof(StartMoving), chargeTime);
+        }
+    }
 }
