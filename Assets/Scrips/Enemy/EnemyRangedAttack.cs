@@ -174,7 +174,7 @@ public class EnemyRangedAttack : MonoBehaviour
 
         //Debug.Log("back");
 
-        if (waitDown > 1f)
+        if (waitDown > 1.5f)
         {
             state = distanceState.normal;
             waitDown = 0f;

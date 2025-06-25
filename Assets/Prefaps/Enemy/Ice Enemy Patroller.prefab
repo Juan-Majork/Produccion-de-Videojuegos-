@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3180378984495184304, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: damagePerTick
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3180378984495184304, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: haveParticles
@@ -94,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8250018543426022046, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: damage
-      value: 25
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8250018543426022046, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: knockbackForceX
@@ -102,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678667901234385708, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: health
-      value: 60
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8678667901234385708, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: isEnemy
@@ -110,7 +110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8678667901234385708, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: maxHealth
-      value: 60
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2329148750721868493, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}

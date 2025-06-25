@@ -1,0 +1,593 @@
+fileFormatVersion: 2
+guid: 9fed6414cbed06b439e0501e066ce630
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 934338949755872550
+    second: Main_Menu_-_copia_0
+  - first:
+      213: 3620553438381026359
+    second: Main_Menu_-_copia_1
+  - first:
+      213: -7025696224052437788
+    second: Main_Menu_-_copia_2
+  - first:
+      213: -2386674484856837959
+    second: Main_Menu_-_copia_3
+  - first:
+      213: 8070595278771605858
+    second: Main_Menu_-_copia_4
+  - first:
+      213: 5408236625308392885
+    second: Main_Menu_-_copia_5
+  - first:
+      213: 6392909076092983123
+    second: Main_Menu_-_copia_6
+  - first:
+      213: -6025829372929569046
+    second: Main_Menu_-_copia_7
+  - first:
+      213: 4750659430228741448
+    second: Main_Menu_-_copia_8
+  - first:
+      213: -4995864085457547994
+    second: Main_Menu_-_copia_9
+  - first:
+      213: 7508297346668449295
+    second: Main_Menu_-_copia_10
+  - first:
+      213: -6933688560867118777
+    second: Main_Menu_-_copia_11
+  - first:
+      213: -4834428976817698993
+    second: Main_Menu_-_copia_12
+  - first:
+      213: -6153847449891810087
+    second: Main_Menu_-_copia_13
+  - first:
+      213: 4893598786744116521
+    second: Main_Menu_-_copia_14
+  - first:
+      213: -3708248940281308600
+    second: Main_Menu_-_copia_15
+  - first:
+      213: 6952829478930486341
+    second: Main_Menu_-_copia_16
+  - first:
+      213: 1816101505755322559
+    second: Main_Menu_-_copia_17
+  - first:
+      213: 6321129201771751212
+    second: Main_Menu_-_copia_18
+  - first:
+      213: -2852862449738363657
+    second: Main_Menu_-_copia_19
+  - first:
+      213: -1127430856741574516
+    second: Main_Menu_-_copia_20
+  - first:
+      213: 7079019189656623622
+    second: Main_Menu_-_copia_21
+  - first:
+      213: -4505057985667768021
+    second: Main_Menu_-_copia_22
+  - first:
+      213: 221682085296265681
+    second: Main_Menu_-_copia_23
+  - first:
+      213: -4973524383416468814
+    second: Main_Menu_-_copia_24
+  - first:
+      213: 8897149811819246015
+    second: Main_Menu_-_copia_25
+  - first:
+      213: -1504499386494045633
+    second: Main_Menu_-_copia_26
+  - first:
+      213: -3733738905143506019
+    second: Main_Menu_-_copia_27
+  - first:
+      213: -4242544627240099322
+    second: Main_Menu_-_copia_28
+  - first:
+      213: 6414375515815914635
+    second: Main_Menu_-_copia_29
+  - first:
+      213: 1692847227759410073
+    second: Main_Menu_-_copia_30
+  - first:
+      213: -847844467215231236
+    second: Main_Menu_-_copia_31
+  - first:
+      213: 8044044819964898265
+    second: Main_Menu_-_copia_32
+  - first:
+      213: -7860901691281104642
+    second: Main_Menu_-_copia_33
+  - first:
+      213: -6712880154881934909
+    second: Main_Menu_-_copia_34
+  - first:
+      213: -1685055518706795925
+    second: Main_Menu_-_copia_35
+  - first:
+      213: -485585070807127252
+    second: Main_Menu_-_copia_36
+  - first:
+      213: 3217952538838344946
+    second: Main_Menu_-_copia_37
+  - first:
+      213: 4342375560034965844
+    second: Main_Menu_-_copia_38
+  - first:
+      213: 6869551829751153612
+    second: Main_Menu_-_copia_39
+  - first:
+      213: 8831089702963026322
+    second: Main_Menu_-_copia_40
+  - first:
+      213: 4245174015259132630
+    second: Main_Menu_-_copia_41
+  - first:
+      213: 2333154356451429479
+    second: Main_Menu_-_copia_42
+  - first:
+      213: 2049252825044585594
+    second: Main_Menu_-_copia_43
+  - first:
+      213: 626959084428551573
+    second: Main_Menu_-_copia_44
+  - first:
+      213: 7891631836434798209
+    second: Main_Menu_-_copia_45
+  - first:
+      213: -1182814836501032015
+    second: Main_Menu_-_copia_46
+  - first:
+      213: 4576558401997211099
+    second: Main_Menu_-_copia_47
+  - first:
+      213: 8863915698674796339
+    second: Main_Menu_-_copia_48
+  - first:
+      213: -7087333720525564037
+    second: Main_Menu_-_copia_49
+  - first:
+      213: 5140405745233014143
+    second: Main_Menu_-_copia_50
+  - first:
+      213: -3116788765773250435
+    second: Main_Menu_-_copia_51
+  - first:
+      213: -1090809999094325350
+    second: Main_Menu_-_copia_52
+  - first:
+      213: -1945663819314647654
+    second: Main_Menu_-_copia_53
+  - first:
+      213: -4524883546153182512
+    second: Main_Menu_-_copia_54
+  - first:
+      213: 8759133344971948104
+    second: Main_Menu_-_copia_55
+  - first:
+      213: -8673246739142838152
+    second: Main_Menu_-_copia_56
+  - first:
+      213: 4688310129790709733
+    second: Main_Menu_-_copia_57
+  - first:
+      213: 6837654292711651965
+    second: Main_Menu_-_copia_58
+  - first:
+      213: -8273691062712552520
+    second: Main_Menu_-_copia_59
+  - first:
+      213: -4626918870299739487
+    second: Main_Menu_-_copia_60
+  - first:
+      213: -1916849996427036275
+    second: Main_Menu_-_copia_61
+  - first:
+      213: -2769535538760615577
+    second: Main_Menu_-_copia_62
+  - first:
+      213: 7854814731308121222
+    second: Main_Menu_-_copia_63
+  - first:
+      213: -4667083709818826874
+    second: Main_Menu_-_copia_64
+  - first:
+      213: 4721303872646698195
+    second: Main_Menu_-_copia_65
+  - first:
+      213: -3833044007506514627
+    second: Main_Menu_-_copia_66
+  - first:
+      213: 3835606021425824804
+    second: Main_Menu_-_copia_67
+  - first:
+      213: -9078805609151044180
+    second: Main_Menu_-_copia_68
+  - first:
+      213: -5160807768791559457
+    second: Main_Menu_-_copia_69
+  - first:
+      213: -3001906940784910983
+    second: Main_Menu_-_copia_70
+  - first:
+      213: 5434512503473748278
+    second: Main_Menu_-_copia_71
+  - first:
+      213: -6332076374089374885
+    second: Main_Menu_-_copia_72
+  - first:
+      213: 3328103047996716718
+    second: Main_Menu_-_copia_73
+  - first:
+      213: 3140103211860540728
+    second: Main_Menu_-_copia_74
+  - first:
+      213: 1477766179858001155
+    second: Main_Menu_-_copia_75
+  - first:
+      213: 6160990453680092909
+    second: Main_Menu_-_copia_76
+  - first:
+      213: 6527810137316125439
+    second: Main_Menu_-_copia_77
+  - first:
+      213: 5732570295186553821
+    second: Main_Menu_-_copia_78
+  - first:
+      213: 5626505724907309181
+    second: Main_Menu_-_copia_79
+  - first:
+      213: 8583004293081165560
+    second: Main_Menu_-_copia_80
+  - first:
+      213: 6812756724382820928
+    second: Main_Menu_-_copia_81
+  - first:
+      213: 3849666541496919541
+    second: Main_Menu_-_copia_82
+  - first:
+      213: -2518500232019692498
+    second: Main_Menu_-_copia_83
+  - first:
+      213: 278345126821210086
+    second: Main_Menu_-_copia_84
+  - first:
+      213: -9088942070369312720
+    second: Main_Menu_-_copia_85
+  - first:
+      213: -3085147766175087385
+    second: Main_Menu_-_copia_86
+  - first:
+      213: -1344296922231158423
+    second: Main_Menu_-_copia_87
+  - first:
+      213: 723691474334869928
+    second: Main_Menu_-_copia_88
+  - first:
+      213: -7916858174166222404
+    second: Main_Menu_-_copia_89
+  - first:
+      213: 2671663697258209074
+    second: Main_Menu_-_copia_90
+  - first:
+      213: -1227105777793748097
+    second: Main_Menu_-_copia_91
+  - first:
+      213: -7372673552436195634
+    second: Main_Menu_-_copia_92
+  - first:
+      213: -856802430987921530
+    second: Main_Menu_-_copia_93
+  - first:
+      213: -8166789143948185110
+    second: Main_Menu_-_copia_94
+  - first:
+      213: 1343801758674912379
+    second: Main_Menu_-_copia_95
+  - first:
+      213: 2353335869219862150
+    second: Main_Menu_-_copia_96
+  - first:
+      213: -6755900531888805750
+    second: Main_Menu_-_copia_97
+  - first:
+      213: 4886326439572766904
+    second: Main_Menu_-_copia_98
+  - first:
+      213: -1672054076411993722
+    second: Main_Menu_-_copia_99
+  - first:
+      213: -965082078591047944
+    second: Main_Menu_-_copia_100
+  - first:
+      213: -441772196335365409
+    second: Main_Menu_-_copia_101
+  - first:
+      213: 2433462833449430482
+    second: Main_Menu_-_copia_102
+  - first:
+      213: -3389330449948684575
+    second: Main_Menu_-_copia_103
+  - first:
+      213: -5830441692430893558
+    second: Main_Menu_-_copia_104
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Main_Menu_-_copia_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 625a200135077fc00800000000000000
+      internalID: 934338949755872550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Menu_-_copia_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 160
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c25017b2ace3230800000000000000
+      internalID: 3620553438381026359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Menu_-_copia_2
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 160
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec1d890286bf7e90800000000000000
+      internalID: -7025696224052437788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Menu_-_copia_3
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 160
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8ae9f7334d0eed0800000000000000
+      internalID: -2386674484856837959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Menu_-_copia_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 160
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261502d65a3800070800000000000000
+      internalID: 8070595278771605858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Menu_-_copia_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 160
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd93c08e8aed0b40800000000000000
+      internalID: 5408236625308392885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main_Menu_-_copia_6
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 160
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35794e10fec28b850800000000000000
+      internalID: 6392909076092983123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f81d7188f0d9d7d489d6006f800d37f1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Main_Menu_-_copia_0: 934338949755872550
+      Main_Menu_-_copia_1: 3620553438381026359
+      Main_Menu_-_copia_2: -7025696224052437788
+      Main_Menu_-_copia_3: -2386674484856837959
+      Main_Menu_-_copia_4: 8070595278771605858
+      Main_Menu_-_copia_5: 5408236625308392885
+      Main_Menu_-_copia_6: 6392909076092983123
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

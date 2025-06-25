@@ -8,8 +8,7 @@ public class MaxHealthCollectable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            healthController = collision.GetComponent<HealthController>();
-            healthController.MaxHealth();
+            CheckPointManager.Instance.lives++;
             Destroy(gameObject);
         }
     }

@@ -218,8 +218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c999f0142bef6d448a6e2bcfac0cc40e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
-  maxHealth: 50
+  health: 45
+  maxHealth: 45
   isPlayer: 0
   isEnemy: 1
   Death:
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   burnDuration: 4
   tickInterval: 0.5
-  damagePerTick: 2.5
+  damagePerTick: 2
   haveParticles: 1
   timer: 0
   isBurning: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   front: {fileID: 2776274468623672293}
-  iceColor: {r: 0.13333334, g: 0.36078432, b: 1, a: 0}
+  iceColor: {r: 0.13333334, g: 0.36078432, b: 1, a: 1}
   distFront: -0.25
   lookRight: 0
   moveX: 7
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc244bbe76d21848871edbaf24104ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 15
+  damage: 5
   knockbackForceX: 20
   knockbackForceY: 10
 --- !u!95 &173059102292913115

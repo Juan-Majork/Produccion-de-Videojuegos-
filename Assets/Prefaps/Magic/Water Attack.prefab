@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96fec030ac02bcb438683c095199509e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 15
+  damage: 16
   lowDamage: 10
   riseDamage: 30
   waitToDestroy: 2
