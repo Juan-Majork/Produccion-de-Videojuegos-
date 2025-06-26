@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Full Fire Restore
       objectReference: {fileID: 0}
+    - target: {fileID: 4580695265439977187, guid: 5e0f328f3c3d58e41903ea3e56e06338, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5329573371755530961, guid: 5e0f328f3c3d58e41903ea3e56e06338, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
