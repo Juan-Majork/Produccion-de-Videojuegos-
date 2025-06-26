@@ -14,7 +14,8 @@ public class BreakFloor : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Boss"))
         {
-            tilemap.ClearAllTiles();
+            gameObject.SetActive(false);
+            //tilemap.ClearAllTiles();
         }
     }
 
