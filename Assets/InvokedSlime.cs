@@ -55,7 +55,7 @@ public class InvokedSlime : MonoBehaviour
         if (healthController != null && healthController.IsDead)
         {
             Destroy(gameObject);
-            bossSpawner.ResetSpawn();
+            //bossSpawner.ResetSpawn();
         }
 
     }
