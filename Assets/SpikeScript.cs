@@ -34,7 +34,7 @@ public class SpikeScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Floor") || collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Floor") || collision.gameObject.CompareTag("Player")|| collision.gameObject.CompareTag("Spike") || collision.gameObject.CompareTag("Rock"))
         {
             if (collision.gameObject.CompareTag("Player"))
             {

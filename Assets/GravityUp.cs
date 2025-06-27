@@ -1,9 +1,12 @@
 using UnityEngine;
+using System.Collections;
+
 
 public class GravityUp : MonoBehaviour
 {
     [SerializeField] private bool gravityUp = true;
     [SerializeField] private float gravityScaleValue = 2f;
+    [SerializeField] private BreakFloor breakFloor;
 
     private bool velocityApplied = false;
 
@@ -18,6 +21,16 @@ public class GravityUp : MonoBehaviour
             rb.linearVelocityY = 15;
 
             velocityApplied = true;
+
+            if (breakFloor != null)
+            {
+                StartCoroutine(ActivateAfterDelay(0.5f));
+            }
         }
+    }
+    private IEnumerator ActivateAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        breakFloor.ActivateTilemap();
     }
 }
