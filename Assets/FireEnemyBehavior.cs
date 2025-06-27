@@ -3,6 +3,10 @@ using UnityEngine.Rendering;
 
 public class FireEnemyBehavior : MonoBehaviour
 {
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip fallSound;
+    private AudioSource audioSource;
+
     [SerializeField] private LayerMask faceFront;
     [SerializeField] private Transform front;
     private SpriteRenderer render;
@@ -33,6 +37,7 @@ public class FireEnemyBehavior : MonoBehaviour
     void Start()
     {
         //enemyKnockback = GetComponent<EnemyKnockback>();
+        audioSource = GetComponent<AudioSource>();
         render = GetComponent<SpriteRenderer>();
         originalColor = render.color;
         rb = GetComponent<Rigidbody2D>();
@@ -90,11 +95,13 @@ public class FireEnemyBehavior : MonoBehaviour
     {
         if (!lookRight)
         {
+            audioSource.PlayOneShot(jumpSound);
             rb.AddForceX(-moveX, ForceMode2D.Impulse);
             rb.AddForceY(moveY, ForceMode2D.Impulse);
         }
         if (lookRight)
         {
+            audioSource.PlayOneShot(jumpSound);
             rb.AddForceX(moveX, ForceMode2D.Impulse);
             rb.AddForceY(moveY, ForceMode2D.Impulse);
         }
@@ -117,6 +124,7 @@ public class FireEnemyBehavior : MonoBehaviour
                         flip();
                     }
 
+                    audioSource.PlayOneShot(fallSound);
                     canJump = true;
                     actualTime = 0;
                     break;
@@ -132,6 +140,7 @@ public class FireEnemyBehavior : MonoBehaviour
                 flip();
             }
 
+            audioSource.PlayOneShot(fallSound);
             canJump = true;
             actualTime = 0;
         }

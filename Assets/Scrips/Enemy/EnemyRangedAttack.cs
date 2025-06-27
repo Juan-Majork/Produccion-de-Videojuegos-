@@ -4,6 +4,9 @@ using static MovePlatform;
 
 public class EnemyRangedAttack : MonoBehaviour
 {
+    [SerializeField] private AudioClip shotSound;
+    private AudioSource audioSource;
+
     [SerializeField] private GameObject shot;
     [SerializeField] private Transform spawn;
 
@@ -41,6 +44,7 @@ public class EnemyRangedAttack : MonoBehaviour
 
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         render = GetComponent<SpriteRenderer>();
         originalColor = render.color;
@@ -189,12 +193,14 @@ public class EnemyRangedAttack : MonoBehaviour
 
          if (isRight)
          {
-             rigid.linearVelocity = shotVelocity * transform.right;
+            audioSource.PlayOneShot(shotSound);
+            rigid.linearVelocity = shotVelocity * transform.right;
 
          }
          else if (!isRight)
          {
-             rigid.linearVelocity = shotVelocity * transform.right;
+            audioSource.PlayOneShot(shotSound);
+            rigid.linearVelocity = shotVelocity * transform.right;
          }
     }
 

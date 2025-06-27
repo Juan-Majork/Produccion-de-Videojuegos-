@@ -5,6 +5,10 @@ public class Movement : MonoBehaviour
 {
     private float horizontalInput;
 
+    [SerializeField] private AudioClip jumpSound;
+    [SerializeField] private AudioClip fallSound;
+    private AudioSource audioSource;
+
     private Vector2 moveDirection;
     public InputActionReference move;
 
@@ -33,6 +37,7 @@ public class Movement : MonoBehaviour
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         animator = transform.GetChild(0).GetComponent<Animator>();
 
         playerInput = GetComponent<PlayerInput>();
@@ -108,6 +113,7 @@ public class Movement : MonoBehaviour
         if (canJump)
         {
             rb2D.AddForce(new Vector2(0, jumpForce));
+            audioSource.PlayOneShot(jumpSound);
             canJump = false;
         }
     }
@@ -119,6 +125,25 @@ public class Movement : MonoBehaviour
         transform.localScale = currentScale;
 
         facingRight = !facingRight;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Floor"))
+        {
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                if (contact.normal.y > 0.5f) // El contacto desde arriba
+                {
+                    audioSource.PlayOneShot(fallSound);
+                }
+            }
+        }
+        if (collision.gameObject.CompareTag("Rock"))
+        {
+            audioSource.PlayOneShot(fallSound);
+        }
+
     }
 
     private void OnCollisionStay2D(Collision2D collision)

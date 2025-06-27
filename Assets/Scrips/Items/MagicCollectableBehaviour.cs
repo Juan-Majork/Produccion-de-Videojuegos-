@@ -12,6 +12,14 @@ public class MagicCollectableBehaviour : MonoBehaviour, ICollectableBehaviour
     [SerializeField] private bool waterActive;
     [SerializeField] private bool rockActive;
 
+    [SerializeField] private AudioClip itemPickUpSound;
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void onCollected(GameObject player)
     {
         
@@ -40,6 +48,7 @@ public class MagicCollectableBehaviour : MonoBehaviour, ICollectableBehaviour
                 player.GetComponent<MagicAttackController>().slots[i] = magic;
                 player.GetComponent<MagicAttackController>().restoreMana(ManaRestore, magicTake);
                 Take = true;
+                audioSource.PlayOneShot(itemPickUpSound);
                 Debug.Log("equipado");
 
                 return;
@@ -48,6 +57,7 @@ public class MagicCollectableBehaviour : MonoBehaviour, ICollectableBehaviour
             {
                 player.GetComponent<MagicAttackController>().restoreMana(ManaRestore, magicTake);
                 Take = true;
+                audioSource.PlayOneShot(itemPickUpSound);
                 Debug.Log("restaurado");
 
                 return;
