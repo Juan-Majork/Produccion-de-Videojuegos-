@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikeWithMagic Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6879392848051110103, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
+      propertyPath: m_TagString
+      value: Spike
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
