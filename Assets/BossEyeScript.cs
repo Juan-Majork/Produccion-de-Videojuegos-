@@ -6,7 +6,7 @@ public class BossEyeScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("hit"))
+        if (collision.CompareTag("hit") || collision.CompareTag("iceMagic"))
         {
             bossController.RegisterHit();
         }

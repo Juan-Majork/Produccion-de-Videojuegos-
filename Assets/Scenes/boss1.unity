@@ -2812,16 +2812,16 @@ Transform:
   m_LocalScale: {x: 0.5263158, y: 0.5263158, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1763123121}
   - {fileID: 113436506}
   - {fileID: 936644960}
   - {fileID: 1291425903}
   - {fileID: 1467582618}
   - {fileID: 108537096}
   - {fileID: 1482430054}
-  - {fileID: 1853545620}
-  - {fileID: 1763123121}
-  - {fileID: 895132399}
   - {fileID: 1655835363}
+  - {fileID: 1853545620}
+  - {fileID: 895132399}
   m_Father: {fileID: 987391062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &316158738
@@ -21973,10 +21973,10 @@ MonoBehaviour:
   - {fileID: 1467582617}
   - {fileID: 936644959}
   - {fileID: 1291425902}
-  roofSpikes: {fileID: 6879392848051110103, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
-  roofSpawnsWithMagic:
   - {fileID: 1763123120}
   - {fileID: 1655835362}
+  roofSpikes: {fileID: 6879392848051110103, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
+  roofSpawnsWithMagic:
   - {fileID: 1853545619}
   - {fileID: 895132398}
   roofSpikesWithMagic: {fileID: 5554434981798991873, guid: 48fe65fe9f56cab47905df81028fbe04, type: 3}
@@ -22137,6 +22137,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270936115}
   m_CullTransparentMesh: 1
+--- !u!1 &1287718319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1287718321}
+  - component: {fileID: 1287718320}
+  m_Layer: 0
+  m_Name: MagicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1287718320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287718319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405c5b5e91a131e44bf9b4dac675a7b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxMagicAllowed: 5
+  checkInterval: 1
+  magicPrefab: {fileID: 6426280555321879245, guid: 7bee06f2cfc7fa24c9b99bf3c4e23169, type: 3}
+--- !u!4 &1287718321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287718319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 244.9, y: 11, z: -4.7939715}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1291425902
 GameObject:
   m_ObjectHideFlags: 0
@@ -22523,6 +22570,7 @@ GameObject:
   - component: {fileID: 1403476852}
   - component: {fileID: 1403476851}
   - component: {fileID: 1403476850}
+  - component: {fileID: 1403476853}
   m_Layer: 0
   m_Name: TriggerArena3
   m_TagString: Untagged
@@ -22609,6 +22657,19 @@ Transform:
   - {fileID: 1849413300}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1403476853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403476849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a6c6cbd187ce540b6ab57925ac579d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spikeSpawner: {fileID: 1874565001}
 --- !u!1 &1407522424
 GameObject:
   m_ObjectHideFlags: 0
@@ -25202,7 +25263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1655835363}
   m_Layer: 0
-  m_Name: SpikeSpawnWithMagic (3)
+  m_Name: SpikeSpawn (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27367,7 +27428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1763123121}
   m_Layer: 0
-  m_Name: SpikeSpawnWithMagic (1)
+  m_Name: SpikeSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29943,3 +30004,4 @@ SceneRoots:
   - {fileID: 831700409}
   - {fileID: 1035952469}
   - {fileID: 133850238}
+  - {fileID: 1287718321}

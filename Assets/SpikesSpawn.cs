@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SpikesSpawn : MonoBehaviour
@@ -10,6 +11,7 @@ public class SpikesSpawn : MonoBehaviour
     [SerializeField] private float spawnTime = 3;
 
     private bool isSpawning = false;
+    private bool hasStopped = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -18,8 +20,6 @@ public class SpikesSpawn : MonoBehaviour
             isSpawning = true;
             InvokeRepeating(nameof(SpawnSpikes), 0f, spawnTime);
         }
-
-
     }
 
     private void SpawnSpikes()
@@ -31,6 +31,15 @@ public class SpikesSpawn : MonoBehaviour
         foreach (GameObject spawnPoint in roofSpawnsWithMagic)
         {
             Instantiate(roofSpikesWithMagic, spawnPoint.transform.position, roofSpikesWithMagic.transform.rotation);
+        }
+    }
+
+    public void StopSpawning()
+    {
+        if (!hasStopped)
+        {
+            hasStopped = true;
+            CancelInvoke(nameof(SpawnSpikes));
         }
     }
 }
