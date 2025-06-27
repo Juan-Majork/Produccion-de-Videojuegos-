@@ -5,6 +5,15 @@ TextureImporter:
   - first:
       213: 2115728665858105723
     second: rio_1_0
+  - first:
+      213: -5997834862923293273
+    second: rio_1_1
+  - first:
+      213: 4364633706910214575
+    second: rio_1_2
+  - first:
+      213: -7364510014377391468
+    second: rio_1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,10 +112,10 @@ TextureImporter:
       name: rio_1_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 0
-        width: 35
-        height: 90
+        x: 27
+        y: 2
+        width: 159
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,12 +130,78 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: rio_1_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 2
+        width: 159
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7add00658f863cca0800000000000000
+      internalID: -5997834862923293273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rio_1_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 2
+        width: 159
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9641b4b3b429c30800000000000000
+      internalID: 4364633706910214575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rio_1_3
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 2
+        width: 159
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49a8a3829210cc990800000000000000
+      internalID: -7364510014377391468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: 1b8e3f87c03e10c468e9c6251c5bc463
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -136,6 +211,9 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       rio_1_0: 2115728665858105723
+      rio_1_1: -5997834862923293273
+      rio_1_2: 4364633706910214575
+      rio_1_3: -7364510014377391468
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

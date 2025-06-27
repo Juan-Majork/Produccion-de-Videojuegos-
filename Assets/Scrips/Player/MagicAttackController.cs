@@ -14,6 +14,10 @@ public enum Spells
 
 public class MagicAttackController : MonoBehaviour
 {
+    [SerializeField] private AudioClip kickSound;
+    [SerializeField] private AudioClip iceSound;
+    private AudioSource audioSource;
+
     private Movement move;
     private nearAttack faceAttack;
 
@@ -70,6 +74,7 @@ public class MagicAttackController : MonoBehaviour
         move = GetComponent<Movement>();
         faceAttack = GetComponentInChildren<nearAttack>();
         animator = transform.GetChild(0).GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         slots[0] = Spells.Empty;
         slots[1] = Spells.Empty;
@@ -171,6 +176,7 @@ public class MagicAttackController : MonoBehaviour
 
             if (timeSinceShoot >= waitShoot)
             {
+                audioSource.PlayOneShot(kickSound);
                 animator.SetTrigger("baseAttack");
                 faceAttack.actualTime = 0;
                 lastShoot = Time.time;
@@ -209,6 +215,7 @@ public class MagicAttackController : MonoBehaviour
 
             if (timeSinceShoot >= waitShoot)
             {
+                audioSource.PlayOneShot(iceSound);
                 animator.SetTrigger("iceAttack");
                 SpawnMagic(waterPrefap, baseSpawner);
                 lastShoot = Time.time;
