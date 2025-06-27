@@ -13,23 +13,16 @@ public class BossController : MonoBehaviour
     //arena 3 a arena 4
     [SerializeField] private Transform[] arena4Path;
 
-    //arena 4 a arena 5
-    [SerializeField] private Transform[] arena5Path;
-
-    //arena 5 a arena 6
-    [SerializeField] private Transform[] arena6Path; 
-
     private Transform[] currentPath;
     private int currentTargetIndex = 0;
     private bool isMoving = false;
 
+    private int hitCount = 0;   
     public bool IsMoving() => isMoving;
 
     public void StartMoveToArena2() => StartPath(arena2Path);
     public void StartMoveToArena3() => StartPath(arena3Path);
     public void StartMoveToArena4() => StartPath(arena4Path);
-    public void StartMoveToArena5() => StartPath(arena5Path);
-    public void StartMoveToArena6() => StartPath(arena6Path);
 
     private void StartPath(Transform[] path)
     {
@@ -58,4 +51,30 @@ public class BossController : MonoBehaviour
             }
         }
     }
+
+    public void RegisterHit()
+    {
+        if (isMoving) return;
+
+        hitCount++;
+
+        switch (hitCount)
+        {
+            case 1:
+                StartMoveToArena2();
+                break;
+            case 2:
+                StartMoveToArena3();
+                break;
+            case 3:
+                StartMoveToArena4();
+                break;
+            case 4:
+                Debug.Log("Victoria");//matar al jefe
+                break;
+            default:
+                break;
+        }
+    }
+
 }

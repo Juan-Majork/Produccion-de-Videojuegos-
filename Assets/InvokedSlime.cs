@@ -38,6 +38,7 @@ public class InvokedSlime : MonoBehaviour
 
     private void StartMoving()
     {
+        if (healthController.IsDead) return;
         isCharging = false;
 
         targetPosition = lastTargetPosition == (Vector2)pointA.position ? pointB.position : pointA.position;
@@ -49,6 +50,12 @@ public class InvokedSlime : MonoBehaviour
 
     void Update()
     {
+        if (healthController.IsDead)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         if (!isCharging)
         {
             if (Vector2.Distance(transform.position, targetPosition) < 0.1f)
@@ -66,19 +73,7 @@ public class InvokedSlime : MonoBehaviour
         {
             targetPosition = (Vector2)transform.position == (Vector2)pointA.position ? pointB.position : pointA.position;
 
-            isCharging = true;
-            rb.linearVelocity = Vector2.zero;
-            Invoke(nameof(ResumeFromCollision), chargeTime);
+            StartMoving();
         }
-    }
-
-    private void ResumeFromCollision()
-    {
-        isCharging = false;
-
-        Vector2 direction = (targetPosition - (Vector2)transform.position).normalized;
-        rb.linearVelocity = direction * moveSpeed;
-
-        lastTargetPosition = targetPosition; 
     }
 }
