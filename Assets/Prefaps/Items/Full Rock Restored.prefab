@@ -84,6 +84,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Full Rock Restored
       objectReference: {fileID: 0}
+    - target: {fileID: 7416980696383489065, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 9060263251649793830, guid: 680556ceccb52c6468fa0282648698d8, type: 3}
       propertyPath: timeBeforeDestroy
       value: 15

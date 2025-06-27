@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnEnemy : MonoBehaviour
 {
     [SerializeField] private LayerMask player;
+    [SerializeField] private LayerMask EnemyItem;
     [SerializeField] private GameObject[] enemies;
 
     private int selectEnemy;
@@ -14,12 +15,19 @@ public class SpawnEnemy : MonoBehaviour
     [SerializeField] private float waitToSpawn;
 
     private bool isPlayer;
+    private bool haveSomething;
 
     // Update is called once per frame
     void Update()
     {
         isPlayer = Physics2D.OverlapCircle(transform.position, fidingRadio, player);
 
+        haveSomething = Physics2D.OverlapCircle(transform.position, fidingRadio, EnemyItem);
+
+        if (haveSomething)
+        {
+            return;
+        }
         if (isPlayer)
         {
             spawnTime += Time.deltaTime;

@@ -24,7 +24,7 @@ public class RockAttack : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject)
         {
@@ -32,5 +32,5 @@ public class RockAttack : MonoBehaviour
         }
     }
 
-    public UnityEvent timeToDestroy;
+    public UnityEvent timeToDestroy;*/
 }

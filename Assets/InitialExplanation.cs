@@ -30,8 +30,6 @@ public class InitialExplanation : MonoBehaviour
             Time.timeScale = 1.0f;
         }
 
-        Debug.Log(active);
-       
     }
 
     public void RestoredTime()

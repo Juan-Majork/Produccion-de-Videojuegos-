@@ -47,6 +47,9 @@ MonoBehaviour:
   player:
     serializedVersion: 2
     m_Bits: 8
+  EnemyItem:
+    serializedVersion: 2
+    m_Bits: 4224
   enemies: []
   fidingRadio: 6
   spawnTime: 2
