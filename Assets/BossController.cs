@@ -19,6 +19,7 @@ public class BossController : MonoBehaviour
 
     private int hitCount = 0;   
     public bool IsMoving() => isMoving;
+    private bool canBeHit = true;  
 
     public void StartMoveToArena2() => StartPath(arena2Path);
     public void StartMoveToArena3() => StartPath(arena3Path);
@@ -48,18 +49,22 @@ public class BossController : MonoBehaviour
             if (currentTargetIndex >= currentPath.Length)
             {
                 isMoving = false;
+                canBeHit = true;
             }
         }
     }
 
     public void RegisterHit()
     {
-        foreach(var eye in eyes)
+    
+        if (!canBeHit||isMoving) return;
+
+        canBeHit = false;
+
+        foreach (var eye in eyes)
         {
             eye.PlayHitAnimation();
         }
-
-        if (isMoving) return;
 
         hitCount++;
 
