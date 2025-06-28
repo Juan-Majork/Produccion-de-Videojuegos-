@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 462098023
-  m_SortingLayer: 4
+  m_SortingLayerID: -363160385
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -7112458395338814165, guid: 53c381c8966b7e64e8d655cd4dc23932, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -136,11 +136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1548391859709883015, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 23.8
       objectReference: {fileID: 0}
     - target: {fileID: 1548391859709883015, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 9.65
       objectReference: {fileID: 0}
     - target: {fileID: 1548391859709883015, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -200,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2715216379123791044, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: activeParticulas
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3349857573361745780, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -280,11 +280,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: Death.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -295,7 +299,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1614719555881424213}
     - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1283747334427717424}
+    - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
@@ -307,6 +319,10 @@ PrefabInstance:
       value: EndAnimation
       objectReference: {fileID: 0}
     - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_isTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DestroyRock, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -315,8 +331,24 @@ PrefabInstance:
       value: SetOnFireAnimation, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.Collider2D, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
       propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894094082635999410, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+      propertyPath: Death.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5625848324448307419, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+      propertyPath: burnDuration
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4779208564875589684, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
@@ -348,7 +380,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574de36d6c3b3104193021e8e71a2740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 2
+  destroyTime: 1.5
+--- !u!61 &1283747334427717424 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2456161017380834977, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}
+  m_PrefabInstance: {fileID: 3730880484898414993}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1614719555881424213 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2715216379123791044, guid: 3753fb8a80b65064497c9ad75912b5d4, type: 3}

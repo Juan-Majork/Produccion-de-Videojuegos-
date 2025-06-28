@@ -45,6 +45,10 @@ public class GameManager : MonoBehaviour
         }
         else if (select == 2)
         {
+            SceneManager.LoadScene("transicion");
+        }
+        else if (select == 3)
+        {
             SceneManager.LoadScene("boss1");
         }
     }
