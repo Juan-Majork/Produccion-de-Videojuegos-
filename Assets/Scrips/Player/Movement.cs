@@ -110,7 +110,7 @@ public class Movement : MonoBehaviour
 
     public void Jump()
     {
-        if (canJump)
+        if (canJump && Mathf.Abs(rb2D.linearVelocity.y) < 0.01f)
         {
             rb2D.AddForce(new Vector2(0, jumpForce));
             audioSource.PlayOneShot(jumpSound);
