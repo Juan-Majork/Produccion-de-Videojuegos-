@@ -5,6 +5,7 @@ public class SpikeScript : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField]private float timer = 1f; //tiempo antes de caer
     private bool hasDropped = false;
+    [SerializeField] private float gravity;
 
     [SerializeField] private int damage;
 
@@ -26,7 +27,7 @@ public class SpikeScript : MonoBehaviour
 
             if (timer <= 0f)
             {
-                rb.gravityScale = 1f;
+                rb.gravityScale = gravity;
                 hasDropped = true;
             }
         }

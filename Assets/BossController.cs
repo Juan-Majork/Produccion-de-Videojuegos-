@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class BossController : MonoBehaviour
 {
@@ -17,9 +18,11 @@ public class BossController : MonoBehaviour
     private int currentTargetIndex = 0;
     private bool isMoving = false;
 
-    private int hitCount = 0;   
+    private int hitCount = 0;
     public bool IsMoving() => isMoving;
-    private bool canBeHit = true;  
+    private bool canBeHit = true;
+
+    [SerializeField] private Tilemap spikes;
 
     public void StartMoveToArena2() => StartPath(arena2Path);
     public void StartMoveToArena3() => StartPath(arena3Path);
@@ -101,12 +104,24 @@ public class BossController : MonoBehaviour
                 break;
             case 3:
                 StartMoveToArena4();
+                spawnSpike();
                 break;
             case 4:
                 Debug.Log("Victoria");//matar al jefe
+                Invoke(nameof(Death), 1f);
                 break;
             default:
                 break;
         }
+    }
+
+    private void Death()
+    {
+        Destroy(gameObject);
+    }
+
+    private void spawnSpike()
+    {
+        spikes.gameObject.SetActive(true);
     }
 }

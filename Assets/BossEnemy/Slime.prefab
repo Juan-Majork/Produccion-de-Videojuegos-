@@ -14,13 +14,12 @@ GameObject:
   - component: {fileID: 3119351770090230744}
   - component: {fileID: 4642099989303899972}
   - component: {fileID: 1203259948575096657}
-  - component: {fileID: -1008112821885962460}
   - component: {fileID: 1812701597136446702}
   - component: {fileID: 6548673316414036505}
   - component: {fileID: 1487756053018822254}
   m_Layer: 7
   m_Name: Slime
-  m_TagString: Enemy
+  m_TagString: RockEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,16 +133,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c999f0142bef6d448a6e2bcfac0cc40e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  maxHealth: 10
+  health: 60
+  maxHealth: 60
   isPlayer: 0
   isEnemy: 1
   Death:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -1008112821885962460}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SpawnMagic, Assembly-CSharp
-        m_MethodName: Drop
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -200,20 +199,6 @@ MonoBehaviour:
   damage: 10
   knockbackForceX: 10
   knockbackForceY: 10
---- !u!114 &-1008112821885962460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2999688642858087803}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e13f46ea85bed194ebce07a5ad1a0e8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items:
-  - {fileID: 6426280555321879245, guid: 7bee06f2cfc7fa24c9b99bf3c4e23169, type: 3}
 --- !u!114 &1812701597136446702
 MonoBehaviour:
   m_ObjectHideFlags: 0

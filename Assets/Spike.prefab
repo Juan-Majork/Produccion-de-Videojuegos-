@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 1
+  gravity: 3
   damage: 10
   magic: {fileID: 0}
 --- !u!50 &863360876469481279
