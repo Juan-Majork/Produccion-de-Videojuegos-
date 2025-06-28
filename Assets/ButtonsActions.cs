@@ -12,4 +12,15 @@ public class ButtonsActions : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ActivePause()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void GoToMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("menu");
+    }
 }
