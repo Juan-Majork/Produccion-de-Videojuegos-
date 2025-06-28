@@ -176,7 +176,7 @@ public class MagicAttackController : MonoBehaviour
 
     private void BaseAttack()
     {
-        if (isDead) { return; }
+        if (isDead || move.IsFrozen()) { return; }
 
         if (!setFire)
         {
@@ -195,7 +195,7 @@ public class MagicAttackController : MonoBehaviour
 
     private void MagicAttack()
     {
-        if (isDead) { return; }
+        if (isDead || move.IsFrozen()) { return; }
 
         if (slots[0] == Spells.Fire)
         {

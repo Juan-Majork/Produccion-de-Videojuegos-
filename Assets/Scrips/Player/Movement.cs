@@ -31,6 +31,7 @@ public class Movement : MonoBehaviour
 
     private PlayerInput playerInput;
     private InputAction inputJump;
+    private bool isFrozenInIce = false;
 
 
     Animator animator;
@@ -96,13 +97,16 @@ public class Movement : MonoBehaviour
 
         rb2D.linearVelocity = currentVelocity;
 
-        if (horizontalInput > 0 && !facingRight)
+        if (!isFrozenInIce)
         {
-            Flip();
-        }
-        else if (horizontalInput < 0 && facingRight)
-        {
-            Flip();
+            if (horizontalInput > 0 && !facingRight)
+            {
+                Flip();
+            }
+            else if (horizontalInput < 0 && facingRight)
+            {
+                Flip();
+            }
         }
 
         animator.SetFloat("inAir", rb2D.linearVelocity.y);
@@ -213,5 +217,24 @@ public class Movement : MonoBehaviour
         rb2D.linearVelocity = Vector3.zero;
     }
 
+    public void FrozenInIce(bool frozen)
+    {
+        isFrozenInIce = frozen;
+        if (frozen)
+        {
+            rb2D.linearVelocity = Vector2.zero;
+            rb2D.bodyType = RigidbodyType2D.Static;
+            animator.enabled = false;
+        }
+        else
+        {
+            rb2D.bodyType = RigidbodyType2D.Dynamic;
+            animator.enabled = true;
+        }
+    }
 
+    public bool IsFrozen()
+    {
+        return isFrozenInIce;
+    }
 }
