@@ -2611,6 +2611,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1427252594}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &133850236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 133850238}
+  - component: {fileID: 133850237}
+  m_Layer: 0
+  m_Name: CheckPointManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &133850237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133850236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73f0a05bf4f3a2948ab6df6a7af49336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3
+--- !u!4 &133850238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133850236}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 172.6, y: 61.6, z: 0.37842563}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &177974644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,16 +2812,16 @@ Transform:
   m_LocalScale: {x: 0.5263158, y: 0.5263158, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1763123121}
   - {fileID: 113436506}
   - {fileID: 936644960}
   - {fileID: 1291425903}
   - {fileID: 1467582618}
   - {fileID: 108537096}
   - {fileID: 1482430054}
-  - {fileID: 1853545620}
-  - {fileID: 1763123121}
-  - {fileID: 895132399}
   - {fileID: 1655835363}
+  - {fileID: 1853545620}
+  - {fileID: 895132399}
   m_Father: {fileID: 987391062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &316158738
@@ -16751,15 +16796,15 @@ CompositeCollider2D:
         Y: 303109376
       - X: 1424999936
         Y: 303109376
-    - - X: 2184999936
+    - - X: 2165999872
         Y: 285890624
-      - X: 2167187456
+      - X: 2148187392
         Y: 285890624
-      - X: 2166000128
+      - X: 2146999936
         Y: 285296864
-      - X: 2166000128
+      - X: 2146999936
         Y: 265109360
-      - X: 2184999936
+      - X: 2165999872
         Y: 265109360
     - - X: 1234999936
         Y: 285296864
@@ -16889,11 +16934,11 @@ CompositeCollider2D:
       - {x: 133.11874, y: 32.38906}
       - {x: 133, y: 32.329674}
       - {x: 133.00003, y: 30.310938}
-    - - {x: 218.49997, y: 26.510937}
-      - {x: 218.49997, y: 28.589064}
-      - {x: 216.71875, y: 28.58906}
-      - {x: 216.60002, y: 28.52967}
-      - {x: 216.60004, y: 26.510937}
+    - - {x: 216.59996, y: 26.510937}
+      - {x: 216.59996, y: 28.589064}
+      - {x: 214.81874, y: 28.58906}
+      - {x: 214.7, y: 28.52967}
+      - {x: 214.70003, y: 26.510937}
     - - {x: 123.49997, y: 26.510937}
       - {x: 123.499985, y: 28.529694}
       - {x: 123.38125, y: 28.589064}
@@ -17157,7 +17202,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 114, y: 14, z: 0}
+  - first: {x: 113, y: 14, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -18857,8 +18902,6 @@ MonoBehaviour:
   - {fileID: 1792194393}
   arena4Path:
   - {fileID: 463354791}
-  arena5Path: []
-  arena6Path: []
 --- !u!50 &1056603369
 Rigidbody2D:
   serializedVersion: 5
@@ -21930,10 +21973,10 @@ MonoBehaviour:
   - {fileID: 1467582617}
   - {fileID: 936644959}
   - {fileID: 1291425902}
-  roofSpikes: {fileID: 6879392848051110103, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
-  roofSpawnsWithMagic:
   - {fileID: 1763123120}
   - {fileID: 1655835362}
+  roofSpikes: {fileID: 6879392848051110103, guid: 046832fefaf07334d95994c895fe63d4, type: 3}
+  roofSpawnsWithMagic:
   - {fileID: 1853545619}
   - {fileID: 895132398}
   roofSpikesWithMagic: {fileID: 5554434981798991873, guid: 48fe65fe9f56cab47905df81028fbe04, type: 3}
@@ -22094,6 +22137,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270936115}
   m_CullTransparentMesh: 1
+--- !u!1 &1287718319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1287718321}
+  - component: {fileID: 1287718320}
+  m_Layer: 0
+  m_Name: MagicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1287718320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287718319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405c5b5e91a131e44bf9b4dac675a7b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxMagicAllowed: 5
+  checkInterval: 1
+  magicPrefab: {fileID: 6426280555321879245, guid: 7bee06f2cfc7fa24c9b99bf3c4e23169, type: 3}
+--- !u!4 &1287718321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287718319}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 244.9, y: 11, z: -4.7939715}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1291425902
 GameObject:
   m_ObjectHideFlags: 0
@@ -22480,6 +22570,7 @@ GameObject:
   - component: {fileID: 1403476852}
   - component: {fileID: 1403476851}
   - component: {fileID: 1403476850}
+  - component: {fileID: 1403476853}
   m_Layer: 0
   m_Name: TriggerArena3
   m_TagString: Untagged
@@ -22566,6 +22657,19 @@ Transform:
   - {fileID: 1849413300}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1403476853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403476849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a6c6cbd187ce540b6ab57925ac579d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spikeSpawner: {fileID: 1874565001}
 --- !u!1 &1407522424
 GameObject:
   m_ObjectHideFlags: 0
@@ -25159,7 +25263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1655835363}
   m_Layer: 0
-  m_Name: SpikeSpawnWithMagic (3)
+  m_Name: SpikeSpawn (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26138,6 +26242,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 114, y: 14, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 115, y: 14, z: 0}
     second:
       serializedVersion: 2
@@ -26292,7 +26406,7 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 60
+  - m_RefCount: 61
     m_Data: {fileID: 11400000, guid: a99fc42c0395105438aa7d13274a78c7, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -26301,14 +26415,14 @@ Tilemap:
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 60
+  - m_RefCount: 61
     m_Data: {fileID: -4971955611685877455, guid: 9acbcb13e243e1c49a0d4b0c307b759a, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 60
+  - m_RefCount: 61
     m_Data:
       e00: 1
       e01: 0
@@ -26345,7 +26459,7 @@ Tilemap:
       e32: 7.05e-43
       e33: 7.02e-43
   m_TileColorArray:
-  - m_RefCount: 60
+  - m_RefCount: 61
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -26486,9 +26600,9 @@ CompositeCollider2D:
         Y: 265109360
     - - X: 2222999808
         Y: 285890624
-      - X: 2184999936
+      - X: 2166000128
         Y: 285890624
-      - X: 2184999936
+      - X: 2166000128
         Y: 265109360
       - X: 2222999808
         Y: 265109360
@@ -26728,8 +26842,8 @@ CompositeCollider2D:
       - {x: 134.90002, y: 30.310938}
     - - {x: 224.19997, y: 26.510937}
       - {x: 224.19997, y: 28.589064}
-      - {x: 218.5, y: 28.589033}
-      - {x: 218.50002, y: 26.510937}
+      - {x: 216.60002, y: 28.589033}
+      - {x: 216.60004, y: 26.510937}
     - - {x: 121.599976, y: 26.510937}
       - {x: 121.599976, y: 28.589064}
       - {x: 114, y: 28.589033}
@@ -27314,7 +27428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1763123121}
   m_Layer: 0
-  m_Name: SpikeSpawnWithMagic (1)
+  m_Name: SpikeSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29773,11 +29887,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7775472873931164796, guid: 60b9b9f08ce62684883599e3612bd1a4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 167.1
+      value: 169.8
       objectReference: {fileID: 0}
     - target: {fileID: 7775472873931164796, guid: 60b9b9f08ce62684883599e3612bd1a4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.8
+      value: 10.4
       objectReference: {fileID: 0}
     - target: {fileID: 7775472873931164796, guid: 60b9b9f08ce62684883599e3612bd1a4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29889,3 +30003,5 @@ SceneRoots:
   - {fileID: 2040134995}
   - {fileID: 831700409}
   - {fileID: 1035952469}
+  - {fileID: 133850238}
+  - {fileID: 1287718321}

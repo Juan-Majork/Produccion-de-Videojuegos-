@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 1203259948575096657}
   - component: {fileID: -1008112821885962460}
   - component: {fileID: 1812701597136446702}
-  - component: {fileID: 6344654168955742713}
   m_Layer: 7
   m_Name: Slime
   m_TagString: Enemy
@@ -204,9 +203,9 @@ MonoBehaviour:
   Damage:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6344654168955742713}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ChangeColorFeedback, Assembly-CSharp
-        m_MethodName: DamageFeedback
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -275,18 +274,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyTime: 0.75
---- !u!114 &6344654168955742713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2999688642858087803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edc0bcb9dc28f184a843915314964501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 3101157041078522450}
-  hitColor: {r: 0, g: 0, b: 0, a: 0}
-  actualColor: {r: 1, g: 1, b: 1, a: 0}
