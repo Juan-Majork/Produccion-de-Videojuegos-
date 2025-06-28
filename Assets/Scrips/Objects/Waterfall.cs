@@ -121,7 +121,11 @@ public class Waterfall : MonoBehaviour
         {
             if (hit.CompareTag("Player"))
             {
+                Movement playerMovement = hit.GetComponent<Movement>();
                 hit.GetComponent<Movement>().SetInWaterfall(false);
+                playerMovement.SetInWaterfall(false);
+                playerMovement.FrozenInIce(true);
+
             }
         }
 
@@ -156,6 +160,20 @@ public class Waterfall : MonoBehaviour
                 Destroy(plataform);
         }
         icePlataforms.Clear();
+
+        Collider2D[] hits = Physics2D.OverlapBoxAll(col.bounds.center, col.bounds.size, 0f);
+        foreach (var hit in hits)
+        {
+            if (hit.CompareTag("Player"))
+            {
+                Movement playerMovement = hit.GetComponent<Movement>();
+                if(playerMovement != null)
+                {
+                    playerMovement.FrozenInIce(false);
+                }
+            }
+        }
+        
     }
     public UnityEvent changeIce;
 }
