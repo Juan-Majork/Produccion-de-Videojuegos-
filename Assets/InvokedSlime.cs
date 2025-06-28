@@ -4,6 +4,8 @@ public class InvokedSlime : MonoBehaviour
 {
     [SerializeField] private float chargeTime = 2f;
     [SerializeField] private float moveSpeed = 8f;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     private Transform pointA;
     private Transform pointB;
@@ -31,18 +33,27 @@ public class InvokedSlime : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         healthController = GetComponent<HealthController>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         lastTargetPosition = pointB.position;
         Invoke(nameof(StartMoving), chargeTime);
+        
     }
 
     private void StartMoving()
     {
         if (healthController.IsDead) return;
         isCharging = false;
+        Debug.Log("Slime empieza a moverse");
+        animator.SetBool("isCharging", false);
+        animator.SetBool("isMoving", true);
 
         targetPosition = lastTargetPosition == (Vector2)pointA.position ? pointB.position : pointA.position;
         lastTargetPosition = targetPosition;
+
+        spriteRenderer.flipX = targetPosition.x > transform.position.x;
+
 
         Vector2 direction = (targetPosition - (Vector2)transform.position).normalized;
         rb.linearVelocity = direction * moveSpeed;
@@ -53,6 +64,7 @@ public class InvokedSlime : MonoBehaviour
         if (healthController.IsDead)
         {
             rb.linearVelocity = Vector2.zero;
+            animator.SetBool("isMoving", false);
             return;
         }
 
@@ -61,6 +73,10 @@ public class InvokedSlime : MonoBehaviour
             if (Vector2.Distance(transform.position, targetPosition) < 0.1f)
             {
                 rb.linearVelocity = Vector2.zero;
+                spriteRenderer.flipX = targetPosition.x > transform.position.x;
+
+                animator.SetBool("isCharging", true);
+                animator.SetBool("isMoving", false);
                 isCharging = true;
                 Invoke(nameof(StartMoving), chargeTime);
             }

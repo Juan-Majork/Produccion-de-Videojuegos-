@@ -3,7 +3,7 @@ using UnityEngine;
 public class BossController : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
-
+    [SerializeField] private BossEyeScript[] eyes;
     //arena 1 a arena 2
     [SerializeField] private Transform[] arena2Path;
 
@@ -54,6 +54,11 @@ public class BossController : MonoBehaviour
 
     public void RegisterHit()
     {
+        foreach(var eye in eyes)
+        {
+            eye.PlayHitAnimation();
+        }
+
         if (isMoving) return;
 
         hitCount++;
@@ -76,5 +81,4 @@ public class BossController : MonoBehaviour
                 break;
         }
     }
-
 }
