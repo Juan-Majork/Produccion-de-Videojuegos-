@@ -7,7 +7,7 @@ public class CheckPointManager : MonoBehaviour
     private Vector2 checkpoint = Vector2.zero;
 
     [SerializeField] public int lives = 3; // vidas máximas
-    private int currentLives; // vidas restantes
+    public int currentLives; // vidas restantes
 
     private void Awake()
     {
