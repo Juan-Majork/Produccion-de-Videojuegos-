@@ -5,12 +5,12 @@ public class ButtonsActions : MonoBehaviour
 {
     public void StartTheGame()
     {
-        SceneManager.LoadScene("level1");
+        Invoke(nameof(ActionStartGame), 0.2f);
     }
 
     public void ExitTheGame()
     {
-        Application.Quit();
+        Invoke(nameof(ActionExitGame), 0.2f);
     }
 
     public void ActivePause()
@@ -22,5 +22,15 @@ public class ButtonsActions : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("menu");
+    }
+
+    private void ActionStartGame()
+    {
+        SceneManager.LoadScene("level1");
+    }
+
+    private void ActionExitGame()
+    {
+        Application.Quit();
     }
 }
