@@ -61,6 +61,8 @@ public class MagicAttackController : MonoBehaviour
     private InputAction inputMagicAttack;
     private InputAction inputChangeSpell;
 
+    private bool isDead = false;
+
     public float manaPercentage
     {
         get
@@ -152,6 +154,11 @@ public class MagicAttackController : MonoBehaviour
         changeManaColor.Invoke();
     }
 
+    public void dead()
+    {
+        isDead = true;
+    }
+
     private void Swap()
     {
         if (timeToSwap <= 0)
@@ -169,6 +176,8 @@ public class MagicAttackController : MonoBehaviour
 
     private void BaseAttack()
     {
+        if (isDead) { return; }
+
         if (!setFire)
         {
             waitShoot = 0.5f;
@@ -186,6 +195,8 @@ public class MagicAttackController : MonoBehaviour
 
     private void MagicAttack()
     {
+        if (isDead) { return; }
+
         if (slots[0] == Spells.Fire)
         {
             waitShoot = 0.2f;
