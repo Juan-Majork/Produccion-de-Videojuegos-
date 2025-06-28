@@ -63,6 +63,29 @@ public class BossController : MonoBehaviour
 
         hitCount++;
 
+        Invoke(nameof(MoveToArea), 0.15f);
+
+        /*switch (hitCount)
+        {
+            case 1:
+                StartMoveToArena2();
+                break;
+            case 2:
+                StartMoveToArena3();
+                break;
+            case 3:
+                StartMoveToArena4();
+                break;
+            case 4:
+                Debug.Log("Victoria");//matar al jefe
+                break;
+            default:
+                break;
+        }*/
+    }
+
+    private void MoveToArea()
+    {
         switch (hitCount)
         {
             case 1:
