@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cascada_3_0: 8186102547803587321
+      cascada_3_1: 9093227578343543557
+      cascada_3_2: 8352218632821272388
+      cascada_3_3: 4946631336225065599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

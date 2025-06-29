@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 2ad66945e73c1a043913b928d4eae215
+guid: 8fd51b2ace4d72149b6c824659d5eb75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6335443051776756048
-    second: ESPUMA_1_0
-  - first:
-      213: -8890829402787201268
-    second: ESPUMA_1_1
-  - first:
-      213: -1660976693701092820
-    second: ESPUMA_1_2
-  - first:
-      213: -8193526069067609189
-    second: ESPUMA_1_3
+      213: -1514112081956084596
+    second: Plataforma_completa_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ESPUMA_1_0
+      name: Plataforma_completa_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 26
-        width: 46
-        height: 23
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,74 +115,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 059ced393e30ce750800000000000000
-      internalID: 6335443051776756048
+      spriteID: c8461e4651bccfae0800000000000000
+      internalID: -1514112081956084596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ESPUMA_1_1
+      name: Plataforma_completa_1
       rect:
         serializedVersion: 2
-        x: 86
-        y: 26
-        width: 42
-        height: 24
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c0f354883cd6d9480800000000000000
-      internalID: -8890829402787201268
+      spriteID: 60f35baeb6411864ab5f473eff079cae
+      internalID: -1898084512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ESPUMA_1_2
+      name: Plataforma_completa_2
       rect:
         serializedVersion: 2
-        x: 166
-        y: 26
-        width: 38
-        height: 23
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c2a5ebf4f7603f8e0800000000000000
-      internalID: -1660976693701092820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ESPUMA_1_3
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 26
-        width: 29
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9b825b837fba4e80800000000000000
-      internalID: -8193526069067609189
+      spriteID: c87846ff166eba34bb30d6ac37ed3313
+      internalID: -314048119
       vertices: []
       indices: 
       edges: []
@@ -200,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8a39b3881ccd45047a7c41f9c8be07d2
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +179,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ESPUMA_1_0: 6335443051776756048
-      ESPUMA_1_1: -8890829402787201268
-      ESPUMA_1_2: -1660976693701092820
-      ESPUMA_1_3: -8193526069067609189
+      Plataforma_completa_0: -1514112081956084596
+      Plataforma_completa_1: -1898084512
+      Plataforma_completa_2: -314048119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
