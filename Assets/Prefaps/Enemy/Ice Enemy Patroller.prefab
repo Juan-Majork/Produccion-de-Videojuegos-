@@ -94,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8250018543426022046, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: damage
-      value: 15
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8250018543426022046, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: knockbackForceX

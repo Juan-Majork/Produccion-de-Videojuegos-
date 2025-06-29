@@ -22,7 +22,7 @@ public class MagicAttackController : MonoBehaviour
     private nearAttack faceAttack;
 
     private float mana;
-    private float [] magicMana = new float[3];
+    public float [] magicMana = new float[3];
     //0 = Fire, 1 = Water, 2 = Rock
 
     [SerializeField] 
