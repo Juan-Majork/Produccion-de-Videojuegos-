@@ -5,7 +5,7 @@ public class ButtonsActions : MonoBehaviour
 {
     public void StartTheGame()
     {
-        Invoke(nameof(ActionStartGame), 0.2f);
+        Invoke(nameof(ActionStartGame), 0.1f);
     }
 
     public void ExitTheGame()
@@ -20,8 +20,7 @@ public class ButtonsActions : MonoBehaviour
 
     public void GoToMenu()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("menu");
+        Invoke(nameof(ActionGoToMenu), 0.2f);
     }
 
     private void ActionStartGame()
@@ -32,5 +31,11 @@ public class ButtonsActions : MonoBehaviour
     private void ActionExitGame()
     {
         Application.Quit();
+    }
+
+    private void ActionGoToMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("menu");
     }
 }

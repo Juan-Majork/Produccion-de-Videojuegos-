@@ -371,6 +371,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 793850339}
+        m_TargetAssemblyTypeName: ButtonsAppear, Assembly-CSharp
+        m_MethodName: DesactiveButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &140272671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -957,6 +969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicClipLevel: {fileID: 8300000, guid: fc3264269952fb44eab76cb372a015e0, type: 3}
   musicClipArena: {fileID: 8300000, guid: 3b1d96afe2e0a80458d841c73caf5cb8, type: 3}
+  musicCliBoss: {fileID: 0}
 --- !u!4 &604113452
 Transform:
   m_ObjectHideFlags: 0
@@ -1401,6 +1414,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: 0cc534948bc295f4daf59f5d78fa5a85, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 793850339}
+        m_TargetAssemblyTypeName: ButtonsAppear, Assembly-CSharp
+        m_MethodName: DesactiveButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

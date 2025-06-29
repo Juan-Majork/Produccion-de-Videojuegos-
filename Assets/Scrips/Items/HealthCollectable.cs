@@ -9,6 +9,7 @@ public class HealthCollectable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            AudioPlayer.audioPlayer.PickItem();
             healthController = collision.GetComponent<HealthController>();
             healthController.restoreHP(health);
             Destroy(gameObject);

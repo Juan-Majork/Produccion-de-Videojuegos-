@@ -8,6 +8,7 @@ public class MaxHealthCollectable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            AudioPlayer.audioPlayer.PickItem();
             CheckPointManager.Instance.currentLives++;
             Destroy(gameObject);
         }
