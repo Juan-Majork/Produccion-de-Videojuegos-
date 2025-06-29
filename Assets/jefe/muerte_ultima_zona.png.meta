@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 4f10ce9714688f24db5dd41e2e6296b4
+guid: 5d9ac4048d33eaf4c800fc0dd24c905f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8227179198186791946
-    second: jefe_cuerpo__0
+      213: -6701519712801770036
+    second: muerte_ultima_zona_0
+  - first:
+      213: -1109527512827177265
+    second: muerte_ultima_zona_1
+  - first:
+      213: 5736302156687191023
+    second: muerte_ultima_zona_2
+  - first:
+      213: -1685922513716510646
+    second: muerte_ultima_zona_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jefe_cuerpo__0
+      name: muerte_ultima_zona_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 1
-        width: 73
-        height: 185
+        x: 58
+        y: 0
+        width: 76
+        height: 198
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a04286b24efcc2270800000000000000
-      internalID: 8227179198186791946
+      spriteID: cc53c2fc35b6ff2a0800000000000000
+      internalID: -6701519712801770036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_ultima_zona_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 77
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6d9690b9a2a90f0800000000000000
+      internalID: -1109527512827177265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_ultima_zona_2
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 0
+        width: 81
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feba5a55b607b9f40800000000000000
+      internalID: 5736302156687191023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_ultima_zona_3
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 0
+        width: 103
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40081bf7666a98e0800000000000000
+      internalID: -1685922513716510646
       vertices: []
       indices: 
       edges: []
@@ -125,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d391f6e6c4002b942b1cad7e948cd2c6
+    spriteID: 49ab420432920fd4ea31a7cf13f9caab
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jefe_cuerpo__0: 8227179198186791946
+      muerte_ultima_zona_0: -6701519712801770036
+      muerte_ultima_zona_1: -1109527512827177265
+      muerte_ultima_zona_2: 5736302156687191023
+      muerte_ultima_zona_3: -1685922513716510646
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

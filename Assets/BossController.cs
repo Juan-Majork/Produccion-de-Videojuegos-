@@ -3,6 +3,11 @@ using UnityEngine.Tilemaps;
 
 public class BossController : MonoBehaviour
 {
+    [SerializeField] private GameObject ojoIzq;
+    [SerializeField] private GameObject ojoDer;
+    [SerializeField] private GameObject nariz;
+    [SerializeField] private Animator animator;
+
     [SerializeField] private float speed = 5f;
     [SerializeField] private BossEyeScript[] eyes;
     //arena 1 a arena 2
@@ -110,6 +115,7 @@ public class BossController : MonoBehaviour
                 break;
             case 4:
                 Debug.Log("Victoria");//matar al jefe
+                ActiveAnimation();
                 Invoke(nameof(Death), 1f);
                 break;
             default:
@@ -121,6 +127,14 @@ public class BossController : MonoBehaviour
     {
         Destroy(gameObject);
         finalDoor.SetActive(true);
+    }
+
+    private void ActiveAnimation()
+    {
+        ojoDer.SetActive(false);
+        ojoIzq.SetActive(false);
+        nariz.SetActive(false);
+        animator.SetTrigger("Dead");
     }
 
     private void spawnSpike()
