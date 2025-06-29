@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene("level1");
         }
+        if (SceneManager.GetActiveScene().name == "transicion")
+        {
+            SceneManager.LoadScene("transicion");
+        }
         else if (SceneManager.GetActiveScene().name == "boss1")
         {
             SceneManager.LoadScene("boss1");

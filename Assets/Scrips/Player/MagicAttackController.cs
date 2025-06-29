@@ -53,7 +53,8 @@ public class MagicAttackController : MonoBehaviour
     public Spells[] slots = new Spells[2];
     public Spells currentSpell;
 
-    Animator animator;
+    private Animator animator;
+    [SerializeField] private Animator slashAnimator;
 
     private PlayerInput playerInput;
 
@@ -186,6 +187,7 @@ public class MagicAttackController : MonoBehaviour
             if (timeSinceShoot >= waitShoot)
             {
                 audioSource.PlayOneShot(kickSound);
+                slashAnimator.SetTrigger("slash");
                 animator.SetTrigger("baseAttack");
                 faceAttack.actualTime = 0;
                 lastShoot = Time.time;

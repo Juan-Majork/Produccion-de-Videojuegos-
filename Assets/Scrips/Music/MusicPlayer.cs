@@ -5,6 +5,7 @@ public class MusicPlayer : MonoBehaviour
 {
     [SerializeField] private AudioClip musicClipLevel;
     [SerializeField] private AudioClip musicClipArena;
+    [SerializeField] private AudioClip musicCliBoss;
     private AudioSource musicSource;
 
     public static MusicPlayer musicPlayer;
@@ -22,9 +23,14 @@ public class MusicPlayer : MonoBehaviour
 
         musicSource = GetComponent<AudioSource>();
 
-        if (SceneManager.GetActiveScene().name == "level1")
+        if (SceneManager.GetActiveScene().name == "level1" || SceneManager.GetActiveScene().name == "transicion")
         {
             LevelMusic();
+        }
+
+        if (SceneManager.GetActiveScene().name == "boss1")
+        {
+            BossMusic();
         }
     }
 
@@ -40,5 +46,17 @@ public class MusicPlayer : MonoBehaviour
         musicSource.clip = musicClipLevel;
         musicSource.loop = true;
         musicSource.Play();
+    }
+
+    public void BossMusic()
+    {
+        musicSource.clip = musicCliBoss;
+        musicSource.loop = true;
+        musicSource.Play();
+    }
+
+    public void StopMusic()
+    {
+        musicSource.Stop();
     }
 }

@@ -593,6 +593,7 @@ GameObject:
   - component: {fileID: 8963422626313314297}
   - component: {fileID: 6246380678859014830}
   - component: {fileID: 2932285653451093500}
+  - component: {fileID: 7000617157350982238}
   m_Layer: 3
   m_Name: Base Attack
   m_TagString: hit
@@ -609,7 +610,7 @@ Transform:
   m_GameObject: {fileID: 8976127076698097296}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8845, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0.8845, y: 0.625, z: 0}
   m_LocalScale: {x: 0.4789, y: 0.7068029, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -649,17 +650,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.116862655, y: -0.18631}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.5, y: 2.125}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7662747, y: 1.0372621}
   m_EdgeRadius: 0
 --- !u!114 &6246380678859014830
 MonoBehaviour:
@@ -673,7 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6b487016670e44e8c89f975cb17792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 5
   actualTime: 1
 --- !u!212 &2932285653451093500
 SpriteRenderer:
@@ -719,8 +720,8 @@ SpriteRenderer:
   m_SortingLayerID: 1801310261
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 0.111320674, b: 0.8986305, a: 1}
+  m_Sprite: {fileID: -635851974, guid: c9e2ed9c49fad8c47b24998fe5efcb54, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -730,6 +731,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7000617157350982238
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8976127076698097296}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 21b18b5ed3ffd734abf2f0da0437742a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9199131965065546555
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,6 +839,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8112e1dc10baf8347924f054852a67b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpSound: {fileID: 0}
+  fallSound: {fileID: 0}
   move: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   speed: 12
   jumpForce: 1500
@@ -833,6 +858,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53312774cebc687418f635523ea79c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  kickSound: {fileID: 0}
+  iceSound: {fileID: 0}
   maxMana: 100
   firePrefap: {fileID: 4267683405766896265}
   waterPrefap: {fileID: 1760410354759048159, guid: d0bb8719d810f164aa98b8c3ed15a879, type: 3}
@@ -841,6 +868,7 @@ MonoBehaviour:
   upSpawner: {fileID: 7273078704913101236}
   slots: 0000000000000000
   currentSpell: 0
+  slashAnimator: {fileID: 0}
   changeMana:
     m_PersistentCalls:
       m_Calls:

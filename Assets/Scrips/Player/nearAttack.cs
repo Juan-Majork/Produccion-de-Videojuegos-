@@ -10,6 +10,7 @@ public class nearAttack : MonoBehaviour
 
     private BoxCollider2D attack;
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
 
     private void Start()
     {

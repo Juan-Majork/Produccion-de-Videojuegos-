@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3180378984495184304, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: damagePerTick
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3180378984495184304, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: haveParticles
@@ -94,7 +94,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8250018543426022046, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: damage
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8250018543426022046, guid: 712ae426f05699e4a94b24b36109c84a, type: 3}
       propertyPath: knockbackForceX
