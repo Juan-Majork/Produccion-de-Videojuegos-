@@ -28,6 +28,8 @@ public class BossController : MonoBehaviour
     public void StartMoveToArena3() => StartPath(arena3Path);
     public void StartMoveToArena4() => StartPath(arena4Path);
 
+    [SerializeField]private GameObject finalDoor;
+
     private void StartPath(Transform[] path)
     {
         if (path == null || path.Length == 0) return;
@@ -118,10 +120,12 @@ public class BossController : MonoBehaviour
     private void Death()
     {
         Destroy(gameObject);
+        finalDoor.SetActive(true);
     }
 
     private void spawnSpike()
     {
         spikes.gameObject.SetActive(true);
     }
+
 }

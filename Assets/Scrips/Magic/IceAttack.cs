@@ -51,8 +51,11 @@ public class IceAttack : MonoBehaviour
         {
             HealthController healthController = collision.gameObject.GetComponent<HealthController>();
             EnemyRangedAttack rangeEnemy = collision.gameObject.GetComponent<EnemyRangedAttack>();
-            rangeEnemy.duration = 0;
-            rangeEnemy.isCold = true;
+            if (rangeEnemy != null)
+            {            
+                rangeEnemy.duration = 0;
+                rangeEnemy.isCold = true;
+            }          
             healthController.takeDamage(riseDamage);
             Destroy(gameObject);
         }
