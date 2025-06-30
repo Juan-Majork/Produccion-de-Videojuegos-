@@ -145,7 +145,7 @@ public class Waterfall : MonoBehaviour
 
         if (haveRender)
         {
-            spriteRenderer.color = Color.blue; //color original
+            spriteRenderer.color = Color.white; //color original
         }
 
         ice = false;

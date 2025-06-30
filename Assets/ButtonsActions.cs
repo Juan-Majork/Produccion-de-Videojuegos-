@@ -20,7 +20,7 @@ public class ButtonsActions : MonoBehaviour
 
     public void GoToMenu()
     {
-        Invoke(nameof(ActionGoToMenu), 0.2f);
+        Invoke(nameof(ActionGoToMenu), 0f);
     }
 
     private void ActionStartGame()
