@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class MusicPlayer : MonoBehaviour
 {
     [SerializeField] private AudioClip musicClipLevel;
+    [SerializeField] private AudioClip musicClipMenu;
     [SerializeField] private AudioClip musicClipArena;
     [SerializeField] private AudioClip musicCliBoss;
     private AudioSource musicSource;
@@ -22,6 +23,11 @@ public class MusicPlayer : MonoBehaviour
         }
 
         musicSource = GetComponent<AudioSource>();
+
+        if (SceneManager.GetActiveScene().name == "menu")
+        {
+            MenuMusic();
+        }
 
         if (SceneManager.GetActiveScene().name == "level1" || SceneManager.GetActiveScene().name == "transicion")
         {
@@ -51,6 +57,13 @@ public class MusicPlayer : MonoBehaviour
     public void BossMusic()
     {
         musicSource.clip = musicCliBoss;
+        musicSource.loop = true;
+        musicSource.Play();
+    }
+
+    public void MenuMusic()
+    {
+        musicSource.clip = musicClipMenu;
         musicSource.loop = true;
         musicSource.Play();
     }

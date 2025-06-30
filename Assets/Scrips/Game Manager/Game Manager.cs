@@ -56,4 +56,9 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene("boss1");
         }
     }
+
+    public void GoNivelTransicion()
+    {
+        SceneManager.LoadScene("transicion");
+    }
 }
