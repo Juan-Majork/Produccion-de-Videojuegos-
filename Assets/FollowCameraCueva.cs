@@ -4,6 +4,8 @@ public class FollowCameraCueva : MonoBehaviour
 {
     [SerializeField] GameObject cam;
     [SerializeField] GameObject destroyExtra;
+    [SerializeField] GameObject destroyOriginal;
+
 
     private bool followPlayer = false;
 
@@ -29,6 +31,7 @@ public class FollowCameraCueva : MonoBehaviour
         {
             followPlayer = true;
             Destroy(destroyExtra);
+            Destroy(destroyOriginal);
         }
     }
 }
