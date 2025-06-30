@@ -157622,6 +157622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicClipLevel: {fileID: 8300000, guid: fc3264269952fb44eab76cb372a015e0, type: 3}
+  musicClipMenu: {fileID: 0}
   musicClipArena: {fileID: 8300000, guid: 9f858ea4677fae74d82fd2098f919513, type: 3}
   musicCliBoss: {fileID: 8300000, guid: 3b1d96afe2e0a80458d841c73caf5cb8, type: 3}
 --- !u!4 &638271822
@@ -170050,9 +170051,9 @@ RectTransform:
   - {fileID: 2116937327}
   m_Father: {fileID: 791569019}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 413.4709, y: 241.5133}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -100, y: -25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415427006
