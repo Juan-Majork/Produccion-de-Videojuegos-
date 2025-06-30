@@ -119,6 +119,7 @@ public class HealthController : MonoBehaviour
             {
                 // Sin vidas: resetear todo y volver al inicio
                 CheckPointManager.Instance.Reset(); // Resetea checkpoint y vidas
+                CheckPointManager.Instance.scene1();
                 Death.Invoke();
                 Debug.Log("Game Over, volviendo al principio");
                 Invoke(nameof(SceneCall), 5f);
