@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CheckPointManager : MonoBehaviour
 {
@@ -53,6 +54,7 @@ public class CheckPointManager : MonoBehaviour
     public void Reset()
     {
         currentLives = lives; // restablece vidas a su valor máximo
+        SceneManager.LoadScene("level1");
         checkpoint = Vector2.zero;
         Debug.Log("Juego reiniciado. Vidas: " + currentLives);
     }
